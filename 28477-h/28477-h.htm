@@ -1,0 +1,4138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>
+      Notes And Queries, Issue 195.
+    </title>
+
+    <style type="text/css">
+
+  body                    {margin-left: 10%; margin-right: 10%; text-align: justify;}
+  p.center                {text-align: center;}
+  blockquote              {text-align: justify;}
+  blockquote.b2n          {margin-left: 4em; margin-right: 4em; }
+  h1,h2,h3,h4,h5,h6       {text-align: center;}
+  pre                     {font-size: 0.7em;}
+
+  hr                      {text-align: center; width: 50%;}
+  html>body hr            {margin-right: 25%; margin-left: 25%; width: 50%;}
+  hr.full                 {width: 100%;}
+  html>body hr.full       {margin-right: 0%; margin-left: 0%; width: 100%;}
+  hr.adverts              {width: 100%; height: 5px; color: black;}
+  html>body hr.adverts    {margin-right: 0%; margin-left: 0%; width: 100%;}
+
+  .note, .footnote        {margin-left: 10%; margin-right: 10%;
+                          font-size: 0.9em;}
+
+   table.nob              {border-collapse: collapse; margin-left: 4em}
+   table.nobctr           {border-collapse: collapse; margin-left: auto; margin-right: auto;}
+   table.allb             {border : 1px solid black; border-collapse: collapse; margin-left: 4em}
+   table.allbnomar        {border : 1px solid black; border-collapse: collapse;}
+   table.allbctr          {border : 1px solid black; border-collapse: collapse;
+	                   margin-left: auto; margin-right: auto; }
+   table.topbotbctr       {border-bottom : 1px solid black; border-top : 1px solid black; border-collapse: collapse;
+	                   margin-left: auto; margin-right: auto; }
+   table.nomar            {margin-left: 0em}
+   td.nob                 {padding-left: 0.5em; padding-right: 0.5em;}
+   td.nobpad              {padding-left: 0.5em; padding-right: 0.5em; padding-bottom: 1ex;}
+   td.nspac               {padding-left: 0em; padding-right: 0em;}
+   td.nspcsingle          {padding-left: 0em; padding-right: 0em;}
+   td.spacsingle          {padding-left: 1em; padding-right: 1em;}
+   td.hspcsingle          {padding-left: 0.5em; padding-right: 0.5em;}
+   td.qspcsingle          {padding-left: 0.25em; padding-right: 0.25em;}
+   td.allb                {border : 1px solid black; padding-left: 0.5em; padding-right: 0.5em;}
+   td.allbnspac           {border : 1px solid black;}
+   td.rightbsing          {border-right : 1px solid black; padding-left: 0.5em; padding-right: 0.5em;}
+   td.rightbotbsing       {border-right : 1px solid black; border-bottom : 1px solid black; padding-left: 0.5em; padding-right: 0.5em;}
+   td.botbsing            {border-bottom : 1px solid black; padding-left: 0.5em; padding-right: 0.5em;}
+   td.rightb              {border-right : 1px solid black;
+				padding-left: 0.5em; padding-right: 0.5em; padding-bottom: 1ex; }
+   td.leftb               {border-left : 1px solid black;
+				padding-left: 0.5em; padding-right: 0.5em; padding-bottom: 1ex; }
+   td.vertb               {border-left : 1px solid black; border-right : 1px solid black;
+				padding-left: 0.5em; padding-right: 0.5em; padding-bottom: 1ex; }
+   td.vertbotb            {border-left : 1px solid black; border-right : 1px solid black; border-bottom : 1px solid black;
+				padding-left: 0.5em; padding-right: 0.5em; }
+   td.topbotb             {border-bottom : 1px solid black; border-top : 1px solid black; padding-left: 0.5em; padding-right: 0.5em; }
+   td.botb                {border-bottom : 1px solid black; padding-left: 0.5em; padding-right: 0.5em; }
+   td.vertbsing		  {border-left : 1px solid black; border-right : 1px solid black; padding-left: 0.5em; padding-right: 0.5em; }
+   td.vertbotbsing	  {border-left : 1px solid black; border-right : 1px solid black; border-bottom : 1px solid black;
+				padding-left: 0.5em; padding-right: 0.5em; }
+  .rightbsing p           {margin: 0;}
+  .rightbotbsing p        {margin: 0;}
+  .botbsing p             {margin: 0;}
+  .single p               {margin: 0;}
+  .spacsingle p           {margin: 0;}
+  .hspcsingle p           {margin: 0;}
+  .qspcsingle p           {margin: 0;}
+  .nspcsingle p           {margin: 0;}
+
+  .contents               {margin-left:30%; margin-right:10%; margin-bottom: 1em; text-align: left;}
+  .contents .stanza       {margin: 1em 0em 1em 0em;}
+  .contents p             {margin: 0; padding-left: 3em; text-indent: -3em;}
+  .poem                   {margin-left:10%; margin-right:10%; text-align: left;}
+  .poem .stanza           {margin: 1em 0em 1em 0em;}
+  .poem p                 {margin: 0; padding-left: 3em; text-indent: -3em;}
+        p.hg3             {margin-left: -0.3em;}
+        p.hg1             {margin-left: -0.2em;}
+        p.i1              {margin-left: 1em;}
+        p.i1hg1           {margin-left: 0.8em;}
+        p.i1hg3           {margin-left: 0.7em;}
+        p.i2              {margin-left: 2em;}
+        p.i2hg1           {margin-left: 1.8em;}
+        p.i2hg3           {margin-left: 1.7em;}
+        p.i3              {margin-left: 3em;}
+        p.i4              {margin-left: 4em;}
+        p.i4hg1           {margin-left: 3.8em;}
+        p.i4hg3           {margin-left: 3.7em;}
+        p.i5              {margin-left: 5em;}
+        p.i6              {margin-left: 6em;}
+        p.i6hg3           {margin-left: 5.7em;}
+        p.i6hg1           {margin-left: 5.8em;}
+        p.i8              {margin-left: 8em;}
+        p.i8hg3           {margin-left: 7.7em;}
+        p.i12             {margin-left: 12em;}
+        p.i12hg3          {margin-left: 11.7em;}
+        p.i12hg1          {margin-left: 11.8em;}
+        p.i10             {margin-left: 10em;}
+        p.i10hg3          {margin-left: 9.7em;}
+        p.i16             {margin-left: 16em;}
+        .unpoem           {position: absolute; left: 10.0%;}
+  .b1n  .unpoem           {position: absolute; left: 12.5%;}
+  .poem .caesura          {vertical-align: -200%;}
+  .figure, .figcenter, .figright, .figleft
+              {padding: 1em; margin: 0; text-align: center; font-size: 0.8em;}
+  .figure img, .figcenter img, .figright img, .figleft img
+              {border: none;}
+  .figcenter {margin: auto;}
+  .figright  {float: right;}
+  .figleft   {float: left;}
+
+  .linenum  {position: absolute; top: auto; left: 60%;} /* poetry number */
+
+  span.pagenum            {position: absolute; left: 1%; right: 91%; font-size: 8pt; font-style: normal;}
+  span.correction         {border-bottom: thin dotted red;}
+  span.special            {border-bottom: thin dotted green;}
+  span.over               {text-decoration: overline;}
+
+  .sc                     {font-variant: small-caps; }
+  .scac                   {font-size: small;}
+  .grk                    {font-style: normal; font-family:"Palatino Linotype","New Athena Unicode",Gentium,"Lucida Grande", Galilee, "Arial Unicode MS", sans-serif;}
+  .saxon                  {font-style: normal;
+				font-family:sans-serif;}
+
+  p.author                {text-align: right;  margin-top: -1em;}
+  p.address               {margin-top: -0.5em;}
+    .cenhead              {text-align: center;  margin-top: 1em;}
+  img.middle              { border: none; vertical-align: middle }
+
+    </style>
+   </head>
+<body>
+
+<table border="0" cellpadding="10" style="background-color: #ccccff;">
+<tr>
+<td style="width:25%; vertical-align:top">
+Transcriber's note:
+</td>
+<td>
+A few typographical errors have been corrected. They
+appear in the text <span class="correction" title="explanation will pop up">like this</span>, and the
+explanation will appear when the mouse pointer is moved over the marked
+passage.
+</td>
+</tr>
+</table>
+
+<p><!-- Page 69 --><span class="pagenum"><a name="page69"></a>{69}</span></p>
+
+<h1>NOTES AND QUERIES:</h1>
+
+<h2>A MEDIUM OF INTER-COMMUNICATION FOR LITERARY MEN, ARTISTS, ANTIQUARIES,
+GENEALOGISTS, ETC.</h2>
+
+<h3><b>"When found, make a note of."</b>&mdash;<span class="sc">Captain Cuttle</span>.</h3>
+
+<hr class="full" />
+
+
+<table width="100%" class="nomar" summary="masthead" title="masthead">
+  <tr>
+    <td class="nspcsingle" style="text-align:left; width:25%">
+      <p><b>No. 195.</b></p>
+    </td>
+    <td class="nspcsingle" style="text-align:center; width:50%">
+      <p><b><span class="sc">Saturday, July 23. 1853.</span></b></p>
+    </td>
+    <td class="nspcsingle" style="text-align:right; width:25%">
+      <p><b>Price Fourpence<br />Stamped Edition 5<i>d.</i></b></p>
+    </td>
+  </tr>
+</table>
+
+<hr class="full" />
+
+<h2>CONTENTS.</h2>
+
+
+<table width="100%" class="nomar" summary="Contents" title="Contents">
+  <tr>
+    <td class="nspcsingle" style="text-align:left; width:94%">
+      <p><span class="sc">Notes</span>:&mdash;</p>
+    </td>
+    <td class="nspcsingle" style="text-align:right; width:5%">
+      <p>Page</p>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="nspcsingle" style="text-align:left">
+      <p>William Blake</p>
+    </td>
+    <td class="nspcsingle" style="text-align:right">
+      <p><a href="#page69">69</a></p>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="nspcsingle" style="text-align:left">
+      <p>A Poem by Shelley, not in his Works</p>
+    </td>
+    <td class="nspcsingle" style="text-align:right">
+      <p><a href="#page71">71</a></p>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="nspcsingle" style="text-align:left">
+      <p>The Impossibilities of History</p>
+    </td>
+    <td class="nspcsingle" style="text-align:right">
+      <p><a href="#page72">72</a></p>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="nspcsingle" style="text-align:left">
+      <p>"Quem Deus vult perdere prius dementat," by T. J. Buckton</p>
+    </td>
+    <td class="nspcsingle" style="text-align:right">
+      <p><a href="#page73">73</a></p>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="nspcsingle" style="text-align:left">
+      <p>Shakspeare Correspondence, by J. Payne Collier, George Blink,
+      &amp;c.</p>
+    </td>
+    <td class="nspcsingle" style="text-align:right">
+      <p><a href="#page73">73</a></p>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="nspcsingle" style="text-align:left">
+      <p>"The Dance of Death," by Weld Taylor</p>
+    </td>
+    <td class="nspcsingle" style="text-align:right">
+      <p><a href="#page76">76</a></p>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="nspcsingle" style="text-align:left">
+      <p><span class="sc">Minor Notes</span>:&mdash;Old Lines newly
+      revived&mdash; Inscription near
+      Cirencester&mdash;Wordsworth&mdash;"Magna est Veritas et
+      prævalebit"&mdash;"Putting your foot into it"</p>
+    </td>
+    <td class="nspcsingle" style="text-align:right">
+      <p><a href="#page76">76</a></p>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="nspcsingle" style="text-align:left">
+      <p><span class="sc">Queries:&mdash;</span></p>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="nspcsingle" style="text-align:left">
+      <p>Fragments of MSS., by Philip Hale</p>
+    </td>
+    <td class="nspcsingle" style="text-align:right">
+      <p><a href="#page77">77</a></p>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="nspcsingle" style="text-align:left">
+      <p>The Electric Telegraph, by W. Matthews</p>
+    </td>
+    <td class="nspcsingle" style="text-align:right">
+      <p><a href="#page78">78</a></p>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="nspcsingle" style="text-align:left">
+      <p><span class="sc">Minor Queries</span>:&mdash;Sir Walter
+      Raleigh&mdash;Ancient Fortifications: Hertstone, Pale,
+      Brecost&mdash;Newton and Somers&mdash;Daventry, Duel at&mdash;Passage
+      in Burial Service&mdash;"They shot him on the nine-stane
+      rig"&mdash;Wardhouse, and Fishermen's Custom there&mdash;"Adrian
+      turn'd the bull"&mdash;Cary's "Palæologia Chronica"&mdash;The
+      Southwark Pudding Wonder&mdash;Roman Catholics confined in Fens of
+      Ely&mdash;White Bell Heather transplanted&mdash;Green's "Secret
+      Plot"&mdash;"The full Moon brings fine Weather"&mdash;Nash the
+      Artist&mdash;Woodwork of St. Andrew's Priory Church,
+      Barnwell&mdash;"The Mitre and the Crown"&mdash;Military Music</p>
+    </td>
+    <td class="nspcsingle" style="text-align:right">
+      <p><a href="#page78">78</a></p>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="nspcsingle" style="text-align:left">
+      <p><span class="sc">Minor Queries With Answers</span>:&mdash;Stoven
+      Church&mdash;The Statute of Kilkenny&mdash;Kenne of Kenne&mdash;Rents
+      of Assize, &amp;c.&mdash;Edifices of Ancient and Modern
+      Times&mdash;Gorram&mdash;"Rock of Ages"</p>
+    </td>
+    <td class="nspcsingle" style="text-align:right">
+      <p><a href="#page80">80</a></p>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="nspcsingle" style="text-align:left">
+      <p><span class="sc">Replies</span>:&mdash;</p>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="nspcsingle" style="text-align:left">
+      <p>Remuneration of Authors</p>
+    </td>
+    <td class="nspcsingle" style="text-align:right">
+      <p><a href="#page81">81</a></p>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="nspcsingle" style="text-align:left">
+      <p>On the Use of the Hour-glass in Pulpits</p>
+    </td>
+    <td class="nspcsingle" style="text-align:right">
+      <p><a href="#page82">82</a></p>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="nspcsingle" style="text-align:left">
+      <p>Ladies' Arms borne in a Lozenge</p>
+    </td>
+    <td class="nspcsingle" style="text-align:right">
+      <p><a href="#page83">83</a></p>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="nspcsingle" style="text-align:left">
+      <p><span class="sc">Photographic
+      Correspondence:</span>&mdash;Multiplication of
+      Photographs&mdash;Yellow Bottles for Photographic Chemicals</p>
+    </td>
+    <td class="nspcsingle" style="text-align:right">
+      <p><a href="#page85">85</a></p>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="nspcsingle" style="text-align:left">
+      <p><span class="sc">Replies To Minor Queries</span>:&mdash;Donnybrook
+      Fair&mdash;Abigail&mdash;Honorary Degrees&mdash;Red
+      Hair&mdash;Historical Engraving&mdash;Proverbs quoted by
+      Suetonius&mdash;"Sat cito, si sat bene"&mdash;Council of Laodicea,
+      Canon 35.&mdash;Anna Lightfoot&mdash;Jack and Gill&mdash;Simile of
+      the Soul and the Magnetic Needle&mdash;Gibbon's Library&mdash;St.
+      Paul's Epistles to Seneca&mdash;"Hip, Hip,
+      Hurrah!"&mdash;Emblemata&mdash;Campvere, Privileges of&mdash;Slang
+      Expressions: "Just the cheese"&mdash;The Honorable Miss E. St.
+      Leger&mdash;Queries from the Navorscher&mdash;"Pity is akin to
+      Love"</p>
+    </td>
+    <td class="nspcsingle" style="text-align:right">
+      <p><a href="#page86">86</a></p>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="nspcsingle" style="text-align:left">
+      <p><span class="sc">Miscellaneous:</span>&mdash;</p>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="nspcsingle" style="text-align:left">
+      <p>Notes on Books, &amp;c.</p>
+    </td>
+    <td class="nspcsingle" style="text-align:right">
+      <p><a href="#page89">89</a></p>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="nspcsingle" style="text-align:left">
+      <p>Books and Odd Volumes wanted</p>
+    </td>
+    <td class="nspcsingle" style="text-align:right">
+      <p><a href="#page90">90</a></p>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="nspcsingle" style="text-align:left">
+      <p>Notices to Correspondents</p>
+    </td>
+    <td class="nspcsingle" style="text-align:right">
+      <p><a href="#page90">90</a></p>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="nspcsingle" style="text-align:left">
+      <p>Advertisements</p>
+    </td>
+    <td class="nspcsingle" style="text-align:right">
+      <p><a href="#page90">90</a></p>
+    </td>
+  </tr>
+</table>
+
+<hr class="full" />
+
+<h2>Notes.</h2>
+
+<h3>WILLIAM BLAKE.</h3>
+
+  <p>My antiquarian tendencies bring me acquainted with many neglected and
+  obscure individuals connected with our earlier English literature, who,
+  after "fretting their hour" upon life's stage, have passed away; leaving
+  their names entombed upon the title-page of some unappreciated or
+  crotchetty book, only to be found upon the shelves of the curious.</p>
+
+  <p>To look for these in Kippis, Chalmers, Gorton, or Rose would be a
+  waste of time; and although agreeing to some extent with the
+  <i>Utilitarians</i>, that we have all that was worth preserving of the
+  <i>Antediluvians</i>, there is, I think, here and there a name worth
+  resuscitating, possessing claims to a <i>niche</i> in our "Antiquary's
+  Newspaper;" and for that distinction, I would now put in a plea on behalf
+  of my present subject, William Blake.</p>
+
+  <p>Although our author belongs to the <i>eccentric category</i>, he is a
+  character not only deserving of notice, but a model for imitation: the
+  "<i>bee</i> in his bonnet" having set his sympathies in the healthy
+  direction of a large <i>philanthropy</i> for the spiritual and temporal
+  interests of his fellow men.</p>
+
+  <p>The congenial reader has already, I doubt not, anticipated that I am
+  about to introduce that nondescript book bearing the running
+  title&mdash;and it never had any other&mdash;of <i>Silver Drops, or
+  Serious Things;</i> purporting, in a kind of colophon, to be "written by
+  William Blake, housekeeper to the Ladies' Charity School."<a
+  name="footnotetag1" href="#footnote1"><sup>[1]</sup></a> The curious in
+  old books knows too, that, apart from its subject, the <i>Silver
+  Drops</i> of W.&nbsp;B. has usually an attractive exterior; most of the
+  <i>exemplaires</i> which have come under my notice being sumptuously
+  bound in old morocco, profusely tooled; with the name of the party to
+  whom it had apparently been presented, stamped in a compartment upon the
+  cover. Its value is farther enhanced by its pictorial and emblematical
+  accompaniments. These are four in number: the first representing a heart,
+  whereon <!-- Page 70 --><span class="pagenum"><a
+  name="page70"></a>{70}</span>a fanciful picture of Charity supported by
+  angels; second, a view of Highgate Charity Schools (Dorchester House);
+  third, Time with his scythe and hour-glass<a name="footnotetag2"
+  href="#footnote2"><sup>[2]</sup></a>; and the fourth, in three
+  compartments, the centre containing butterflies; the smaller at top and
+  bottom, sententious allusions to the value of time&mdash;"Time drops
+  pearles from his golden wings," &amp;c. These are respectable engravings,
+  but by whom executed I know not. After these, and before coming to the
+  <i>Silver Drops</i>, which are perhaps something akin to Master Brooks'
+  <i>Apples of Gold</i>, the book begins abruptly: "The Ladies' Charity
+  School-house Roll of Highgate, or a subscription of many noble
+  well-disposed ladies for the easie carrying of it on." "Being well
+  informed," runs the Prospectus, "that there is a pious, good, commendable
+  work for maintaining near forty poor or fatherless children, born all at
+  or near Highgate, Hornsey, or Hamsted: we, whose names are subscribed, do
+  engage or promise, that if the said boys are decently cloathed in blew,
+  lined with yellow; constantly fed all alike with good and wholsom diet;
+  taught to read, write, and cast accompts, and so put out to trades, in
+  order to live another day; then we will give for one year, two or three
+  (if we well like the design, and prudent management of it,) once a year,
+  the sum below mentioned," &amp;c. The projector of this good work was the
+  subject of my present note; and after thus introducing it, the worthy
+  "woollen-draper, at the sign of the Golden Boy, Maiden Lane, Covent
+  Garden," for such he was, goes on to recommend and enforce its importance
+  in a variety of cajolling addresses, or, as he calls them,
+  "charity-school sticks," to the great and wealthy; ostensibly the
+  production of the boys, but in reality the concoctions of Mr. Blake, and
+  in which he pleads earnestly for his <i>hobby</i>. In <i>An Essay, or
+  Humble Guess, how the Noble Ladies may be inclined to give to and
+  encourage their Charity-school at Highgate</i>, Mr. Blake farther
+  humorously shows up the various dispositions of his fair
+  friends:&mdash;"And first," says he, "my lady such-a-one cryed, Come, we
+  will make one purse out of our family;" and "my lady such-an-one said she
+  would give for the fancy of the Roll and charity stick. My lady
+  such-an-one cryed by her troth she would give nothing at all, for she had
+  waies enough for her money; while another would give five or six stone of
+  beef every week." Again, in trying to come at the great citizen-ladies,
+  he magnifies, in the following characteristic style, the city of London;
+  and, by implication, their noble husbands and themselves:&mdash;"There
+  is," says Mr. Blake, "the Tower and the Monument; the old Change,
+  Guild-Hall, and Blackwall-Hall, <i>which some would fain burn again</i>;
+  there is Bow steeple, the <i>Holy Bible</i>, <i>the Silver Bells of
+  Aaron</i>, <i>the godly-outed ministers</i>; the melodious musick of the
+  Gospels; Smithfield martyrs yet alive; and the best society, the very
+  best in all the world for civility, loyalty, men, and manners; with the
+  greatest cash, bulk, mass, and stock of all sorts of silks, cinnamon,
+  spices, wine, gold, pearls, Spanish wooll and cloaths; with the river
+  <i>Nilus</i>, and the stately ships of <i>Tarshish</i> to carry in and
+  out the great merchandizes of the world." In this the city dames are
+  attacked collectively. Individually, he would wheedle them thus into his
+  charitable plans:&mdash;"Now pray, dear madam, speak or write to my lady
+  out of hand, and tell her how it is with us; and if she will subscribe a
+  good <i>gob</i>, and get the young ladies to do so too; and then put in
+  altogether with your lordship's and Sir James's also: for it is necessary
+  he or you in his stead should do something, <i>now the great ship is come
+  safe in, and by giving some of the first-fruits of your great bay, or new
+  plantation, to our school, the rest will be blessed the better</i>." The
+  scheme seems to have offered attractions to the Highgate
+  gentry:&mdash;"The great ladies do allow their house-keeper," he
+  continues, "one bottle of wine, three of ale, half a dozen of rolls, and
+  two dishes of meat a-day; who is to see the wilderness, orchard, great
+  prospects, walks, and gardens, all well kept and rolled for their
+  honours' families; and to give them small treats according to discretion
+  when they please to take the air, which is undoubtedly the best round
+  London." Notwithstanding the eloquent pleadings of Mr. Blake for their
+  assistance and support, it is to be feared that the <i>noble ladies</i>
+  allowed the predictions of his friends to be verified, and <i>did</i>
+  "suffer such an inferiour meane and little person (to use his own
+  phraseology) to sink under the burden of so good and great a work:" for
+  we find that Gough, in allusion thereto, says (<i>Topographical
+  Anecdotes</i>, vol. i. p. 644.):&mdash;</p>
+
+<blockquote class="b1n">
+
+  <p>"This Hospital at Highgate, called the Ladies' Charity School, was
+  erected by one W. Blake, a woollen-draper in Covent Garden; who having
+  purchased Dorchester House, and having fooled away his estate in
+  building, was thrown into prison."</p>
+
+</blockquote>
+
+  <p>Even here, and under such circumstances, our subject was nothing
+  daunted; for the same authority informs us, that, still full of his
+  philanthropic projects, he took the opportunity his leisure there
+  admitted to write another work upon his favourite topic of educating and
+  caring for the <!-- Page 71 --><span class="pagenum"><a
+  name="page71"></a>{71}</span>poor; its title is, <i>The State and Case of
+  a Design for the better Education of Thousands of Parish Children
+  successively in the vast Northern Suburbs of London vindicated,
+  &amp;c.</i> Besides the above, there is another remarkable little piece
+  which I have seen, beginning abruptly, "Here followeth a briefe
+  exhortation which I gave in my owne house at my wife's funerall to our
+  friends then present," by Blake, with the MS. date, 1650; and exhibits
+  this original character in another not less amiable light:&mdash;"I was
+  brought up," says he, "by my parents to learne <i>Hail Mary</i>,
+  paternoster, the Beliefe, and learne to reade; and where I served my
+  apprenticeship little more was to be found." He attributes it to God's
+  grace that he fell a reading the <i>Practice of Piety</i>, by which means
+  he got a little persuading of God's love to his soul:&mdash;"Well, my
+  time being out, I set up for myselfe; and seeking out for a wife, which,
+  with long waiting and difficulty, much expence and charge, at last I got.
+  Four children God gave me by her; but he hath taken them and her all
+  again too, who was a woman of a thousand." Mr. B. then naturally indulges
+  in a panegyric upon this pattern of wives, and reproaches himself for his
+  former insensibility to her surpassing merits: relating with great
+  <i>naïveté</i> some domestic passages, with examples of her piety and
+  trials, in one of which latter the <i>enemy</i> would tempt her to
+  suicide:&mdash;"There lie your garters," said he; "but she threw them
+  aside, and so escaped this will of the Devil."</p>
+
+  <p>In conclusion, let me inquire if your Highgate correspondents are
+  cognisant of any existing institution raised upon the foundation of
+  William Blake's Charity School at Dorchester House?</p>
+
+  <p class="author">J. O.</p>
+
+<div class="note">
+  <p>[Our correspondent's interesting communication suggests a Query: Is
+  there any biographical notice of William Blake; and was he the author of
+  the following piece, preserved among the Kings' pamphlets in the British
+  Museum? "The Condemned Man's Reprieve, or God's Love-Tokens, flowing in
+  upon the heart of William Blake, a penitent sinner, giving him assurance
+  of the pardon of his sins, and the enjoyment of eternal happiness through
+  the merits of Christ his Saviour. Recommended by him (being a condemned
+  prisoner for manslaughter within the statute) unto his sister, and
+  bequeathed unto her as a legacy." It is dated from "Exon Jayle," June 25,
+  1653, and was published July 14, 1653."&mdash;<span
+  class="sc">Ed.</span>]</p>
+
+</div>
+
+<div class="note">
+  <a name="footnote1"></a><b>Footnote 1:</b><a
+  href="#footnotetag1">(return)</a>
+  <p>"Mr. Henry Cornish, merchant," was a coadjutor of Blake's in this
+  charitable undertaking; and as that Alderman was not executed until 1635,
+  this publication may be assigned to about that date.</p>
+
+  <a name="footnote2"></a><b>Footnote 2:</b><a
+  href="#footnotetag2">(return)</a>
+  <p>[It appears, from the following advertisement at the end of <i>Silver
+  Drops</i>, that the plates of Time and Charity were used as
+  receipts:&mdash;"It is humbly desired, that what you or any of you, most
+  noble Ladies, Gentlewomen, or others, are pleased to bestow or give
+  towards this good or great design, that you would be pleased to take a
+  receipt on the backside of Time or Charity, sealed with three seales,
+  namely, the Treasurer's, Housekeeper's, and Register's; and it shall be
+  fairly recorded, and hung up in the school-house, to be read of all from
+  Time to Time, to the world's end, we hope."&mdash;<span
+  class="sc">Ed.</span>]</p>
+
+</div>
+<hr class="short" />
+
+<h3>A POEM BY SHELLEY, NOT IN HIS WORKS.</h3>
+
+  <p>The following poem was published in a South Carolina newspaper in the
+  year 1839. The person who communicates it states that it was among the
+  papers of a deceased friend, in a small packet, endorsed "A letter and
+  two poems written by Shelley the poet, and lent to me by Mr. Trelawney in
+  1823. I was prevented from returning them to him, for which I am sorry,
+  since this is the only copy of them&mdash;they have never been
+  published." Upon this poem was written, "Given to me by Shelley, who
+  composed it as we were sailing one evening together."</p>
+
+  <p class="author"><span class="sc">Uneda.</span></p>
+
+  <p class="address">Philadelphia.</p>
+
+  <div class="contents">
+    <div class="stanza">
+      <p class="i4hg3">"<i>The Calm.</i></p>
+    </div>
+
+    <div class="stanza">
+      <p class="hg3">"Hush! hark! the Triton calls</p>
+      <p class="i1">From his hollow shell,</p>
+      <p class="i1">And the sea is as smooth as a well;</p>
+      <p class="i1">For the winds and the waves</p>
+      <p>In wild order form,</p>
+      <p class="i1">To rush to the halls</p>
+      <p class="i1">And the crystal-roof'd caves</p>
+      <p class="i1">Of the deep, deep ocean,</p>
+      <p>To hold consultation</p>
+      <p class="i1">About the next storm.</p>
+    </div>
+
+    <div class="stanza">
+      <p class="hg3">"The moon sits on the sky</p>
+      <p class="i1">Like a swan sleeping</p>
+      <p>On the stilly lake:</p>
+      <p>No wild breath to break</p>
+      <p>Her smooth <i>massy</i> light</p>
+      <p class="i1">And <i>ruffle</i> it into <i>beams:</i></p>
+    </div>
+
+    <div class="stanza">
+      <p class="hg3">"The downy clouds droop</p>
+      <p class="i1">Like moss upon a tree;</p>
+      <p>And in the earth's bosom grope</p>
+      <p class="i1">Dim vapours and streams.</p>
+      <p>The darkness is weeping,</p>
+      <p class="i1">Oh, most silently!</p>
+      <p>Without audible sigh,</p>
+      <p class="i1">All is noiseless and bright.</p>
+    </div>
+
+    <div class="stanza">
+      <p class="hg3">"Still 'tis living silence here,</p>
+      <p>Such as fills not with fear.</p>
+      <p>Ah, do you not hear</p>
+      <p class="i1">A humming and purring</p>
+      <p class="i1">All about and about?</p>
+      <p class="i1hg1">'Tis from souls let out,</p>
+      <p class="i1">From their day-prisons freed,</p>
+      <p>And joying in release,</p>
+      <p class="i1">For no slumber they need.</p>
+    </div>
+
+    <div class="stanza">
+      <p class="hg3">"Shining through this <i>veil of peace,</i></p>
+      <p class="i1">Love now pours her omnipresence,</p>
+      <p>And various nature</p>
+      <p>Feels through every feature</p>
+      <p class="i1">The joy intense,</p>
+      <p class="i1">Yet so <i>passionless,</i></p>
+      <p>Passionless and pure;</p>
+      <p class="i1">The human mind restless</p>
+      <p>Long could not endure.</p>
+    </div>
+
+    <div class="stanza">
+      <p class="hg3">"But hush while I tell,</p>
+      <p class="i1">As the <i>shrill whispers flutter</i></p>
+      <p>Through the pores of the sea,&mdash;</p>
+      <p class="i1">Whatever they utter</p>
+      <p class="i1">I'll interpret to thee.</p>
+      <p>King Neptune now craves</p>
+      <p class="i1">Of his turbulent vassals</p>
+      <p>Their workings to quell;</p>
+      <p class="i1">And the billows are quiet,</p>
+      <p class="i1"><i>Though thinking on riot.</i></p>
+      <p>On the left and the right</p>
+      <p>In ranks they are coil'd up,</p>
+<!-- Page 72 --><span class="pagenum"><a name="page72"></a>{72}</span>
+      <p class="i1">Like snakes on the plain;</p>
+      <p>And each one has roll'd up</p>
+      <p class="i1">A bright flashing streak</p>
+      <p>Of the white moonlight</p>
+      <p class="i1">On his glassy green neck:</p>
+      <p>On every one's forehead</p>
+      <p class="i1">There glitters a star,</p>
+      <p>With a hairy train</p>
+      <p class="i1">Of light <i>floating from afar</i>,</p>
+      <p>And pale or fiery red.</p>
+      <p>Now old Eolus goes</p>
+      <p class="i1">To each muttering blast,</p>
+      <p>Scattering blows;</p>
+      <p class="i1">And some he binds fast</p>
+      <p class="i1">In hollow rocks vast,</p>
+      <p class="i1">And others he gags</p>
+      <p>With thick heavy foam.</p>
+      <p class="hg1">'Twing them round</p>
+      <p class="i1">The sharp rugged crags</p>
+      <p class="i1">That are sticking out near,'</p>
+      <p class="i1">Growls he, 'for fear</p>
+      <p>They all should rebel,</p>
+      <p>And so play hell.'</p>
+      <p>Those that he bound,</p>
+      <p class="i1">Their prison-walls grasp,</p>
+      <p>And through the dark gloom</p>
+      <p class="i1">Scream fierce and yell:</p>
+      <p class="i1">While all the rest gasp,</p>
+      <p class="i1">In rage fruitless and vain.</p>
+      <p>Their shepherd now leaves them</p>
+      <p class="i1">To howl and to roar&mdash;</p>
+      <p>Of his presence bereaves them,</p>
+      <p class="i1">To feed some young breeze</p>
+      <p>On the violet odour,</p>
+      <p>And to teach it on shore</p>
+      <p class="i1">To rock the green trees.</p>
+      <p class="i1">But no more can be said</p>
+      <p>Of what was transacted</p>
+      <p>And what was enacted</p>
+      <p>In the heaving abodes</p>
+      <p>Of the great sea-gods."</p>
+    </div>
+  </div>
+
+<hr class="short" />
+
+<h3>THE IMPOSSIBILITIES OF HISTORY.</h3>
+
+  <p>In <i>The Tablet</i> of June 18 is a leading article on the proposed
+  erection of Baron Marochetti's statue of Richard C&oelig;ur de Lion.
+  Theology and history are mixed: of course I shall carefully exclude the
+  former. I have tried to trace the statements to their sources; and where
+  I have failed, perhaps some of your readers may be able to help me.</p>
+
+<blockquote class="b1n">
+
+  <p>"When the physicians told him that they could do nothing more for him,
+  and when his confessor had done his duty faithfully and with all honesty,
+  the stern old soldier commanded his attendants to take him off the bed,
+  and lay him naked on the bare floor. When this was done, he then bade
+  them take a discipline and scourge him with all their might. This was the
+  last command of their royal master; and in this he was obeyed with more
+  zeal than he found displayed when at the head of his troops in
+  Palestine."</p>
+
+</blockquote>
+
+  <p>I find no record that "the stern old soldier," who was then forty-two
+  years of age, and whom the writer oddly calls Richard II., had any reason
+  to complain of want of zeal in his troops. They fought well, and flogged
+  well&mdash;if they flogged at all. Richard died of gangrene in the
+  shoulder; and I have the authority of an eminent physician for saying,
+  that gangrene, so near the vital parts, would produce such mental and
+  bodily prostration, that it is highly improbable that the patient, unless
+  in delirium, should give such an order, and impossible that he should
+  live through its execution.</p>
+
+  <p>Hume and Lingard do not allude to the "discipline;" and the silence of
+  the latter is important. Henry says:</p>
+
+<blockquote class="b1n">
+
+  <p>"Having expressed great penitence for his vices, and having undergone
+  a very severe discipline from the hands of the clergy, who attended him
+  in his last moments," &amp;c.&mdash;Vol. iii. p. 161. ed. 1777.</p>
+
+</blockquote>
+
+  <p>He cites Brompton, and there I find the penance given much stronger
+  than in <i>The Tablet</i>:</p>
+
+<blockquote class="b1n">
+
+  <p>"Præcepitque pedes sibi ligari, et in altum suspendi nudumque corpus
+  flagellis cædi et lacerari, donec ipse præciperat ut silerent. Cumque diu
+  cæderetur, ex præcepto, ad modicum siluerunt. Et spiritu iterum
+  reassumpto, hoc idem secundo ac tertio in abundantiâ sanguinis
+  compleverunt. Tamdiu in se revertens, afferri viaticum sibi jussit et se
+  velut proditorem et hostem, contra dominum suum ligatis pedibus fune
+  trahi."</p>
+
+</blockquote>
+
+  <p>This is taken from Brompton's Chronicle in <i>Decem Scriptores
+  Historiæ Anglicanæ</i>, 1652, p. 1279., edited by Selden. As Brompton
+  lived in the reign of Edward III., he is not a high authority upon any
+  matter in that of Richard I. I cannot find any other. Hoveden and
+  Knyghton are silent. Is the fact stated elsewhere? Hoveden states, and
+  the modern historians follow him, that after the king's death, Marchader
+  seized the archer, flayed him alive, and then hanged him. My medical
+  authority says, that no man could be flayed <i>alive</i>: and that the
+  most skilful operator could not remove the skin of one arm from the elbow
+  to the wrist, before the patient would die from the shock to his
+  system.</p>
+
+  <p>Mr. Riley, in a note on the passage in Hoveden, cites from the
+  <i>Winchester Chronicle</i> a possible account of Gurdum being tortured
+  to death. The historian of <i>The Tablet</i>, in the same article,
+  says:</p>
+
+<blockquote class="b1n">
+
+  <p>"We are far from attributing absolute perfection to the son of Henry
+  II., one of that awful race popularly believed to be descended from the
+  devil. When Henry, as a boy, practising Whiggery by revolting against his
+  father, was presented to St. Bernard at the Court of the King of France,
+  the saint looked at him with a sort of terror, and said, 'From the Devil
+  you came, and to the Devil you will go.'"</p>
+
+</blockquote>
+
+  <p>The fact that Henry II. rebelled against his father is not given in
+  any history which I have <!-- Page 73 --><span class="pagenum"><a
+  name="page73"></a>{73}</span>read; and the popular belief in the
+  remarkable descent of Henry, and consequently of our present royal
+  family, is quite new to me, and to all of whom I have inquired. Still,
+  finding that the writer had an authority for the "discipline," he may
+  have one for the Devil. If so, I should like to know it; for I
+  contemplate something after the example of Lucian's <i>Quomodo Historia
+  sit conscribenda</i>.</p>
+
+  <p class="author">H. B. C.</p>
+
+  <p class="address">U. U. Club.</p>
+
+<hr class="short" />
+
+<h3>"QUEM DEUS VULT PERDERE PRIUS DEMENTAT."</h3>
+
+  <p>Having disposed of the allegation that the Greek Iambic,</p>
+
+  <div class="poem">
+    <div class="stanza">
+      <p class="hg3">"<span title="hon theos thelei apolesai prôt' apophrenai" class="grk">&#x1F45;&nu; &theta;&epsilon;&#x1F78;&sigmaf; &theta;&#x1F73;&lambda;&epsilon;&iota; &#x1F00;&pi;&omicron;&lambda;&#x1F73;&sigma;&alpha;&iota; &pi;&rho;&#x1FF6;&tau;' &#x1F00;&pi;&omicron;&phi;&rho;&#x1F73;&nu;&alpha;&iota;</span>,"</p>
+    </div>
+  </div>
+
+  <p>was from Euripides, by denying the assertion, I am also, on farther
+  investigation, compelled to deny to him also the authorship of the cited
+  passage,&mdash;</p>
+
+<blockquote class="b1n">
+
+  <p>"<span title="hotan de Daimôn andri porsunêi kaka, ton noun eblapse prôton" class="grk"
+  >&#x1F45;&tau;&alpha;&nu; &delta;&epsilon;
+  &Delta;&alpha;&#x1F77;&mu;&omega;&nu; &#x1F00;&nu;&delta;&rho;&#x1F76;
+  &pi;&omicron;&rho;&sigma;&#x1F7B;&nu;&#x1FC3;
+  &kappa;&alpha;&kappa;&#x1F70;, &tau;&#x1F78;&nu;
+  &nu;&omicron;&#x1FE6;&nu; &#x1F14;&beta;&lambda;&alpha;&psi;&epsilon;
+  &pi;&rho;&#x1F7C;&tau;&omicron;&nu;</span>."</p>
+
+</blockquote>
+
+  <p>Its first appearance is in Barnes, who quotes it from Athenagoras
+  "sine auctoris nomine." Carmeli includes it with others, to which he
+  prefixes the observation,&mdash;</p>
+
+<blockquote class="b1n">
+
+  <p>"A me piacque come al Barnesio di porle per disteso, ed a canto
+  mettervi la traduzione in nostra favella, <i>senza entrare tratto tratto
+  in quistioni</i> inutili, <i>se alcuni versi appartengano a Tragedia di
+  Euripide, o no</i>."</p>
+
+</blockquote>
+
+  <p>There is, then, no positive evidence of this passage having ever been
+  attributed, by any competent scholar, to Euripides. Indirect proof that
+  it could not have been written by him is thus shown:&mdash;In the
+  Antigone of Sophocles (v. 620.) the chorus sings, according to
+  Brunck,&mdash;</p>
+
+  <div class="poem">
+    <div class="stanza">
+      <p class="hg3">"<span title="Sophiai gar ek tou" class="grk">&Sigma;&omicron;&phi;&#x1F77;&#x1FB3; &gamma;&#x1F70;&rho; &#x1F14;&kappa; &tau;&omicron;&upsilon;</span></p>
+      <p><span title="kleinon epos pephantai;" class="grk">&kappa;&lambda;&epsilon;&iota;&nu;&#x1F78;&nu; &#x1F14;&pi;&omicron;&sigmaf; &pi;&#x1F73;&phi;&alpha;&nu;&tau;&alpha;&iota;&#x387;</span></p>
+      <p><span title="To kakon dokein pot' esthlon" class="grk">&Tau;&#x1F78; &kappa;&alpha;&kappa;&#x1F78;&nu; &delta;&omicron;&kappa;&epsilon;&#x1FD6;&nu; &pi;&omicron;&tau;' &#x1F10;&sigma;&theta;&lambda;&#x1F78;&nu;</span></p>
+      <p><span title="tôid' emmen, hotôi phrenas" class="grk">&tau;&#x1FF7;&delta;' &#x1F14;&mu;&mu;&epsilon;&nu;, &#x1F45;&tau;&#x1FF3; &phi;&rho;&#x1F73;&nu;&alpha;&sigmaf;</span></p>
+      <p><span title="theos agei pros atan;" class="grk">&theta;&epsilon;&#x1F78;&sigmaf; &#x1F04;&gamma;&epsilon;&iota; &pi;&rho;&#x1F78;&sigmaf; &#x1F04;&tau;&alpha;&nu;&#x387;</span></p>
+      <p><span title="prassein d' oligoston chronon ektos atas" class="grk">&pi;&rho;&#x1F71;&sigma;&sigma;&epsilon;&iota;&nu; &delta;' &#x1F40;&lambda;&iota;&gamma;&omicron;&sigma;&tau;&#x1F78;&nu; &chi;&rho;&#x1F79;&nu;&omicron;&nu; &#x1F10;&kappa;&tau;&#x1F78;&sigmaf; &#x1F04;&tau;&alpha;&sigmaf;</span>."</p>
+    </div>
+  </div>
+
+<blockquote class="b1n">
+
+  <p>"For a splendid saying has been revealed by the wisdom of <i>some
+  one</i>: That evil appears to be good to him whose mind God leads to
+  destruction; <i>but that he (God) practises this a short time without
+  destroying such a one</i>."</p>
+
+</blockquote>
+
+  <p>Now, had Barnes referred to the scholiast on the Antigone, or
+  remembered at the time the above-cited passage, he would either not have
+  omitted the conclusion of his distich, or he would at once have seen that
+  a passage quoted as "<span title="ek tou" class="grk">&#x1F14;&kappa;
+  &tau;&omicron;&upsilon;</span>, <i>of some one</i>," by Sophocles,
+  seventeen years the senior of Euripides, could not have been the original
+  composition of his junior competitor. The conclusion of the distich is
+  thus given by the old scholiast:</p>
+
+  <div class="poem">
+    <div class="stanza">
+      <p class="hg3">"<span title="hotan d' ho Daimôn andri porsunêi kaka," class="grk">&#x1F45;&tau;&alpha;&nu; &delta;' &#x1F41; &Delta;&alpha;&#x1F77;&mu;&omega;&nu; &#x1F00;&nu;&delta;&rho;&#x1F76; &pi;&omicron;&rho;&sigma;&#x1F7B;&nu;&#x1FC3; &kappa;&alpha;&kappa;&#x1F70;,</span></p>
+      <p><span title="ton noun eblapse prôton hôi bouleuetai" class="grk">&tau;&#x1F78;&nu; &nu;&omicron;&#x1FE6;&nu; &#x1F14;&beta;&lambda;&alpha;&psi;&epsilon; &pi;&rho;&#x1FF6;&tau;&omicron;&nu; &#x1FA7; <b>&beta;&omicron;&upsilon;&lambda;&epsilon;&#x1F7B;&epsilon;&tau;&alpha;&iota;</b></span>."</p>
+    </div>
+  </div>
+
+  <p>The words "when he wills it" being left out by Barnes and Carmeli, but
+  which correspond with the last line of the quotation from Sophocles. The
+  old scholiast introduces the exact quotation referred to by Sophocles as
+  "a celebrated (notorious, <span title="aoidimon" class="grk"
+  >&#x1F00;&omicron;&#x1F77;&delta;&iota;&mu;&omicron;&nu;</span>) and
+  splendid saying, revealed by the wisdom of <i>some one</i>, <span
+  title="meta sophias gar hupo tinos" class="grk"
+  >&mu;&epsilon;&tau;&#x1F70; &sigma;&omicron;&phi;&#x1F77;&alpha;&sigmaf;
+  &gamma;&#x1F70;&rho; &#x1F51;&pi;&#x1F79;
+  &tau;&iota;&nu;&omicron;&sigmaf;</span>."</p>
+
+  <p>Indeed, the sentiment must have been as old as Paganism, wherein,
+  whilst all <i>voluntary</i> acts are attributed to the individual, all
+  <i>involuntary</i> ones are ascribed to the Deity. Even <i>sneezing</i>
+  was so considered: hence the phrase common in the lower circles in
+  England, "Bless us," and in a higher grade in Germany, "Gott segne euch,"
+  which form the usual chorus to a sneeze.</p>
+
+  <p>The other scholiast, Triclinius, explains the passage of Sophocles by
+  saying, "The gods lead to error (<span title="blabên" class="grk"
+  >&beta;&lambda;&#x1F71;&beta;&eta;&nu;</span>) him whom they intend to
+  make miserable (<span title="dustuchein" class="grk"
+  >&delta;&upsilon;&sigma;&tau;&upsilon;&chi;&epsilon;&#x1FD6;&nu;</span>):
+  hence the application to Antigone, who considers death as sweet."</p>
+
+  <p class="author"><span class="sc">T. J. Buckton.</span></p>
+
+  <p class="address">Lichfield.</p>
+
+<hr class="short" />
+
+<h3>SHAKSPEARE CORRESPONDENCE.</h3>
+
+  <p><i>A Passage in "The Taming of the Shrew."</i>&mdash;Perhaps I mistake
+  it, but <span class="sc">Mr. C. Mansfield Ingleby</span> seems to me to
+  write in a tone as if he fancied I should be unwilling to answer his
+  questions, whether public or private. Although I am not personally
+  acquainted with him, we have had some correspondence, and I must always
+  feel that a man so zealous and intelligent is entitled to the best reply
+  I can afford. I can have no hesitation in informing him that, in
+  preparing what he terms my "monovolume Shakspeare," I pursued this plan
+  throughout; I adopted, as my foundation, the edition in eight volumes
+  octavo, which I completed in 1844; that was "formed from an entirely new
+  collation of the old editions," and my object there was to give the most
+  accurate representation of the text of the folios and quartos. Upon that
+  stock I engrafted the manuscript alterations in my folio 1632, in every
+  case in which it seemed to me possible that the old corrector might be
+  right&mdash;in short, wherever two opinions could be entertained as to
+  the reading: in this way my text in the "monovolume Shakspeare" was
+  "regulated by the old copies, and by the recently discovered folio of
+  1632."</p>
+
+  <p><span class="sc">Mr. Ingleby</span> will see that in the brief preface
+  to the "monovolume Shakspeare," I expressly say that "while a general
+  similarity (to the folio 1632) has been preserved, care has been taken
+  <i>to rectify the admitted mistakes of the early impression</i>, and to
+  introduce such alterations of a corrupt and imperfect text, as were
+  warranted by better authorities. Thus, while the new readings of the old
+  corrector of the folio 1632, considerably exceeding a thousand, are duly
+  inserted in the places <!-- Page 74 --><span class="pagenum"><a
+  name="page74"></a>{74}</span>to which they belong, the old readings,
+  which, during the last century and a half, have recommended themselves
+  for adoption, and have been derived from a comparison of ancient printed
+  editions, have also been incorporated." I do not know how I could have
+  expressed myself with greater clearness; and it was merely for the sake
+  of distinctness that I referred to the result of my own labours in 1842,
+  1843, and 1844, during which years my eight volumes octavo were
+  proceeding through the press. Those labours, it will be seen, essentially
+  contributed to lighten my task in preparing the "monovolume
+  Shakspeare."</p>
+
+  <p>My answer respecting the passage in <i>The Taming of the Shrew</i>,
+  referred to by <span class="sc">Mr. Ingleby</span>, will, I trust, be
+  equally satisfactory; it shall be equally plain.</p>
+
+  <p>I inserted <i>ambler</i>, because it is the word substituted in
+  manuscript in the margin of my folio 1632. I adopted <i>mercatantè</i>,
+  as proposed by Steevens, not only because it is the true Italian word,
+  but because it exactly fits the place in the verse, <i>mercatant</i> (the
+  word in the folios) being a syllable short of the required number. In the
+  very copy of Florio's <i>Italian Dictionary</i>, which I bought of Rodd
+  at the time when I purchased my folio 1632, I find <i>mercatantè</i>
+  translated by the word "marchant," "marter," and "trader," exactly the
+  sense required. Then, as to "surely" instead of <i>surly</i>, I venture
+  to think that "surely" is the true reading:</p>
+
+<blockquote class="b1n">
+
+  <p>"In gait and countenance surely like a father."</p>
+
+</blockquote>
+
+  <p>"Surely like a father" is certainly like a father; and although a man
+  may be <i>surly</i> in his "countenance," I do not well see how he could
+  be <i>surly</i> in his "gait;" besides, what had occurred to make the
+  pedant <i>surly</i>? This appears to me the best reason for rejecting
+  <i>surly</i> in favour of "surely;" but I have another, which can hardly
+  be refused to an editor who professes to follow the old copies, where
+  they are not contradicted. I allude to the folio 1628, where the line
+  stands precisely thus:</p>
+
+<blockquote class="b1n">
+
+  <p>"In gate and countenance surely like a Father."</p>
+
+</blockquote>
+
+  <p>The folio 1632 misprinted "surely" <i>surly</i>, as, in <i>Julius
+  Cæsar</i>, Act I. Sc. 3., it committed the opposite blunder, by
+  misprinting "surly" <i>surely</i>. Another piece of evidence, to prove
+  that "surely" was the poet's word in <i>The Taming of the Shrew</i>, has
+  comparatively recently fallen in my way; I did not know of its existence
+  in 1844, or it would have been of considerable use to me. It is a
+  <i>unique</i> quarto of the play, which came out some years before the
+  folio 1623, and is not to be confounded with the quarto of <i>The Taming
+  of the Shrew</i>, with the date of 1631 on the title-page. This new
+  authority has the line exactly as it is given in the folio 1623, which,
+  in truth, was printed from it. It is now before me.</p>
+
+  <p class="author"><span class="sc">J. Payne Collier</span>.</p>
+
+  <p class="address">July 10.</p>
+
+  <p><i>Critical Digest of various Readings in the Works of
+  Shakspeare.</i>&mdash;There is much activity in the literary world just
+  now about the text of Shakspeare: but one most essential work, in
+  reference to that text, still remains to be performed,&mdash;I mean, the
+  publication of a complete digest of <i>all</i> the various readings, in a
+  concise shape, such as those which we possess in relation to the MSS. and
+  other editions of nearly every classical author.</p>
+
+  <p>At present, all editions of Shakspeare which claim to be considered
+  critical, contain much loose information on readings, mixed up with notes
+  (frequently very diffuse) on miscellaneous topics. This is not in the
+  least what we require: we need a regular <i>digest</i> of readings,
+  wholly distinct from long debates about their value.</p>
+
+  <p>What I mean will be plain to any one who is familiar with any good
+  critical edition of the Greek New Testament, or with such books as
+  Gaisford's <i>Herodotus</i>, the Berlin <i>Aristotle</i>, the Zurich
+  <i>Plato</i>, and the like. We ought to have, first, a good text of
+  Shakspeare: such as may represent, as fairly as possible, the real
+  results of the labours of the soundest critics; and, secondly, page by
+  page, at the foot of that text, the following particulars:</p>
+
+  <p>I. All the readings of the folios, which should be cited as A, B, C,
+  and D.</p>
+
+  <p>II. All the readings of the quartos, which might be cited separately
+  in each play that possesses them, either as a, b, c, d; or as 1, 2, 3,
+  and 4.</p>
+
+  <p>III. A succinct summary of all the respectable criticisms, in the way
+  of conjecture, on the text. This is especially needed. The recent volumes
+  of Messrs. Collier, Singer, and Dyce, show that even editors of
+  Shakspeare scarcely know the history of all the emendations. Let their
+  precise <i>pedigree</i> be in the last case recorded with the most
+  absolute brevity; simply the <i>suggestion</i>, and the names of its
+  proposers and adopters.</p>
+
+  <p>IV. To simplify this last point, a new siglation might be introduced
+  to denote the various critical editions.</p>
+
+  <p>Such a publication should be kept distinct from any commentary;
+  especially from one laid out in the broad flat style of modern editors.
+  Mr. Collier's volume of <i>Emendations</i>, &amp;c., for instance, need
+  not have occupied half its present space, if he had first denoted his MS.
+  corrector by some short symbol, instead of by a lengthy phrase; and,
+  secondly, introduced his suggestions by some such formularies as those
+  employed in classical criticisms, instead of toiling laboriously after
+  variations in his style of expression, till we are wearied by the real
+  iteration which lies under the seeming diversity.</p>
+
+  <p>There should be none of this <i>phrasework</i> in the digest which I
+  recommend. If indeed it were found absolutely necessary to connect it
+  with a commentary, then arrange the two portions of the <!-- Page 75
+  --><span class="pagenum"><a name="page75"></a>{75}</span>apparatus as in
+  Arnold's edition of <i>Thucydides</i>: the <i>variæ lectiones</i> in the
+  middle of the page, and the comment in a different type below it. But I
+  repeat, it would be better still to give us the digest <i>without</i> the
+  comment. All would go into one large volume. And it cannot be doubted
+  that such a volume, if thoroughly well done, would furnish at once a sort
+  of <i>textus receptus</i>, and a critical basis, from which future
+  editors might commence their labours. It would also be an indispensable
+  book of reference to all who treat of, or are interested in, the poet's
+  text. Such, I say, would be its certain prospects if the editor were at
+  once an accurate, painstaking scholar, and a man of true poetical
+  feeling. The labour would be great, but so would be the reward. It is
+  only what the ablest scholars have proudly undertaken for the classics,
+  even in the face of toils far more severe. Would that Mr. Dyce could be
+  roused to attempt it!</p>
+
+  <p class="author">B.</p>
+
+<div class="note">
+  <p>[Some such edition as that alluded to by our correspondent has been
+  long desired and contemplated. A proposal in connexion with it has been
+  afloat for some time past, and we had hoped would have been publicly made
+  in our pages before now. There are difficulties in the way which do not
+  exist in the parallel instances from classical literature, and which do
+  not seem to have occurred to our correspondent; but the project is in
+  good hands, and we hope will soon be brought to bear.&mdash;<span
+  class="sc">Ed.</span>]</p>
+
+</div>
+
+  <p><i>Emendations of Shakspeare.</i>&mdash;I am sadly afraid, what with
+  one annotator and another, that we, in a very little time, shall have
+  Shakspeare so modernised and weeded of his peculiarities, that he will
+  become a very second-rate sort of a person indeed; for I now see with no
+  little alarm, that one of his most delightful quaintnesses is to give way
+  to the march of refinement, and be altogether ruined. Hazlitt, one the
+  most original and talented of critics, has somewhere said, that there was
+  not in any passage of Shakspeare any single word that could be changed to
+  one more appropriate, and as an instance he gives a passage from
+  <i>Macbeth</i>, which certainly is one of the most perfect and beautiful
+  to be found in the whole of his works:</p>
+
+  <div class="poem">
+    <div class="stanza">
+      <p class="hg3">"This castle hath a pleasant seat; the air</p>
+      <p>Nimbly and sweetly recommends itself</p>
+      <p>Unto our gentle senses.</p>
+      <p class="i10">This guest of summer,</p>
+      <p>The temple-haunting martlet, does approve</p>
+      <p>By his loved mansionry, that the heaven's breath</p>
+      <p>Smells wooingly here: no jutty, frieze, buttress,</p>
+      <p>Nor coin of vantage, but this bird hath made</p>
+      <p>His pendent bed, and procreant cradle: where they</p>
+      <p>Most breed and haunt, I have observed, the air</p>
+      <p>Is delicate."</p>
+    </div>
+  </div>
+
+  <p>There are some who differ from Hazlitt in the present day, and assert
+  that there is an error in the press in Dogberry's reproof of Borachio for
+  calling him an "ass." The passage as it stands is as follows:</p>
+
+<blockquote class="b1n">
+
+  <p>"I am a wise fellow; and which is more, an officer, and which is more,
+  a <i>householder</i>, and which is more, as pretty a piece of flesh as
+  any is in Messina, and one that knows the law, go to; and a rich fellow
+  enough, go to; and a fellow that hath had <i>losses</i>, and one that
+  hath two gowns, and everything handsome about him."</p>
+
+</blockquote>
+
+  <p>His having had losses evidently meaning, though he was then poor, that
+  his circumstances were at one time so prosperous, that he could afford to
+  <i>bear</i> losses; and he, even then, had a superfluity of wardrobe in
+  "two gowns, and everything handsome about him." But this little word
+  <i>losses</i>, the perfect Shakspearian quaintness of which is
+  universally acknowledged, is to be changed into <i>leases</i>; if it
+  should be <i>leases</i>, how is it that it does not follow upon
+  "householder," instead of being introduced so many words after? as, if
+  <i>leases</i> were the proper word, it would assuredly have suggested
+  itself immediately as an additional item to his respectability as a
+  householder: for a moment only fancy similar corrections to be introduced
+  in others of Shakspeare's plays, and Falstaff be made to exclaim at the
+  robbery at Gad's Hill, "Down with them, they dislike us old men," instead
+  of "they hate us youth;" for Falstaff was no boy at the time, and this
+  might be advanced as an authority for the emendation. But seriously, if
+  this alteration is sent forth as a specimen of the improvements about to
+  be effected in Shakspeare, from an edition of his plays lately
+  discovered, I shall, for one, deeply regret that it was ever rescued
+  front its oblivion; for with my prejudices and prepossessions against
+  interpolations, and in favour of old readings, I shall find it no easy
+  matter to reconcile my mind to the new. Strip history of its romance, and
+  you deprive it of its principal charm; the scenery of a play-house
+  imposes upon us an illusion, and though we know it to be so, it is not
+  essential that the impression should be removed. I remember once
+  travelling at night in Norfolk, and a part of my way was through a wood,
+  at the end of which I came upon a lake lit up by a magnificent moon. I
+  subsequently went the same road by day: the wood, I then found, was a
+  mere belt of trees, and the lake had dwindled to a duck-pond. I have ever
+  since wished that the first impression had remained unchanged; but this
+  is a digression. There is no author so universal as Shakspeare, and would
+  that be the case if he was not thoroughly understood? He is appreciated
+  alike in the closet and on the stage, quoted by saints and sages, in the
+  pulpit and the senate, and your nostrum-monger advertises his wares with
+  a quotation from his pages; does he then require interpreting who is his
+  own interpreter? Johnson says of him that&mdash;</p>
+
+  <div class="poem">
+    <div class="stanza">
+      <p class="hg3">"Panting Time toil'd after him in vain."</p>
+    </div>
+  </div>
+
+<p><!-- Page 76 --><span class="pagenum"><a name="page76"></a>{76}</span></p>
+
+  <p>And that he&mdash;</p>
+
+  <div class="poem">
+    <div class="stanza">
+      <p class="hg3">"Exhausted worlds and then imagined new."</p>
+    </div>
+  </div>
+
+  <p>There is no passion that he has not pourtrayed, and laid bare in its
+  beauty or deformity; no feeling or affection to which his genius has not
+  given the stamp of immortality: and does he want an interpreter? It is
+  treading on dangerous ground to attempt to improve him. Even <span
+  class="sc">Mr. Knight</span>, enthusiast as he is in his veneration for
+  Shakspeare, and who, by his noble editions of the poet's works, has won
+  the admiration and secured the gratitude of every lover of the poet, has
+  gone too far in his emendations when he changes a line in <i>Romeo and
+  Juliet</i> from</p>
+
+  <div class="poem">
+    <div class="stanza">
+      <p class="hg3">"Hence will I to my ghostly father's cell."</p>
+    </div>
+  </div>
+
+  <p>to</p>
+
+  <div class="poem">
+    <div class="stanza">
+      <p class="hg3">"Hence will I to my ghostly friar's close cell."</p>
+    </div>
+  </div>
+
+  <p>As in the latter case the line will not scan unless the word "friar"
+  be reduced to a monosyllable, which, on reflection, I think <span
+  class="sc">Mr. Knight</span> will be inclined to admit. But my paper is,
+  I fear, extending to a limit beyond which you have occasionally warned
+  your correspondents not to go, and I must therefore draw my remarks to a
+  close, with a hope that not any offence will be taken where none is
+  intended by those to whom any of my observations may apply.</p>
+
+  <p class="author"><span class="sc">George Blink.</span></p>
+
+  <p class="address">Canonbury.</p>
+
+<hr class="short" />
+
+<h3>"THE DANCE OF DEATH."</h3>
+
+  <p>Amongst the numerous emblematic works, it has often appeared to me
+  that the above work should be republished entire; to give any part of it
+  would be spoiling a most admirable series. I should desire to see it
+  executed not as a fac-simile, but improved by good modern artists. The
+  history of "The Dance of Death" is too long and too obscure to enter upon
+  here; but from the general tenor of the accounts and criticisms of the
+  work, it does not appear to have originated at all with Hans Holbein, or
+  even his father, who also really painted it at Basil, in Switzerland, but
+  to have had its origin in more remote times, as quoted in several
+  authors, that anciently monasteries usually had a painted representation
+  of a Death's Dance upon the walls. It is a subject, therefore, open to
+  any artist, nor could it be said he had pirated anything if he treated
+  the subject after his own fashion. "The Dance of Death" begins of course
+  with king, the queen, the bishop, the lawyer, the lovers, &amp;c., and
+  ends with the child, whom Death is leading away from the weeping mother.
+  The original plates of Hollar, from Holbein's drawings, are possibly
+  still extant, but they are by no means perfect, although admirable in
+  expression. The deaths or skeletons are very ill-drawn as to the
+  anatomical structure, and were they better the work would be excellent.
+  The Death lugging off the fat abbot is inimitable; and the gallant way he
+  escorts the lady abbess out the convent door is very good. I have the
+  engravings by Hollar, and have made some of the designs afresh, intending
+  to lithograph them at some future day; but there being thirty subjects in
+  all, the work would be a difficult task. Mr. J.&nbsp;B. Yates might, indeed,
+  with his excellent collection of Emblemata, revive this old and beautiful
+  taste now in abeyance: it is now rarely practised by our painters. There
+  is, however, a very fine picture in the Royal Academy Exhibition, by Mr.
+  Goodall, which is, strictly speaking, an emblem, though the artist calls
+  it an historical episode. Now it appears to me an episode cannot be
+  reduced into a representation; it might embrace a complete picture in
+  writing, but as I read the picture it is an emblem, and would have been
+  still more perfect had the painter treated it accordingly. The old man at
+  the helm of the barge might well represent Strafford, because, though he
+  holds the tiller, he is not engaged in steering right, his eyes are not
+  directed to his port. Charles himself, rightly enough, has his back to
+  the port, and is truly not engaged in manly affairs, nor attending to his
+  duty; but the sentiment of frivolity here painted cannot, I should say,
+  attach itself to him, for he is not to be reproached with idling away his
+  time with women and children, as this more strictly must be laid to his
+  son. But the port where some grim-looking men are seriously waiting for
+  him, completes a very happy and poetical idea, but incomplete as an
+  emblem, which it really is; and were the emblematic rules more
+  cultivated, it would have told its story much better.</p>
+
+  <p>At present, the taste of the day lies in more direct caricature, and
+  our volatile friend <i>Punch</i> does the needful in his wicked sallies
+  of wit, and his fertile pencil. His sharp rubs are perhaps more effective
+  to John Bull's temper, who can take a blow with Punch's truncheon and
+  bear no malice after it,&mdash;the heavy lectures of the ancients are not
+  so well suited to his constitution.</p>
+
+  <p class="author"><span class="sc">Weld Taylor.</span></p>
+
+  <p class="address">Bayswater.</p>
+
+<hr class="full" />
+
+<h2>Minor Notes.</h2>
+
+  <p><i>Old Lines newly revived.</i>&mdash;The old lines of spondees and
+  dactyls are just now applicable:&mdash;</p>
+
+  <div class="poem">
+    <div class="stanza">
+      <p>C&#x14D;nt&#x16B;rb&#x101;b&#x101;nt&#x16B;r C&#x14D;nst&#x101;nt&#x12B;n&#x14D;p&#x14F;l&#x12D;t&#x101;n&#x12B;</p>
+      <p>Inn&#x16D;m&#x115;r&#x101;b&#x12D;l&#x12D;b&#x16B;s s&#x14D;l&#x12D;c&#x12D;t&#x16B;d&#x12D;n&#x12D;b&#x16B;s."</p>
+    </div>
+  </div>
+
+  <p class="author"><span class="sc">W. Collyns.</span></p>
+
+  <p class="address">Harlow.</p>
+
+  <p><i>Inscription near Cirencester.</i>&mdash;In Earl Bathurst's park,
+  near Cirencester, stands a building&mdash;the resort in the summer months
+  of occasional pic-nic parties. During one of these visits, at which I
+  <!-- Page 77 --><span class="pagenum"><a name="page77"></a>{77}</span>was
+  present, I copied an inscription, painted in old characters on a board,
+  and nailed to one of the walls, and as the whole thing had not the
+  appearance of belonging to modern times, and, as far as I could decipher
+  it, it referred to some agreement between Alfred and some of his
+  neighbouring brother kings, concerning boundaries of territory, I send it
+  to you for insertion.</p>
+
+  <p class="author"><span class="sc">A. Smith.</span></p>
+
+<blockquote class="b1n">
+
+  <p><a href="images/maltesex.png"><img src="images/maltesex.png"
+  class="middle" style="height:1.5ex" alt="cross" /></a> "F&OElig;DVS .
+  QUOD . ÆLFREDVS . ET . LVTHRVNVS . REGES . OMNES . ANGLIAM . INTOLEBANT .
+  ORIENTALEM . FERIERVNT . ET . NON . SOLVM . DE . SEIPSIS . VERVM . ETIAM
+  . DE . NATIS . SVIS . AC . NONDVM . IN . LVCEM . EDITIS . QVOTQVOT .
+  MISERICORDIÆ . DIVINÆ . AVT . REGIÆ . VELVNT . ESSE . PARTICIPES .
+  JVREJVRANDO . SANXERVNT." <a href="images/maltesex.png"><img
+  src="images/maltesex.png" class="middle" style="height:1.5ex" alt="cross"
+  /></a></p>
+
+  <p><a href="images/maltesex.png"><img src="images/maltesex.png"
+  class="middle" style="height:1.5ex" alt="cross" /></a> "PRIMO . DITIONIS
+  . NOSTRÆ . FINES . TAMESIN . EVEHVNTOR . INDE . LEAM . VSQVE . FONTEM .
+  EJVS . TAM . RECTA . AD . BEDFORDIAM . AC . DENIQVE . PER . VSAM . AD .
+  VIAM . VETE . LINTIANAM."</p>
+
+</blockquote>
+
+  <p><i>Wordsworth.</i>&mdash;In Wordsworth's touching "Lament of Mary
+  Queen of Scots," one of the stanzas opens with:</p>
+
+  <div class="poem">
+    <div class="stanza">
+      <p class="hg3">"<i>Born all too high; by wedlock rais'd</i></p>
+      <p><i>Still higher</i>, to be brought thus low!"</p>
+    </div>
+  </div>
+
+  <p>Is it straining a point to suppose that the author has here translated
+  the opening words of the well-known epitaph on the Empress Matilda,
+  mother of our Henry II.?</p>
+
+  <div class="poem">
+    <div class="stanza">
+      <p class="hg3">"<i>Ortu magna; viro major</i>; sed maxima prole;</p>
+      <p>Hic jacet Henrici filia, sponsa, parens."</p>
+    </div>
+  </div>
+
+  <p class="author">A. W.</p>
+
+  <p class="address">Sunningdale.</p>
+
+  <p>"<i>Magna est Veritas et prævalebit.</i>"&mdash;I was asked the other
+  day whence came this hackneyed quotation. It is taken from the
+  uncanonical Scriptures, 3 Esdras iv. 41.:</p>
+
+<blockquote class="b1n">
+
+  <p>"Et desiit loquendo: Et omnes populi clamaverunt, et dixerunt: Magna
+  est veritas, et <i>prævalet</i>."</p>
+
+</blockquote>
+
+  <p class="author"><span class="sc">T. H. de H.</span></p>
+
+  <p>"<i>Putting your Foot into it.</i>"&mdash;The legitimate origin of
+  this term I have seen thus explained. Perhaps it may pass as correct
+  until a better be found. According to the <i>Asiatic Researches</i>, a
+  very curious mode of trying the title to land is practised in Hindostan.
+  Two holes are dug in the disputed spot, in each of which the lawyers on
+  either side put one of their legs, and remain there until one of them is
+  tired, or complains of being stung by insects, in which case his client
+  is defeated. An American writer has remarked that in the United States it
+  is generally the <i>client</i>, and not the <i>lawyer</i>, "who puts his
+  foot in it."</p>
+
+  <p class="author">W. W.</p>
+
+  <p class="address">Malta.</p>
+
+<hr class="full" />
+
+<h2>Queries.</h2>
+
+<h3>FRAGMENTS OF MSS.</h3>
+
+  <p>Dr. Maitland, in his valuable volume on the "Dark Ages," has the
+  following remarks on a subject which I think has not met with the
+  attention it deserves:</p>
+
+<blockquote class="b1n">
+
+  <p>"Those who are in the habit of looking at such things, know how
+  commonly early printed books, whose binding has undergone the analytical
+  operation of damp, or mere old age, disclose the under end pieces of
+  beautiful and ancient manuscript. They know how freely parchment was used
+  for backs and bands, and fly-leaves, and even for covers. The thing is so
+  common, that those who are accustomed to see old books <i>have ceased to
+  notice it</i>."</p>
+
+</blockquote>
+
+  <p>In order to come within the design of your pages, I must put this in
+  the shape of a Query, and ask, if it is not a pity that this fact has
+  <i>ceased to be noticed</i>? We do not know what treasures may be
+  contained in the shabby covers which we contemplate getting rid of.
+  "There are thousands" (of MSS.), says the same writer, "equally
+  destroyed,&mdash;thousands of murdered wretches not so completely
+  annihilated: their ghosts do walk the earth; they glide unseen into our
+  libraries, our studies, our very hands; they are all about and around us.
+  We even take them up and lay them down, without knowing of their
+  existence; unless time and damp (as if to punish and mock us for robbing
+  them of their prey) have loosed their bonds, and set them to confront
+  us."</p>
+
+  <p>Archbishop Tenison had not "ceased to notice it." He very diligently
+  rescued these "fragments" from the hands of his bookbinder and it is to
+  be regretted that he did not take equal precaution in preserving them.
+  Recently, all that I could collect have been cleaned, inlaid, and
+  arranged chronologically, making two interesting and valuable
+  volumes.</p>
+
+  <p>How far would it be desirable to unite for the purpose of collecting
+  MS. fragments, and early printed leaves?</p>
+
+  <p>Might not a Society, which should have for its especial object the
+  <i>discovery</i>, cataloguing, and circulating information about these
+  stray bits, be of great service? <i>E. g.</i> I have before me five
+  volumes of Justinian's <i>Codices</i> and <i>Digesta</i>, Paris, 1526;
+  the covers of which are made of MS. Thirteen leaves go to make one board.
+  They are written on both sides and thus an easy multiplication gives us
+  260 pages of MS., or early printing, in the covers of one work!</p>
+
+  <p>It is not unlikely that, if the results of research in this direction
+  were carefully registered, many perfect pieces might be recovered.</p>
+
+  <p class="author"><span class="sc">Philip Hale.</span></p>
+
+  <p class="address">Archbishop Tenison's Library,<br />St. Martin-in-the-Fields.</p>
+
+<hr class="short" />
+
+<p><!-- Page 78 --><span class="pagenum"><a name="page78"></a>{78}</span></p>
+
+<h3>THE ELECTRIC TELEGRAPH.</h3>
+
+  <p>I have just met with a passage in the <i>Pseudodoxia Epidemica</i> of
+  Sir Thomas Browne, wherein this invention is foreshadowed in terms more
+  remarkable and significant, if less imaginative and beautiful, than that
+  from <i>The Spectator</i>, to which public attention has already been
+  directed, and which, I conceive, must unquestionably have been written,
+  with this particular example of the "received tenets and commonly
+  presumed truths" of the learned physician's day, distinctly present to
+  the mind of Addison. The passage referred to is as follows:</p>
+
+<blockquote class="b1n">
+
+  <p>"There is another conceit of better notice, and <i>whispered thorow
+  the world</i> with some attention; credulous and vulgar auditors readily
+  believing it, and more judicious and distinctive heads not altogether
+  rejecting it. The conceit is excellent, and, if the effect would follow,
+  somewhat divine: whereby we might communicate like spirits, and confer on
+  earth with Menippus in the moon. And this is pretended from the sympathy
+  of two needles touched with the same loadstone, and placed in the centre
+  of two abecedary circles, or rings with letters described round about
+  them, one friend keeping one, and another the other, and agreeing upon
+  the hour wherein they will communicate. For then, <i>saith tradition</i>,
+  at what distance of place soever, when one needle shall be removed unto
+  any letter, the other, by a wonderful sympathy, will move unto the
+  same."&mdash;Book <span class="scac">II.</span> chap. ii, 4to., 1669, p.
+  77.</p>
+
+</blockquote>
+
+  <p>Thus it is that "coming events cast their shadows before:" and, in the
+  present case, one is curious to learn how far back the <i>shadow</i> may
+  be traced. By whom has this <i>conceit</i> been <i>whispered thorow the
+  world</i>? and in what musty tomes is that <i>tradition</i> concealed,
+  which speaks concerning it? Kircher's <i>Catena Magnetica</i> might haply
+  tell us something in reply to these inquiries.</p>
+
+  <p>In conformity with an often repeated suggestion to the correspondents
+  of "N. &amp; Q.," to the simple signature of my <i>habitat</i>, alone
+  hitherto adopted by me, I now subjoin my name.</p>
+
+  <p class="author"><span class="sc">Wm. Matthews.</span></p>
+
+  <p class="address">Cowgill.</p>
+
+<hr class="full" />
+
+<h2>Minor Queries.</h2>
+
+  <p><i>Sir Walter Raleigh.</i>&mdash;In the discussions on the copyright
+  question some years ago, Sir Walter Raleigh was mentioned as one of the
+  authors whose posterity is totally extinct; but in his Life, as given in
+  <i>Lodge's Portraits</i>, his descendants are given as far down as his
+  great-grandchildren, of whom many were still living in 1699, at which
+  period, says Mr. Lodge, my information ceases. It seems unlikely that a
+  family then so numerous should have utterly perished since, both in its
+  male and female branches; and perhaps some of your correspondents may be
+  able to trace their subsequent history: the <i>name</i> is certainly not
+  extinct, whether its bearers be his descendants or not.</p>
+
+  <p>Is the gallant Sir Walter Raleigh Gilbert descended from one of Sir
+  Walter's half-brothers?</p>
+
+  <p class="author"><span class="sc">J. S. Warden.</span></p>
+
+  <p><i>Ancient Fortifications: Hertstone, Pale, Brecost.</i>&mdash;In the
+  Clause Rolls, 16 John, M. 6. (<i>Public Records</i>, vol. i. p. 192.) is
+  a warrant of King John's, addressed to the bailiffs of Peter de Maulay of
+  Doncaster, as follows:</p>
+
+<blockquote class="b1n">
+
+  <p>"Mandam' vob' q&#x111; vill<span class="over">a</span> de
+  Danecast<span class="over">r</span> claudi faciatis herit<span
+  class="over">o</span>ne et palo sc&#x111;m q&#x111; fossat<span
+  class="over">u</span> f<span class="over">cm</span> exigit, et un<span
+  class="over">a</span> lev<span class="over">e</span> bretasc<span
+  class="over">a</span> f<span class="over">i</span> faciatis su<span
+  style="text-decoration:line-through">p</span> pont<span
+  class="over">e</span> ad vill<span class="over">a</span> defendend<span
+  class="over">a</span>."</p>
+
+</blockquote>
+
+  <p>Which, in Miller's History of that town (p. 40.), is thus
+  translated:</p>
+
+<blockquote class="b1n">
+
+  <p>"We command ye, cause the town of Doncaster to be inclosed with
+  <i>hertstone</i> and <i>pale</i>, according as the ditch that is made
+  doth require; and that ye make a light <i>brecost</i> or barbican upon
+  the bridge, to defend the town."</p>
+
+</blockquote>
+
+  <p>I shall be obliged by being informed if <i>hertstone</i> is the
+  correct translation of the word "herit<span class="over">o</span>ne,"
+  and, if so, what species of fortification it was. <i>Pale</i> is probably
+  a defence composed of high wooden stakes. <i>Brecost</i> is questionable,
+  I imagine, and should most likely be spelt <i>bretesk</i> or
+  <i>bretex</i>. I shall be glad, however, of explanations of the
+  words.</p>
+
+  <p class="author">C. J.</p>
+
+  <p><i>Newton and Somers.</i>&mdash;It has been said that there is a
+  complimentary allusion to Somers in Newton's writings. Where?</p>
+
+  <p class="author">M.</p>
+
+  <p><i>Daventry, Duel at.</i>&mdash;</p>
+
+  <div class="poem">
+    <div class="stanza">
+    </div>
+
+    <div class="stanza">
+      <p class="hg3">"Veni Daintreo cum puella,</p>
+      <p>Procerum celebre duello."</p>
+    </div>
+
+    <div class="stanza">
+      <p class="hg3">"Thence to Daintree with my jewel,</p>
+      <p>Famous for a noble duel."&mdash;<i>Drunken Barnaby's Journal.</i></p>
+    </div>
+  </div>
+
+  <p>Can any Northamptonshire reader of "N. &amp; Q." say between whom, and
+  when, this duel took place?</p>
+
+  <p class="author">J. H. L.</p>
+
+  <p><i>Passage in Burial Service.</i>&mdash;Whence comes the expression in
+  the Burial Service, "In the midst of life we are in death." I have
+  observed that Mr. Palmer, in his <i>Origines Liturgicæ</i>, refers for a
+  parallel passage to ancient liturgies, but, if I mistake not, to none but
+  those used in England. The passage is very scriptural: but I do not
+  believe it exists in the Bible.</p>
+
+  <p class="author">J. G. T.</p>
+
+  <p>"<i>They shot him on the nine-stane rig.</i>"&mdash;Where is the
+  ballad beginning with the words&mdash;</p>
+
+  <div class="poem">
+    <div class="stanza">
+      <p class="hg3">"They shot him on the nine-stane rig,</p>
+      <p class="i1">Beside the headless cross."</p>
+    </div>
+  </div>
+
+  <p>to be found? Who is the author?</p>
+
+  <p class="author"><span class="sc">Borderer.</span></p>
+
+  <p><i>Wardhouse, and Fishermen's Custom there.</i>&mdash;In a MS. local
+  history, written in 1619, there is this <!-- Page 79 --><span
+  class="pagenum"><a name="page79"></a>{79}</span>passage: "They bought
+  herrings during the season, and then departed, <i>as those fishermen
+  which kill fish at Wardhouse do use to do at present</i>."</p>
+
+  <p>Where was Wardhouse, and what was the custom there?</p>
+
+  <p class="author">C. J. P.</p>
+
+  <p class="address">Great Yarmouth.</p>
+
+  <p>"<i>Adrian turn'd the bull.</i>"&mdash;In an old MS. in my possession,
+  the following verse occurs:&mdash;</p>
+
+  <div class="poem">
+    <div class="stanza">
+      <p class="hg3">"Of whate'er else your head be full,</p>
+      <p>Remember Adrian turn'd the bull;</p>
+      <p class="hg1">'Tis time that you should turn the chase,</p>
+      <p>Kick out the knave and take the place."</p>
+    </div>
+  </div>
+
+  <p>Would any of the correspondents of "N. &amp; Q." be so good as to
+  explain to me the reference in the second line of the verse?</p>
+
+  <p class="author">G. M.</p>
+
+  <p><i>Cary's "Palæologia Chronica.</i>"&mdash;I have an old book
+  entitled:</p>
+
+<blockquote class="b1n">
+
+  <p>"Palæologia Chronica; a Chronological Account of Ancient Time.
+  Performed by Robert Cary, D.LL., Devon. London: printed by J. Darby, for
+  Richard Chiswell, at the Rose and Crown in St. Paul's Church Yard,
+  1677."</p>
+
+</blockquote>
+
+  <p>and shall be glad to be informed whether the author was any relation
+  of Dr. Valentine Carey, who was consecrated bishop of Exeter in 1620, and
+  died in 1626. (See Walton's <i>Life of Dr. Donne</i>.)</p>
+
+  <p class="author"><span class="sc">Chris. Roberts.</span></p>
+
+  <p class="address">Bradford, Yorkshire.</p>
+
+  <p><i>The Southwark Pudding Wonder.</i>&mdash;I have been very much
+  pleased with the perusal of a collection of MS. letters, written by the
+  celebrated antiquary William Stukeley to Maurice Johnson, Esq., the
+  founder of the Gentlemen's Society at Spalding. These letters have not
+  been published; the MSS. exist in the library of the Spalding Society.
+  They contain much interesting matter, and furnish many traits of the
+  manners, character, and modes of thinking and acting of their respected
+  author.</p>
+
+  <p>Can any of your readers explain the meaning of the following passage,
+  which is found in a letter dated 19th June, 1718: "<i>The Southwark
+  Pudding wonder is over?</i>"</p>
+
+  <p>In the same letter the Dr. alludes to a contested election for the
+  office of Chamberlain of the City of London, which took place in
+  1718:</p>
+
+<blockquote class="b1n">
+
+  <p>"The city is all in an uproar about the election of a chamberlain,
+  like a country corporation for burgesses, where roast pig and beef and
+  wine are dealt about freely at taverns, and advertisements about it more
+  voluminous than the late celebrated Bangorean Notification, though not in
+  a calm and undisturbed way."</p>
+
+</blockquote>
+
+  <p class="author"><span class="sc">Pishey Thompson.</span></p>
+
+  <p class="address">Stoke Newington.</p>
+
+  <p><i>Roman Catholics confined in Fens of Ely.</i>&mdash;Mr. Dickens, in
+  <i>Household Words</i>, No. 169. p. 382., in the continuation of a
+  "Child's History of England," says, when alluding to the threatened
+  invasion of England by the Spanish Armada:</p>
+
+<blockquote class="b1n">
+
+  <p>"Some of the Queen's advisers were for seizing the principal English
+  Catholics, and putting them to death; but the queen&mdash;who, to her
+  honour, used to say that she would never believe any ill of her subjects,
+  which a parent would not believe of her own children&mdash;neglected the
+  advice, and only confined a few of those who were the most suspected
+  among them, in the fens of Lincolnshire."</p>
+
+</blockquote>
+
+  <p>Mr. Dickens had, of course, as he supposed, good authority for making
+  this statement; but, in reply to a private communication, he states it
+  should have been <i>Fens of Ely</i>. I am, perhaps convicting myself of
+  gross ignorance by seeking for information respecting it; nevertheless, I
+  venture to ask the readers of at "N. &amp; Q." for a reference to the
+  authentic history, where a corroboration of Mr. Dickens' statement is to
+  be found?</p>
+
+  <p class="author"><span class="sc">Pishey Thompson.</span></p>
+
+  <p class="address">Stoke Newington.</p>
+
+  <p><i>White Bell Heather transplanted.</i>&mdash;Is it generally known
+  that <i>white bell</i> heather becomes <i>pink</i> on being transplanted
+  from its native hills into a garden? Two plants were shown to me a few
+  days ago, by a country neighbour, flowering pink, which were
+  transplanted, the one three, and the other two, years ago; the former had
+  white bells for two years, the latter for one year only. What I wish to
+  know is, Whether these are exceptional cases or not?</p>
+
+  <p class="author">W. C.</p>
+
+  <p class="address">Argyleshire.</p>
+
+  <p><i>Green's "Secret Plot."</i>&mdash;Can you inform me where the scene
+  of the following drama is laid, and the names of the <i>dramatis
+  personæ</i>? <i>The Secret Plot</i>; a tragedy by Rupert Green, 12mo.,
+  1777. The author of this play, which was published when he was only in
+  his ninth year, was the son of Mr. Valentine Green, who wrote a history
+  of Worcester.</p>
+
+  <p class="author">A. Z.</p>
+
+  <p>"<i>The full Moon brings fine Weather.</i>"&mdash;When did this saying
+  originate, and have we any proof of its correctness? The late Duke of
+  Wellington is reported to have said, that, as regarded the weather, it
+  was "nonsense to have any faith in the moon." (Vide Larpent's <i>Private
+  Journal</i>, vol. ii. p. 283.)</p>
+
+  <p class="author">W. W.</p>
+
+  <p class="address">Malta.</p>
+
+  <p><i>Nash the Artist.</i>&mdash;In the year 1802, Mr. F. Nash made a
+  water-colour drawing of the Town Hall, churches, &amp;c., in the High
+  Street of the ancient borough of Dorchester; a line engraving (now rather
+  scarce) was shortly afterwards published therefrom by Mr. J. Frampton,
+  then a bookseller in the town. Can any reader of the <!-- Page 80
+  --><span class="pagenum"><a name="page80"></a>{80}</span>"N. &amp; Q."
+  inform me what Mr. Nash this was, and what became of him? Was he related
+  to the <i>Castles and Abbeys</i> Nash?</p>
+
+  <p class="author"><span class="sc">John Garland.</span></p>
+
+  <p class="address">Dorchester.</p>
+
+  <p><i>Woodwork of St. Andrew's Priory Church, Barnwell.</i>&mdash;The
+  Cambridge Architectural Society, which is now attempting the restoration
+  of St. Andrew's Priory Church, Barnwell, will feel deeply indebted to any
+  of your readers who can give them any information respecting the carved
+  woodwork removed from that church some forty years ago, to make way for
+  the present hideous arrangement of pews and pulpit. A man who lives on
+  the spot speaks of a fine wood screen, and highly decorated pulpit, some
+  portions of which were sold by auction; and the rest was in his
+  possession for some time, and portions of it were given away by him to
+  all who applied for it.</p>
+
+  <p class="author"><span class="sc">The Treasurer.</span></p>
+
+  <p class="address">Trin. Coll. Camb.</p>
+
+  <p>"<i>The Mitre and the Crown.</i>"&mdash;I find the following work, at
+  first published anonymously, reprinted as Dr. Atterbury's in Sir Walter
+  Scott's edition of the <i>Somers' Tracts</i>. No reason is assigned by
+  the editor for ascribing it to him, and I should be glad to know whether
+  there is any satisfactory evidence for doing so. The original tract
+  appears as anonymous the Bodleian Catalogue:</p>
+
+<blockquote class="b1n">
+
+  <p>"The Mitre and the Crown, or a real Distinction between them: in a
+  Letter to a Reverend Member of the Convocation: Lond. 1711, 8vo."</p>
+
+</blockquote>
+
+  <p class="author"><span title="Halieus" class="grk">&#x1F09;&lambda;&iota;&#x1F73;&upsilon;&sigmaf;</span>.</p>
+
+  <p class="address">Dublin.</p>
+
+  <p><i>Military Music.</i>&mdash;Was military music ever played at night
+  in the time of King Charles I.?</p>
+
+  <p class="author"><span class="sc">Militaris.</span></p>
+
+  <p class="address">Belfast.</p>
+
+<hr class="full" />
+
+<h2>Minor Queries with Answers.</h2>
+
+  <p><i>Stoven Church.</i>&mdash;Can you give me any information concerning
+  the <i>original</i> church of Stoven, Suffolk, which was of good Norman
+  work throughout, as lately ascertained by the vast number of Norman
+  mouldings found in the walls in restoring it?</p>
+
+  <p class="author">L. (2)</p>
+
+<div class="note">
+  <p>[In Jermyn's "Suffolk Collections," vol. vi. (Add. MSS. 8173.), in the
+  British Museum, are the following Notes of this church, taken 1st June,
+  1808, by H.&nbsp;I. and D.&nbsp;E.&nbsp;D.: "The Church consists of a nave and chancel,
+  both under one roof, which is covered with thatch. The chancel is 30 ft.
+  3 in. long, and 15 ft. 5 in. wide. The communion-table is neither raised
+  nor inclosed. The floor of the whole church is also of the same height.
+  The nave is 30 ft. long, and 16 ft. 1 in. wide. Between the chancel and
+  nave are the remains of a screen, and over it the arms of George II.,
+  between two tables containing the Lord's Prayer, &amp;c. In the N.&nbsp;E.
+  angle is the pulpit, which is of oak, hexagon, ordinary, as are also the
+  pews and seats. At the W. end stands the font, which is octagon, the
+  faces containing roses and lions, and two figures holding blank
+  escutcheons, the pedestal supported by four lions. The steeple is in the
+  usual place, small, square, of flints, but little higher than the roof.
+  In it is only one bell, inscribed 1759. The entrance into the church on
+  the N. side is through a circular Saxon arch, not much ornamented. On the
+  side is another of the same description, but more ornamented, with
+  zig-zag moulding, &amp;c." Then follow the inscriptions, &amp;c. in the
+  chancel, of Mrs. Elizabeth Brown, John Brown, Thomas Brown; in the nave,
+  of Henry Keable, with extracts from the parish register commencing in
+  1653.]</p>
+
+</div>
+
+  <p><i>The Statute of Kilkenny.</i>&mdash;Said to have been passed in
+  1364. What was the nature of it?</p>
+
+  <p class="author"><span class="sc">Abredonensis.</span></p>
+
+<div class="note">
+  <p>[This statute legally abolished the ancient code of the Irish, called
+  the Brehon laws, and was passed in a parliament held at Kilkenny in the
+  40th Edward III., under the government of Lionel, Duke of Clarence, Lord
+  Lieutenant of Ireland. By this act, the English are commanded in all
+  controversies to govern themselves by the common laws of England, so that
+  whoever submitted himself to the Brehon law, or the law of the Marches,
+  is declared a traitor. Among other things the statute enacted that "the
+  alliaunce of the English by marriage with any Irish, the nurture of
+  infantes, and gossipred with the Irish, be deemed high treason." And
+  again, "If anie man of English race use an Irish name, Irish apparell, or
+  any other guize or fashion of the Irish, his lands shall be seized, and
+  his bodie imprisoned, till he shall conform to English modes and
+  customs." This statute was followed by the 18th Henry VI. c. i. ii. iii.,
+  and the 28th Hen. VI., c. i., with similar prohibitions and penalties.
+  These prohibitions, however, had little effect; nor were the English laws
+  universally submitted to throughout Ireland until the time of James I.,
+  when the final extirpation of the ancient Brehon law was effected.]</p>
+
+</div>
+
+  <p><i>Kenne of Kenne.</i>&mdash;Can any of your Kentish correspondents
+  inform me to whom a certain Christ. Kenne of Kenne, in co. Somerset, sold
+  the manor of "Oakley," in the parish of Higham, near Rochester; and in
+  whose possession it was about the close of the reign of Queen Elizabeth
+  or commencement of James I.?</p>
+
+  <p>The above Kenne, by marrying Elizabeth, the daughter of Sir Roger
+  Cholmeley, and widow of Sir Leonard Beckwith, of Selby, in co. York,
+  acquired possession of the same manor in co. Kent.</p>
+
+  <p>After the death of his first wife, he married a Florence Stalling, who
+  survived him. He died in 1592.</p>
+
+  <p class="author">F. T.</p>
+
+<div class="note">
+  <p>["Christopher Kenne of Kenne, in the county of Somerset, Esq., was
+  possessed of the manor of Little Okeley, in Higham, Kent, in the right of
+  his wife, the daughter and co-heir of Sir Roger Cholmeley, anno <!-- Page
+  81 --><span class="pagenum"><a name="page81"></a>{81}</span>22 Eliz.; and
+  then, having levied a fine of it, sold it to Thompson, and he, in the
+  reign of Charles I., alienated it to Best."&mdash;<i>Hasted.</i></p>
+
+  <p>Of course, the Christian name of Thompson, and other particulars if
+  required, can be obtained by a reference to the foot of the fine in the
+  Record Office, Carlton Ride.]</p>
+
+</div>
+
+  <p><i>Rents of Assize, &amp;c.</i>&mdash;In the <i>Valor
+  Ecclesiasticus</i>, the following varieties of income derived from rent
+  of land constantly recur, viz.:</p>
+
+  <div class="poem">
+    <div class="stanza">
+      <p class="hg3">"De redditu (simply).</p>
+      <p>De redditu assisæ.</p>
+      <p>De redditu libero.</p>
+      <p>De redditu ad voluntatem."</p>
+    </div>
+  </div>
+
+  <p>Can the distinction between these be exactly explained by any
+  corresponding annual payments for land according to present custom? And
+  will any of your readers be kind enough to give such explanation?</p>
+
+  <p class="author">J.</p>
+
+<div class="note">
+  <p>[<i>Redditus.</i>&mdash;Rents from lands let out to tenants; modern
+  farm rents.</p>
+
+  <p><i>Redditus Assisæ.</i>&mdash;Quit rents: fixed sums paid by the
+  tenants of a manor annually to the lord; as in modern times.</p>
+
+  <p><i>Redditus Liberi.</i>&mdash;Those quit rents which were paid to the
+  lord by "liberi tenentes," freeholders; as distinguished from "villani
+  bassi tenentes," &amp;c.</p>
+
+  <p><i>Redditus ad voluntatem.</i>&mdash;Annual payments "ad voluntatem
+  donatium;" such as "confrana," &amp;c. The modern Easter Offering perhaps
+  corresponds with them.]</p>
+
+</div>
+
+  <p><i>Edifices of Ancient and Modern Times.</i>&mdash;Can any of your
+  architectural or antiquarian readers inform me where a chronological list
+  of the principal edifices of ancient and modern times can be found?</p>
+
+  <p class="author"><span class="sc">Getsrn.</span></p>
+
+<div class="note">
+  <p>[Consult <i>Chronological Tables of Ancient and Modern History
+  Synchronistically and Ethnographically arranged</i>, fol., Oxford, 1835.
+  For those relating to Great Britain, see Britton's <i>Chronological and
+  Historical Illustrations</i>, and his <i>Architectural Antiquities of
+  Great Britain</i>.]</p>
+
+</div>
+
+  <p><i>Gorram.</i>&mdash;Please to direct me where I can find a short
+  account of Gorram, an ecclesiastical writer (I suppose) mentioned by
+  D'Aubigné, vol. v. p. 245.</p>
+
+  <p class="author">L. (2)</p>
+
+<div class="note">
+  <p>[The divine alluded to by D'Aubigné is no doubt Nicholas de Gorran, a
+  Dominican, confessor to Philip the Fair of France. He was an admired and
+  eloquent preacher, and his Sermons, together with a Commentary on the
+  Gospels, appeared at Paris, 1523 and 1539. He died in 1295.]</p>
+
+</div>
+
+  <p>"<i>Rock of Ages.</i>"&mdash;Who is the author of the hymn beginning
+  "Rock of Ages?"</p>
+
+  <p class="author">J. G. T.</p>
+
+<div class="note">
+  <p>[That celebrated advocate for <i>The Calvinism of the Church of
+  England</i>, the Rev. Augustus Montague Toplady.]</p>
+
+</div>
+
+<hr class="full" />
+
+<h2>Replies.</h2>
+
+<h3>REMUNERATION OF AUTHORS.</h3>
+
+<p class="cenhead">(Vol. vii., p. 591.)</p>
+
+  <p>Responding to the challenge of your correspondent <span class="sc">Mr.
+  Andrews</span>, I copy the following from my common-place book:</p>
+
+<p class="cenhead"><i>From Lintot's memorandum-book of "Copies when
+purchased."</i></p>
+
+<table class="nobctr" summary="Remuneration of Authors." title="Remuneration of Authors.">
+<tr><td colspan="4" align="center" class="hspcsingle"> <i>Farquhar.</i></td></tr>
+<tr><td align="right" class="nspcsingle" colspan="4"> £ &nbsp; <i>s.</i> &nbsp; <i>d.</i></td></tr>
+<tr><td class="hspcsingle" valign="top"> 1705. </td><td colspan="2" class="hspcsingle"> Recruiting Officer </td><td align="right" class="hspcsingle" valign="bottom"> 16 &nbsp; 2 &nbsp; 6</td></tr>
+<tr><td class="hspcsingle" valign="top"> 1706. </td><td colspan="2" class="hspcsingle"> Beaux Stratagem </td><td align="right" class="hspcsingle" valign="bottom"> 30 &nbsp; 0 &nbsp; 0</td></tr>
+
+<tr><td colspan="4" align="center" class="hspcsingle"> <br /><i>Betterton.</i></td></tr>
+
+<tr><td class="hspcsingle" valign="top"> 1712. </td><td colspan="2" class="hspcsingle"> The Miller's Tale, with some characters
+  from Chaucer </td><td align="right" class="hspcsingle" valign="bottom"> 5 &nbsp; 7 &nbsp; 6</td></tr>
+
+<tr><td colspan="4" align="center" class="hspcsingle"> <br /><i>Mr. Centlivre.</i></td></tr>
+
+<tr><td class="hspcsingle" valign="top"> 1703. </td><td class="hspcsingle" valign="top"> May 14. </td><td class="hspcsingle"> Love's Contrivance </td><td align="right" class="hspcsingle" valign="bottom"> 10 &nbsp; 0 &nbsp; 0</td></tr>
+<tr><td class="hspcsingle" valign="top"> 1709. </td><td class="hspcsingle" valign="top"> May 14. </td><td class="hspcsingle"> Busy Body </td><td align="right" class="hspcsingle" valign="bottom"> 10 &nbsp; 0 &nbsp; 0</td></tr>
+
+<tr><td colspan="4" align="center" class="hspcsingle"> <br /><i>Mr. Cibber.</i></td></tr>
+
+<tr><td class="hspcsingle" valign="top"> 1701. </td><td class="hspcsingle" valign="top"> Nov. 8. </td><td class="hspcsingle"> A third of Love's Last Shift </td><td align="right" class="hspcsingle" valign="bottom"> 3 &nbsp; 4 &nbsp; 6</td></tr>
+<tr><td class="hspcsingle" valign="top"> 1705. </td><td class="hspcsingle" valign="top"> Nov. 5. </td><td class="hspcsingle"> Perolla and Izadora </td><td align="right" class="hspcsingle" valign="bottom"> 36 11 &nbsp; 0</td></tr>
+<tr><td class="hspcsingle" valign="top"> 1707. </td><td class="hspcsingle" valign="top"> Oct. 27. </td><td class="hspcsingle"> Double Gallant </td><td align="right" class="hspcsingle" valign="bottom"> 16 &nbsp; 2 &nbsp; 6</td></tr>
+<tr><td class="hspcsingle" valign="top"> &nbsp; </td><td class="hspcsingle" valign="top"> Nov. 22. </td><td class="hspcsingle"> Lady's Last Stake </td><td align="right" class="hspcsingle" valign="bottom"> 32 &nbsp; 5 &nbsp; 0</td></tr>
+<tr><td class="hspcsingle" valign="top"> &nbsp; </td><td class="hspcsingle" valign="top"> Feb. 26. </td><td class="hspcsingle"> Venus and Adonis </td><td align="right" class="hspcsingle" valign="bottom"> 5 &nbsp; 7 &nbsp; 6</td></tr>
+<tr><td class="hspcsingle" valign="top"> 1708. </td><td class="hspcsingle" valign="top"> Oct. 9. </td><td class="hspcsingle"> Comical Lover </td><td align="right" class="hspcsingle" valign="bottom"> 10 15 &nbsp; 0</td></tr>
+<tr><td class="hspcsingle" valign="top"> 1712. </td><td class="hspcsingle" valign="top"> Mar. 16. </td><td class="hspcsingle"> Cinna's Conspiracy </td><td align="right" class="hspcsingle" valign="bottom"> 13 &nbsp; 0 &nbsp; 0</td></tr>
+<tr><td class="hspcsingle" valign="top"> 1718. </td><td class="hspcsingle" valign="top"> Oct. 1. </td><td class="hspcsingle"> The Nonjuror </td><td align="right" class="hspcsingle" valign="bottom"> 105 &nbsp; 0 &nbsp; 0</td></tr>
+
+<tr><td colspan="4" align="center" class="hspcsingle"> <br /><i>Mr. Gay.</i></td></tr>
+
+<tr><td class="hspcsingle" valign="top"> 1713. </td><td class="hspcsingle" valign="top"> May 12. </td><td class="hspcsingle"> Wife of Bath </td><td align="right" class="hspcsingle" valign="bottom"> 25 &nbsp; 0 &nbsp; 0</td></tr>
+<tr><td class="hspcsingle" valign="top"> 1714. </td><td class="hspcsingle" valign="top"> Nov. 11. </td><td class="hspcsingle"> Letter to a Lady </td><td align="right" class="hspcsingle" valign="bottom"> 5 &nbsp; 7 &nbsp; 6</td></tr>
+<tr><td class="hspcsingle" valign="top"> 1715. </td><td class="hspcsingle" valign="top"> Feb. 14. </td><td class="hspcsingle"> The What-d'ye-call-it? </td><td align="right" class="hspcsingle" valign="bottom"> 16 &nbsp; 2 &nbsp; 6</td></tr>
+<tr><td class="hspcsingle" valign="top"> &nbsp; </td><td class="hspcsingle" valign="top"> Dec. 22. </td><td class="hspcsingle"> Trivia </td><td align="right" class="hspcsingle" valign="bottom"> 43 &nbsp; 0 &nbsp; 0</td></tr>
+<tr><td class="hspcsingle" valign="top"> &nbsp; </td><td class="hspcsingle" valign="top"> &nbsp; </td><td class="hspcsingle"> Epistle to the Earl of Burlington </td><td align="right" class="hspcsingle" valign="bottom"> 10 15 &nbsp; 0</td></tr>
+<tr><td class="hspcsingle" valign="top"> 1717. </td><td class="hspcsingle" valign="top"> May 4. </td><td class="hspcsingle"> Battle of the Frogs </td><td align="right" class="hspcsingle" valign="bottom"> 16 &nbsp; 2 &nbsp; 6</td></tr>
+<tr><td class="hspcsingle" valign="top"> &nbsp; </td><td class="hspcsingle" valign="top"> Jan. 8. </td><td class="hspcsingle"> Three Hours after Marriage </td><td align="right" class="hspcsingle" valign="bottom"> 43 &nbsp; 2 &nbsp; 6</td></tr>
+<tr><td class="hspcsingle" valign="top"> &nbsp; </td><td class="hspcsingle" valign="top"> &nbsp; </td><td class="hspcsingle"> Revival of the Wife of Bath </td><td align="right" class="hspcsingle" valign="bottom"> 75 &nbsp; 0 &nbsp; 0</td></tr>
+<tr><td class="hspcsingle" valign="top"> &nbsp; </td><td colspan="2" class="hspcsingle"> The Mohocks, a farce&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2<i>l.</i> 10<i>s.</i></td></tr>
+<tr><td class="hspcsingle" valign="top"> &nbsp; </td><td colspan="2" class="hspcsingle"> Sold the Mohocks to him again.</td></tr>
+<tr><td class="hspcsingle" valign="top"> &nbsp; </td><td colspan="2" class="hspcsingle"> &nbsp; </td><td align="right" class="topbotb"> 234 10 &nbsp; 0</td></tr>
+
+<tr><td colspan="4" align="center" class="hspcsingle"> <br /><i>Captain Killegrew.</i></td></tr>
+
+<tr><td class="hspcsingle" valign="top"> 1718-19. </td><td class="hspcsingle" valign="top"> Feb. 14. </td><td class="hspcsingle"> Chit Chat </td><td align="right" class="hspcsingle" valign="bottom"> 84 &nbsp; 0 &nbsp; 0</td></tr>
+
+<tr><td colspan="4" align="center" class="hspcsingle"> <br /><i>Mr. Ozell.</i></td></tr>
+
+<tr><td class="hspcsingle" valign="top"> 1711. </td><td class="hspcsingle" valign="top"> Nov. 18. } </td><td class="hspcsingle"> Translating Homer's Iliad, books i. ii. iii.</td></tr>
+<tr><td class="hspcsingle" valign="top"> 1712. </td><td class="hspcsingle" valign="top"> Jan. 4. &nbsp; &nbsp; } </td><td class="hspcsingle"> &nbsp; </td><td align="right" class="hspcsingle" valign="bottom"> 10 &nbsp; 8 &nbsp; 6</td></tr>
+<tr><td class="hspcsingle" valign="top"> 1713. </td><td class="hspcsingle" valign="top"> April 29. </td><td class="hspcsingle"> Translating Molière </td><td align="right" class="hspcsingle" valign="bottom"> 37 12 &nbsp; 6</td></tr>
+
+<tr><td colspan="4" align="center" class="hspcsingle"> <br /><i>N. Rowe, Esq.</i></td></tr>
+
+<tr><td class="hspcsingle" valign="top"> &nbsp; </td><td class="hspcsingle" valign="top"> Dec. 12. </td><td class="hspcsingle"> Jane Shore </td><td align="right" class="hspcsingle" valign="bottom"> 50 15 &nbsp; 0</td></tr>
+<tr><td class="hspcsingle" valign="top"> 1715. </td><td class="hspcsingle" valign="top"> April 27. </td><td class="hspcsingle"> Jane Grey </td><td align="right" class="hspcsingle" valign="bottom"> 73 &nbsp; 5 &nbsp; 0</td></tr>
+
+<tr><td colspan="4" align="center" class="hspcsingle"> <br /><i>Somerville.</i></td></tr>
+
+<tr><td class="hspcsingle" valign="top"> 1727. </td><td class="hspcsingle" valign="top"> July 14. </td><td class="hspcsingle"> A Collection of Poems. </td><td align="right" class="hspcsingle" valign="bottom"> 35 15 &nbsp; 0</td></tr>
+
+<tr><td colspan="4" align="center" class="hspcsingle">
+<!-- Page 82 --><span class="pagenum"><a name="page82"></a>{82}</span>
+<br /><i>Pope.</i></td></tr>
+
+<tr><td class="hspcsingle" valign="top"> 1712. </td><td class="hspcsingle" valign="top"> Feb. 19. </td><td class="hspcsingle"> Statius, 1st book, and Verstumnus and Pomona
+   </td><td align="right" class="hspcsingle" valign="bottom"> 16 &nbsp; 2 &nbsp; 6</td></tr>
+<tr><td class="hspcsingle" valign="top"> &nbsp; </td><td class="hspcsingle" valign="top"> Mar. 21. </td><td class="hspcsingle"> First edition of the Rape </td><td align="right" class="hspcsingle" valign="bottom"> 7 &nbsp; 0 &nbsp; 0</td></tr>
+<tr><td class="hspcsingle" valign="top"> &nbsp; </td><td class="hspcsingle" valign="top"> April 9. </td><td class="hspcsingle"> To a lady presenting Voiture.<br />
+   Upon Silence. To the author<br />
+   of a poem called Successio </td><td align="right" class="hspcsingle" valign="bottom"> 3 16 &nbsp; 6</td></tr>
+
+<tr><td class="hspcsingle" valign="top"> 1712-13. </td><td colspan="2" class="hspcsingle"> Windsor Forest (Feb. 23) </td><td align="right" class="hspcsingle" valign="bottom"> 32 &nbsp; 5 &nbsp; 0</td></tr>
+
+<tr><td class="hspcsingle" valign="top"> 1713. </td><td class="hspcsingle" valign="top"> July 23. </td><td class="hspcsingle"> Ode to St. Cecilia's Day </td><td align="right" class="hspcsingle" valign="bottom"> 15 &nbsp; 0 &nbsp; 0</td></tr>
+
+<tr><td class="hspcsingle" valign="top"> 1714. </td><td class="hspcsingle" valign="top"> Feb. 20. </td><td class="hspcsingle"> Addition to the Rape </td><td align="right" class="hspcsingle" valign="bottom"> 15 &nbsp; 0 &nbsp; 0</td></tr>
+<tr><td class="hspcsingle" valign="top"> &nbsp; </td><td class="hspcsingle" valign="top"> Mar. 23. </td><td class="hspcsingle"> Homer, vol. i. </td><td align="right" class="hspcsingle" valign="bottom"> 215 &nbsp; 0 &nbsp; 0</td></tr>
+<tr><td class="hspcsingle" valign="top"> &nbsp; </td><td class="hspcsingle" valign="top"> &nbsp; </td><td class="hspcsingle"> 650 copies on royal paper </td><td align="right" class="hspcsingle" valign="bottom"> 176 &nbsp; 0 &nbsp; 0</td></tr>
+
+<tr><td class="hspcsingle" valign="top"> 1715. </td><td class="hspcsingle" valign="top"> Feb. 1. </td><td class="hspcsingle"> Temple of Fame </td><td align="right" class="hspcsingle" valign="bottom"> 32 &nbsp; 5 &nbsp; 0</td></tr>
+<tr><td class="hspcsingle" valign="top"> &nbsp; </td><td class="hspcsingle" valign="top"> April 21. </td><td class="hspcsingle"> Key to the Lock </td><td align="right" class="hspcsingle" valign="bottom"> 10 15 &nbsp; 0</td></tr>
+
+<tr><td class="hspcsingle" valign="top"> 1716. </td><td class="hspcsingle" valign="top"> Feb. 9. </td><td class="hspcsingle"> Homer, vol. ii. </td><td align="right" class="hspcsingle" valign="bottom"> 215 &nbsp; 0 &nbsp; 0</td></tr>
+<tr><td class="hspcsingle" valign="top"> &nbsp; </td><td class="hspcsingle" valign="top"> May 2. </td><td class="hspcsingle"> 650 royal paper </td><td align="right" class="hspcsingle" valign="bottom"> 150 &nbsp; 0 &nbsp; 0</td></tr>
+<tr><td class="hspcsingle" valign="top"> &nbsp; </td><td class="hspcsingle" valign="top"> July 17. </td><td class="hspcsingle"> Essay on Criticism </td><td align="right" class="hspcsingle" valign="bottom"> 15 &nbsp; 0 &nbsp; 0</td></tr>
+
+<tr><td class="hspcsingle" valign="top"> 1717. </td><td class="hspcsingle" valign="top"> Aug. 9. </td><td class="hspcsingle"> Homer, vol. iii. </td><td align="right" class="hspcsingle" valign="bottom"> 215 &nbsp; 0 &nbsp; 0</td></tr>
+
+<tr><td class="hspcsingle" valign="top"> 1718. </td><td class="hspcsingle" valign="top"> Jan. 6. </td><td class="hspcsingle"> 650 royal paper </td><td align="right" class="hspcsingle" valign="bottom"> 150 &nbsp; 0 &nbsp; 0</td></tr>
+<tr><td class="hspcsingle" valign="top"> &nbsp; </td><td class="hspcsingle" valign="top"> Mar. 3. </td><td class="hspcsingle"> Homer, vol. iv. </td><td align="right" class="hspcsingle" valign="bottom"> 210 &nbsp; 0 &nbsp; 0</td></tr>
+<tr><td class="hspcsingle" valign="top"> &nbsp; </td><td class="hspcsingle" valign="top"> &nbsp; </td><td class="hspcsingle"> 650 royal paper </td><td align="right" class="hspcsingle" valign="bottom"> 150 &nbsp; 0 &nbsp; 0</td></tr>
+<tr><td class="hspcsingle" valign="top"> &nbsp; </td><td class="hspcsingle" valign="top"> Oct. 17. </td><td class="hspcsingle"> Homer, vol. v. </td><td align="right" class="hspcsingle" valign="bottom"> 210 &nbsp; 0 &nbsp; 0</td></tr>
+
+<tr><td class="hspcsingle" valign="top"> 1719. </td><td class="hspcsingle" valign="top"> April 6. </td><td class="hspcsingle"> 650 royal paper </td><td align="right" class="hspcsingle" valign="bottom"> 150 &nbsp; 0 &nbsp; 0</td></tr>
+
+<tr><td class="hspcsingle" valign="top"> 1720. </td><td class="hspcsingle" valign="top"> Feb. 26. </td><td class="hspcsingle"> Homer, vol. vi. </td><td align="right" class="hspcsingle" valign="bottom"> 210 &nbsp; 0 &nbsp; 0</td></tr>
+<tr><td class="hspcsingle" valign="top"> &nbsp; </td><td class="hspcsingle" valign="top"> May 7. </td><td class="hspcsingle"> 650 royal paper </td><td align="right" class="hspcsingle" valign="bottom"> 150 &nbsp; 0 &nbsp; 0</td></tr>
+
+<tr><td class="hspcsingle" valign="top"> 1721. </td><td colspan="2" class="hspcsingle"> Parnell's Poems </td><td align="right" class="hspcsingle" valign="bottom"> 15 &nbsp; 0 &nbsp; 0</td></tr>
+<tr><td class="hspcsingle" valign="top"> &nbsp; </td><td colspan="2" class="hspcsingle"> Paid Mr. Pope for the subscription-money<br/>
+   due on the 2nd volume of his Homer,<br/>
+   and on his 5th volume, at the agreement<br/>
+   for the said 5th vol.&mdash;(I had Mr. Pope's <br/>
+   assignment for the royal paper that was<br/>
+   then left of his Homer) </td><td align="right" class="hspcsingle" valign="bottom"> 840 &nbsp; 0 &nbsp; 0</td></tr>
+
+<tr><td class="hspcsingle" valign="top"> &nbsp; </td><td colspan="2" class="hspcsingle"> Copy-money for the Odyssey, vols. i. ii. iii.,<br/>
+   and 750 of each volume printed on royal<br/>
+   paper, 4to. </td><td align="right" class="hspcsingle" valign="bottom"> 615 &nbsp; 0 &nbsp; 0</td></tr>
+
+<tr><td class="hspcsingle" valign="top"> &nbsp; </td><td colspan="2" class="hspcsingle"> Copy-money for the Odyssey, vols. iv. and<br/>
+   v., and 750 of each royal </td><td align="right" class="hspcsingle" valign="bottom"> 425 18 7½</td></tr>
+
+<tr><td class="hspcsingle" valign="top"> &nbsp; </td><td colspan="2" class="hspcsingle"> &nbsp; </td><td align="right" class="topbotb">£4244 &nbsp; 8 7½</td></tr>
+
+</table>
+
+<p class="cenhead">From that storehouse of instruction and amusement,
+Nichols's <i>Anecdotes</i>, vol. viii. pp. 293-304.</p>
+
+  <p>I take this opportunity of forwarding to you a curious memorandum
+  which I found in rummaging the papers of a "note-maker" of the last
+  century. It appears to be a bill of fare for the entertainment of a
+  party, upon the "flitch of bacon" being decreed to a happy couple. It is
+  at Harrowgate, and not at Dunmow, which would lead us to believe that
+  this custom was not confined to one county. The feast itself is almost as
+  remarkable, as regards its component parts, as that produced by Mr.
+  Thackeray, in his delightful "Lectures," as characteristic of polite
+  feeding in Queen Anne's reign:</p>
+
+<blockquote class="b1n">
+
+  <p>"<i>June 25.&mdash;Mr. and Mrs. Liddal's Dinner at Green Dragon,
+  Harrowgate, on taking Fflitch Bacon Oath.</i></p>
+
+  <div class="poem">
+    <div class="stanza">
+      <p class="i2"><i>Bill Fare.</i></p>
+      <p>Beans and bacon.</p>
+      <p>Cabbage, colliflower.</p>
+      <p>Three doz. chickens.</p>
+      <p>Two shoulders mutton, cowcumbers.</p>
+      <p>Two turbets.</p>
+      <p>Rump beef, &amp;c. &amp;c.</p>
+      <p>Goose and plumbpudding.</p>
+      <p>Quarter lamb, sallad.</p>
+      <p>Tarts, jellies, strawberries, cream.</p>
+      <p>Cherrys, syllabubs, and blomonge.</p>
+      <p>Leg lamb, spinnage.</p>
+      <p>Crawfish, pickled salmon.</p>
+      <p>Fryd tripe, calves' heads.</p>
+      <p>Gravy and Pease soup.</p>
+      <p>Two piggs.</p>
+      <p>Breast veal, ragoud.</p>
+      <p>Ice cream, pine apple.</p>
+      <p>Surloin beaf.</p>
+      <p>Pidgeons, green peas.</p>
+      <p>Lobsters, crabs.</p>
+      <p>Twelve red herrings, twenty-two dobils."</p>
+    </div>
+  </div>
+
+</blockquote>
+
+  <p class="author">W. R.</p>
+
+  <p class="address">Stockwell.</p>
+
+<hr class="short" />
+
+<h3>ON THE USE OF THE HOUR-GLASS IN PULPITS.</h3>
+
+<p class="cenhead">(Vol. vii., p. 489.)</p>
+
+  <p>Perhaps the following may be of service as a farther illustration of
+  this subject.</p>
+
+  <p>Zacharie Boyd says, in <i>The Last Battell of the Sovle in Death</i>,
+  1629, reprinted Glasgow, 1831, at p. 469.:</p>
+
+<blockquote class="b1n">
+
+  <p>"Now after his Battell ended hee hath surrendered the spirit,
+  <i>Clepsydra effluxit</i>, his <i>houre-glasse</i> is now runne out, and
+  his soule is come to its wished home, where it is free from the fetters
+  of flesh."</p>
+
+</blockquote>
+
+  <p>This divine was minister of the barony parish of Glasgow, the church
+  for which was then in the crypt of the cathedral. I have no doubt the
+  hour-glass was there used from which he draws his simile. Your
+  correspondent refers to sermons an hour long, but, to judge from the
+  contents of "Mr. Zacharie's" MS. sermons still preserved in the library
+  of the College of Glasgow, each, at the rate of ordinary speaking, must
+  have occupied at least an hour and a half in delivery. When he had become
+  infirm and near his end, and had found it necessary to shorten his
+  sermons, his "kirk session" was offended, as&mdash;</p>
+
+<blockquote class="b1n">
+
+  <p>"Feb. 13, 1651. Some are to speak to Mr. Z. Boyd about the soon
+  skailing (dismissing) of the Baronie Kirk on Sunday afternoon."</p>
+
+</blockquote>
+
+  <p>Though sermons are now generally restricted from three quarters to an
+  hour's delivery, the practice of long preaching in the olden times in the
+  west of Scotland had much prevailed. Within my own recollection I have
+  heard sermons of nearly two hours' duration; and early among a few
+  classes of the first Dissenters, on "Sacramental Occasions" as they are
+  yet called, the services lasted altogether (not unfrequently)
+  continuously from ten o'clock on Sabbath forenoon, to three and <!-- Page
+  83 --><span class="pagenum"><a name="page83"></a>{83}</span>four o'clock
+  the following morning. A traditional anecdote is current of an old
+  Presbyterian clergyman, unusually full of matter, who, having preached
+  out his hour-glass, was accustomed to pause, and addressing the
+  precentor, "<i>Another glass and then</i>," recommenced his sermon.</p>
+
+  <p>A pictorial representation of the hour-glass in a country church is to
+  be seen in front of the precentor's desk, or pulpit, in a very scarce
+  humorsome print, entitled "Presbyterian Penance," by the famous David
+  Allan. It also figures in the engraving of the painting by Wilkie, of
+  John Knox preaching before Mary Queen of Scots. About twenty years ago it
+  was either in the Cathedral of Stirling or the Armory of the Castle (the
+  ancient chapel), that I saw the hour-glass (about twelve inches high)
+  which had been connected with one or other of the pulpits, from both of
+  which John Knox is said to have preached. It is likely the hour-glass is
+  there "even unto this day" (unless abstracted by some relic hunter); and
+  if it could be depended on as an original appendage to the pulpits, would
+  prove that its use was coeval with the times of the Scottish Reformation.
+  I think its high antiquity as certain as the oaken pulpits
+  themselves.</p>
+
+  <p>At an early period the general poverty of the country, and the
+  scarcity of clocks and watches, must have given rise to the adoption of
+  the hour sand-glass, a simple instrument, but yet elegant and impressive,
+  for the measurement of a brief portion of our fleeting span.</p>
+
+  <p class="author">G. N.</p>
+
+  <p class="address">Glasgow.</p>
+
+  <p>On the 31st May, 1640, the churchwardens of great Staughton, co.
+  Huntingdonshire, "are, and stand charged with (among other church goods),
+  a pulpit standinge in the church, having a cover over the same, and an
+  houre-glasse adjoininge."</p>
+
+  <p>Copy of a cutting from a magazine, name and date unknown:</p>
+
+<blockquote class="b1n">
+
+  <p>"Among Dr. Rawlinson's manuscripts in the Bodleian Library, No. 941
+  contains collection of <i>Miscellaneous Discourses</i>, by Mr. Lewis of
+  Margate, in Kent, whence the following extract has been made:</p>
+
+  <p>"'It appears that these hour-glasses were coeval with our Reformation.
+  In a fine frontispiece, prefixed to the Holy Bible of the bishops'
+  translation, printed in 4to. by John Day, 1569, Archbishop Parker is
+  represented in the pulpit with an hour-glass standing on his right hand;
+  ours, here, stood on the left without any frame. It was proper that some
+  time should be prescribed for the length of the sermon, and clocks and
+  watches were not then so common as they are now. This time of an hour
+  continued till the Revolution, as appears by Bishop Sanderson's,
+  Tillotson's, Stillingfleet's, Dr. Barrow's, and others' sermons, printed
+  during that time.'</p>
+
+  <p>"The writer of this article was informed in 1811 by the Rev. Mr.
+  Burder, who had the curacy of St. Dunstan's, Fleet Street, that the large
+  silver hour-glass formerly used in that church, was melted down into two
+  staff heads for the parish beadles.</p>
+
+  <p>"An hour-glass frame of iron, fixed in the wall by the side of the
+  pulpit, was remaining in 1797 in the church of North Moor, in
+  Oxfordshire."</p>
+
+</blockquote>
+
+  <p class="author"><span class="sc">Joseph Rix.</span></p>
+
+  <p class="address">St. Neots, Huntingdonshire.</p>
+
+  <p>In many of our old pulpits built during the seventeenth century, when
+  hour sermons were the rule, and thirty minutes the exception, the shelf
+  on which the glass used to stand may still be seen. If I recollect
+  rightly, that of Miles Coverdale was thus furnished, as stated in the
+  newspapers, at the time the church of Bartholomew was removed. Perhaps
+  this emblem was adopted on gravestones as significant of the character of
+  Death as a minister or preacher.</p>
+
+  <p>The late Basil Montague, when delivering a course of lectures on
+  "Laughter" at the Islington Institution some few years since, kept time
+  by the aid of this antique instrument. If I remember aright, he turned
+  the glass and said, "<i>Another glass and then</i>," or some equivalent
+  expression.</p>
+
+  <p class="author"><span class="sc">E. G. Ballard.</span></p>
+
+  <p>There is an example at the church of St. Alban, Wood Street,
+  Cheapside. This church was rebuilt by Sir C. Wren, and finished 1685;
+  showing that the hour-glass was in use subsequent to the times alluded
+  to.</p>
+
+  <p class="author"><span class="sc">J. D. Allcroft.</span></p>
+
+  <p>I saw on 13th January last, an iron hour-glass stand affixed to a
+  pillar in the north aisle of Belton Church, in the Isle of Axholme.</p>
+
+  <p class="author"><span class="sc">Edward Peacock.</span></p>
+
+  <p class="address">Bottesford Moors, Kirton-in-Lindsey.</p>
+
+<hr class="short" />
+
+<h3>LADIES' ARMS BORNE IN A LOZENGE.</h3>
+
+<p class="cenhead">(Vol. vii., p. 571.)</p>
+
+  <p>The subject of the Query put by your correspondent is one that has
+  frequently occurred to me, but which is involved in obscurity. Heraldic
+  writers generally have contented themselves with the mere statement of
+  ladies' arms being thus borne; and where we do find an opinion hazarded,
+  it is more in the form of a quotation from a nameless author, or of a
+  timid suggestion, than an attempt to elucidate the question by argument
+  or from history.</p>
+
+  <p>By some this form of shield is said to have descended to us from the
+  Amazons, who bore such: others say, from the form of their tombstones!
+  Now we find it to represent the ancient spindle so much used by ladies;
+  and again to be a shield found by the Romans unfit for use, and therefore
+  transferred to the weaker sex, who were "allowed to place their ensigns
+  upon it, with one corner always uppermost." <!-- Page 84 --><span
+  class="pagenum"><a name="page84"></a>{84}</span></p>
+
+  <p>Here are quotations from a few of our writers on the science of
+  Heraldry:&mdash;</p>
+
+  <p><span class="sc">Burke</span>, <i>Encyclop. Herald.</i> 1844. Queen
+  Victoria bears her arms on a full and complete shield; "for," says the
+  old rhyme&mdash;</p>
+
+  <div class="poem">
+    <div class="stanza">
+      <p class="hg3">"Our sagest men of lore define</p>
+      <p>The kingly state as masculine,</p>
+      <p>Paiseant, martial bold and strong,</p>
+      <p>The stay of right, the scourge of wrong;</p>
+      <p>Hence those that England's sceptre wield,</p>
+      <p>Must buckle on broad sword and shield,</p>
+      <p>And o'er the land, and o'er the sea,</p>
+      <p>Maintain her sway triumphantly."</p>
+    </div>
+  </div>
+
+  <p>This, unfortunately, is only one side of the question: and, though
+  satisfactorily accounting for the shape of the shield of royalty, does
+  not enlighten us on the "origin and meaning" of the lozenge.</p>
+
+  <p><span class="sc">Barrington</span>, <i>Display of Heraldry</i>,
+  1844:&mdash;</p>
+
+<blockquote class="b1n">
+
+  <p>"An unmarried daughter bears her father's arms on a lozenge-shaped
+  shield, without any addition or alteration."</p>
+
+</blockquote>
+
+  <p><span class="sc">Berry</span>, <i>Encycl. Herald.</i> 1830:&mdash;</p>
+
+<blockquote class="b1n">
+
+  <p>"The arms of maidens and widows should be borne in shields of this
+  shape."</p>
+
+</blockquote>
+
+  <p><span class="sc">Robson</span>, <i>British Herald</i>,
+  1830:&mdash;</p>
+
+<blockquote class="b1n">
+
+  <p>"Lozenge, a four-cornered figure, differing from the fusil, being
+  shorter and broader. Plutarch says that in Megara [read Megura], an
+  ancient town of Greece, <i>the tombstones under which the bodies of
+  Amazons lay</i> were of that form: some conjecture this to be the cause
+  why ladies have their arms on lozenges."</p>
+
+</blockquote>
+
+  <p><span class="sc">Porny</span>, <i>Elements of Heraldry</i>, 1795,
+  supposes&mdash;</p>
+
+<blockquote class="b1n">
+
+  <p>"The lozenge may have been originally a <i>fusil</i>, or <i>fusée</i>,
+  as the French call it: it is a figure longer than the lozenge, and
+  <i>signifies a spindle</i>, which is a woman's instrument."</p>
+
+</blockquote>
+
+  <p>This writer also quotes <i>Sylvester de Petra Sancta</i>, who would
+  have this shield to "<i>represent a cushion</i>, whereon women used to
+  sit and spin, or do other housewifery."</p>
+
+  <p><span class="sc">Brydson</span>, <i>Summary View of Heraldry</i>,
+  1795:&mdash;</p>
+
+<blockquote class="b1n">
+
+  <p>"The shields on which armorial bearings are represented are of various
+  forms, as round, oval, or somewhat resembling a heart; which last is the
+  most common form. Excepting sovereigns, women unmarried, or widows, bear
+  their arms on a lozenge shield, which is of a square form, so placed as
+  to have one of its angles upwards, <i>and is supposed to resemble a
+  distoff</i>."</p>
+
+</blockquote>
+
+  <p><span class="sc">Boyes</span>, <i>Great Theatre of Honour</i>, 1754.
+  In this great work the various forms of shields, and the etymology of
+  their names, are treated on at considerable length. The Greeks had
+  five:&mdash;the <i>Aspis</i>, the <i>Gerron</i> or <i>Gerra</i>, the
+  <i>Thurios</i>, the <i>Laiveon</i>, and the <i>Pelte</i> or <i>Pelta</i>.
+  The Romans had the <i>Ancile</i>, the <i>Scutum</i>, the <i>Clypeus</i>,
+  the <i>Parma</i>, the <i>Cetra</i>, and others; but none of these
+  approached the shape of the lozenge. The shields of modern nations are
+  also dealt with at length; still the author appears to have had no
+  information nor an opinion upon the lozenge, which he dismisses with
+  these remarks:&mdash;</p>
+
+<blockquote class="b1n">
+
+  <p>"L'écu des filles est <i>en lozenge</i>, de même de celui des veuves;
+  et en France et ailleurs, celles-ci l'ornent et l'entourent d'une
+  cordelière ou cordon à divers neuds. Quant aux femmes mariées, elles
+  accollent d'ordinaire leurs armes avec celles de leurs époux; mais
+  quelquefois elles les portent aussi <i>en lozenge</i>."</p>
+
+</blockquote>
+
+  <p><span class="sc">Coates</span>, <i>Dictionary of Heraldry</i>, 1725,
+  quotes Colombière, a French herald, who, he says, gives upwards of thirty
+  examples of differently formed shields; but no allusion is made to the
+  lozenge.</p>
+
+  <p><span class="sc">Carter</span>, <i>Honor Redivivus</i>, 1660.</p>
+
+  <p><span class="sc">Dugdale</span>, <i>Ancient Usage in bearing Arms</i>,
+  1682.</p>
+
+  <p><span class="sc">Gwillim</span>, <i>Display of Heraldry</i>, 1638.</p>
+
+  <p><span class="sc">Camden</span>, <i>Remains</i>, 1637.</p>
+
+  <p><span class="sc">Gerard Legh</span>, <i>Accedence of Armorie</i>,
+  1576.</p>
+
+  <p>None of these authors have touched on the subject; which, considering
+  that at the least two of them are the greatest authorities, appears
+  somewhat strange.</p>
+
+  <p><span class="sc">Ferne</span>, <i>Blazon of Gentrie</i>,
+  1586&mdash;</p>
+
+<blockquote class="b1n">
+
+  <p>"Thinks the lozenge is formed of the shield called <i>Tessera</i> or
+  <i>Tessela</i>, which the Romans, finding unfit for use, did allow to
+  women to place their ensigns upon, with one of its angles always
+  upmost."</p>
+
+</blockquote>
+
+  <p>Though unable at this moment to furnish examples in proof of my
+  opinion, I must say that it is contrary to the one expressed by your
+  correspondent <span class="sc">Ceyrep</span>, that "formerly all ladies
+  of rank" bore their arms upon a complete shield, or bore shields upon
+  their seals. The two instances cited by him are rather unfortunate, the
+  connexion of both ladies with royalty being sufficiently close to suggest
+  the possibility of their right to the "full and complete" shield.</p>
+
+  <p>Margaret, Duchess (not Countess) of Norfolk, was sole heir of her
+  father, Thomas of Brotherton, fifth Earl of Norfolk, son of King Edward
+  I., and Marshal of England. She, "for the greatness of her birth, her
+  large revenues and wealth," was created Duchess of Norfolk for life; and
+  at the coronation of King Richard II. she exhibited her petition "to be
+  accepted to the office of High Marshal," which was, I believe, granted.
+  In such case, setting aside her royal descent, I apprehend that, by
+  virtue of her office, she would not bear her arms in a lozenge. She bore
+  the arms of England with only a label for difference.</p>
+
+  <p>Margaret, Countess of Richmond, was herself royally descended, being
+  great-granddaughter of John of Gaunt, son of Edward III.; was
+  daughter-in-law of Henry V.'s widow, and mother of Henry VII. Being
+  descended from the antenuptial children of John of Gaunt's third wife,
+  who had been legitimatised by act of parliament for all purposes except
+  succession to the crown, <!-- Page 85 --><span class="pagenum"><a
+  name="page85"></a>{85}</span>Henry VII. would probably desire by every
+  means in his power to suppress anything suggestive of his unsubstantial
+  title to the crown. It might be by his particular desire that his mother
+  assumed the full regal shield, on which to emblazon arms differing but
+  slightly from those of her son, the king.</p>
+
+  <p>It is not, however, my opinion that the form of shield under
+  consideration is anything like so ancient as some of the authors would
+  make it. I do not believe it comes to us either from the Amazons or the
+  Romans.</p>
+
+  <p>My own opinion, in the absence of any from the great writers to guide
+  me, is, that we owe the use of this form of shield amongst ladies to
+  <i>hatchments</i> or <i>funeral achievements</i>. During the time of
+  mourning for persons of rank, their coats of arms are set up in churches
+  and over the principal entrances of their houses. On these occasions it
+  is well known their arms are always placed in a large black lozenge; a
+  form adopted as the most proper figure for admitting the coats of arms of
+  sixteen ancestors to be placed round it, four on each of the sides of the
+  square.</p>
+
+  <p>It was not until the reign of Richard III. that the College of Arms
+  was regularly incorporated; and though the science of heraldry received
+  its highest polish during the splendid reigns of Edward III. and Henry
+  V., it had yet scarcely been subjected to those rules which since the
+  establishment of the College have controlled it. Mark Noble, in his
+  <i>History of the College of Arms</i>, says that the latter
+  reign&mdash;</p>
+
+<blockquote class="b1n">
+
+  <p>"If it did not add to the wealth of the nation at large, gave rise to
+  a number of great families, enriched by the spoils of Azincourt, the
+  plunder of France, and the ransom of princes. The heraldic body was
+  peculiarly prized and protected by the king, who, however, was very
+  whimsical in the adoption of cognizances and devices."</p>
+
+</blockquote>
+
+  <p>During the greater portion of the fourteenth century, and the early
+  part of the fifteenth, there was a rage for jousts, tilts, and
+  tournaments; and almost every English nobleman had his officers of arms;
+  dukes, marquesses, and earls were allowed a herald and pursuivant; the
+  lower nobility, and even knights, might retain one of the latter. To
+  these officers belonged the ordering of everything relating to the solemn
+  and magnificent funerals, which were so general in these centuries, and
+  which they presided over and marshalled.</p>
+
+  <p>During the reign of Edward IV. the exact form of these obsequies was
+  prescribed. Not only were the noblemen's own heralds there, but the
+  king's also; and not in tabards bearing the sovereign's, but the
+  deceased's arms.</p>
+
+  <p>So preposterously fond of funeral rites were monarchs and their
+  subjects, that the obsequies of princes were observed by such sovereigns
+  as were in alliance with them, and in the same state as if the royal
+  remains had been conveyed from one Christian kingdom to another.
+  Individuals had their obsequies kept in various places where they had
+  particular connexions.<a name="footnotetag3"
+  href="#footnote3"><sup>[3]</sup></a></p>
+
+  <p>Is it too much then to presume that in the midst of all this pomp and
+  affectation of grief, the hatchment of the deceased nobleman would be
+  displayed as much, and continued as long, as possible by the widow? May
+  we not reasonably believe that these ladies would vie with each other in
+  these displays of the insignia of mourning, until, by usage, the
+  lozenge-shaped hatchment became the shield appropriated to the sex?</p>
+
+  <p>These hypotheses are not without some foundation; but if any of your
+  correspondents will enunciate another theory, I shall be glad to give it
+  my support if it is found to be more reasonable than the foregoing.</p>
+
+  <p class="author"><span class="sc">Broctuna.</span></p>
+
+  <p class="address">Bury, Lancashire.</p>
+
+<div class="note">
+  <a name="footnote3"></a><b>Footnote 3:</b><a
+  href="#footnotetag3">(return)</a>
+  <p>Noble.</p>
+
+</div>
+<hr class="short" />
+
+<h3>PHOTOGRAPHIC CORRESPONDENCE.</h3>
+
+  <p><i>Multiplication of Photographs.</i>&mdash;In Vol. viii., p. 60. is a
+  letter from <span class="sc">Mr. John Stewart</span> of Pau suggesting
+  certain modes of operating in producing positive photographs, and which
+  suggestions are apparently offered as <i>novelties</i>, when, in fact,
+  they have been for some considerable time in practice by other
+  manipulators. Of course, I do not suppose that they are otherwise
+  regarded by <span class="sc">Mr. Stewart</span> than as novelties, who
+  cannot be acquainted with what is doing here; but it appears to me
+  desirable to discriminate between facts that are <i>absolutely</i>, and
+  those that are <i>relatively</i> new.</p>
+
+  <p>Most of the transparent stereoscopic photographs sold in such numbers
+  by all our eminent opticians, <i>are actually produced</i> in the way
+  recommended by <span class="sc">Mr. Stewart</span>; and reduced copies of
+  photographs, &amp;c., have been produced in almost every possible variety
+  by <span class="sc">Dr. Diamond</span>, and many others of our most
+  eminent photographers. Very early in the history of this science, the
+  idea was suggested by Mr. Fox Talbot himself, of taking views of a small
+  size, and enlarging them for multiplication; and, if I am rightly
+  informed, Mr. Ross was applied to to construct a lens specially for the
+  purpose. Some months back, as early at least as March or April in the
+  present year, Mr. F.&nbsp;H. Wenham actually printed on common chloride paper
+  a <i>life-size</i> positive from a small negative on collodion; and
+  immediately afterwards adopted the use of iodized paper for the same
+  purpose; and after he had exhibited the proofs, I myself repeated the
+  experiment. In fact, had there been time at the last meeting of the
+  Photographic Society, a paper on this very subject would have been read
+  by Mr. Wenham; but the <!-- Page 86 --><span class="pagenum"><a
+  name="page86"></a>{86}</span>business before the meeting was too
+  extensive to admit of it. My object is not, of course, to offer any
+  objection to the proposition, but simply to put in a claim of merit for
+  the idea originally due to Mr. Fox Talbot, and secondarily to Mr. Wenham,
+  who I believe was an earlier operator in this way than any one.</p>
+
+  <p class="author"><span class="sc">Geo. Shadbolt.</span></p>
+
+  <p><i>Yellow Bottles for Photographic Chemicals.</i>&mdash;As light
+  transmitted through a yellow curtain, or yellow glass, does not affect
+  photographic operations, would it not be desirable to keep the nitrate of
+  silver and its solutions in yellow glass bottles, instead of covering the
+  plain white glass with black paper, as I see directed in some cases?</p>
+
+  <p class="author"><span class="sc">Ceridwen.</span></p>
+
+<hr class="full" />
+
+<h2>Replies to Minor Queries.</h2>
+
+  <p><i>Donnybrook Fair</i> (Vol. vii., p. 549.).&mdash;<span
+  class="sc">Abhba</span> will find his answer in D'Alton's <i>History of
+  the County of Dublin</i>, p. 804.:</p>
+
+<blockquote class="b1n">
+
+  <p>"About the year 1174, Earl 'Strongbow' gave Donnybrock (Devonalbroc),
+  amongst other lands, to Walter de Riddlesford; and in 1204, King John
+  granted to the corporation of Dublin license for an <i>annual eight-day
+  fair here</i>, commencing on the day of the finding of the Holy Cross
+  (May 3rd), with similar stallages and tolls, as established in Waterford
+  and Limerick."</p>
+
+</blockquote>
+
+  <p>This scene of an Irishman's glory has been daguerreotyped in lines
+  that may be left in your pages, as being probably quite as little known
+  to your readers as is the work above cited:</p>
+
+  <div class="poem">
+    <div class="stanza">
+      <p class="hg3">"Instead of weapons, either band</p>
+      <p>Seized on such arms as came to hand.</p>
+      <p>And as famed Ovid paints th' adventures</p>
+      <p>Of wrangling Lapithæ and Centaurs,</p>
+      <p>Who at their feast, by Bacchus led,</p>
+      <p>Threw bottles at each others' head;</p>
+      <p>And these arms failing in their scuffles,</p>
+      <p>Attack'd with andirons, tonges, and shovels:</p>
+      <p>So clubs and billets, staves and stones,</p>
+      <p>Met fierce, encountering every sconce,</p>
+      <p>And cover'd o'er with knobs and pains,</p>
+      <p>Each void receptacle for brains."</p>
+    </div>
+  </div>
+
+  <p class="author">J. D.</p>
+
+  <p><i>Abigail</i> (Vol. iv., p. 424.; Vol. v., pp. 38. 94. 450., Vol.
+  viii., p. 42.).&mdash;Not having my "N. &amp; Q." at hand, I cannot say
+  what may have been already told on this subject, but I think I can answer
+  the Queries of your last correspondent, <span class="sc">H.&nbsp;T.
+  Ryley</span>. There can be, I think, no doubt that the familiar use of
+  the name Abigail, for the <i>genus</i> "lady's maid," is derived from one
+  whom I may call <i>Abigail the Great</i>; who, before she ascended King
+  David's bed and throne, introduced herself under the oft-reiterated
+  description of a "hand-maid." (See 1 Sam. xxv. 24, 25, 27, 28, 31.) I
+  have no <i>Concordance</i> at hand, but I suspect there is no passage in
+  Scripture where the word <i>hand-maid</i> is more prominent; and so the
+  idea became associated with the name <i>Abigail</i>. An <i>Abigail</i>
+  for a hand-maid is therefore merely analogous to a <i>Goliath</i> for a
+  giant; a <i>Job</i> for a patient man; a <i>Samson</i> for a strong one;
+  a <i>Jezebel</i> for a shrew, &amp;c. I need hardly add, that <span
+  class="sc">H.&nbsp;T. Ryley's</span> conjecture, that this use of the term
+  <i>Abigail</i> had any relation to the Lady Masham, is, therefore, quite
+  supererogative&mdash;but I may go farther. The old Duchess of
+  Marlborough's <i>Apology</i>, which <i>first</i> told the world that Lady
+  Masham's Christian name was Abigail, and that she was a poor cousin of
+  her own, was not published till 1742, when all feeling about "Abigail
+  Hill and her brother Jack" was extinct. In fine, it will be found that
+  the use of the term <i>Abigail</i> for a lady's maid was much more
+  frequent <i>before</i> the change of Queen Anne's Whig ministry than
+  <i>after</i>.</p>
+
+  <p class="author">C.</p>
+
+  <p><i>Honorary Degrees</i> (Vol. viii, p. 8.).&mdash;Honorary degrees
+  give no corporate rights. Johnson never himself assumed the title of
+  Doctor; conferred on him first by the University of Dublin in 1765, and
+  afterwards in 1775 by that of Oxford. See Croker's <i>Boswell</i>, p.
+  168. n. 5., for the probable motives of Johnson's never having called
+  himself Doctor.</p>
+
+  <p class="author">C.</p>
+
+  <p><i>Red Hair</i> (Vol. vii., p. 616.).&mdash;The Danes are said to have
+  been (and to be even now) a red-haired race.</p>
+
+  <p>They were long the scourge of England, and to this possibly may be
+  attributed in some degree the prejudice against people having hair of
+  that colour.</p>
+
+  <p>In Denmark, it is said, red-hair is esteemed a beauty.</p>
+
+  <p>That red-haired people are fiery and passionate is undoubtedly true;
+  at least I vouch for it as far as my experience goes; but that they emit
+  a disagreeable odour when inattentive to personal cleanliness, is
+  probably a vulgar prejudice arising from the colour of their hair,
+  resembling that of the fox&mdash;<i>unde</i> the term "foxy."</p>
+
+  <p class="author">A. C. M.</p>
+
+  <p class="address">Exeter.</p>
+
+  <p><i>Historical Engraving</i> (Vol. vii., p. 619).&mdash;I am glad I
+  happen to be able to inform <span class="sc">E.&nbsp;S. Taylor</span> that his
+  engraving, about the restoration of Charles II., is to be found in a book
+  entitled&mdash;</p>
+
+<blockquote class="b1n">
+
+  <p>"Verhael in forme van Journal, van de Reys ende 't Vertoeven van den
+  seer Doorluchtige ende Machtige Prins Carel de II." &amp;c. "In 's
+  Graven-hage, by Adrian Vlack, <span class="scac">M.DC.LX.</span>"
+  &amp;c.</p>
+
+</blockquote>
+
+  <p>Folio. The names at the corner of the engraving are apparently "F.&nbsp;T.
+  vliet, jn. P. Phillipe, sculp."</p>
+
+  <p class="author">J. M. G.</p>
+
+  <p><i>Proverbs quoted by Suetonius</i> (Vol. vii., p. 594).&mdash;A full
+  explanation of the proverb <span title="speude bradeôs" class="grk"
+  >&sigma;&pi;&epsilon;&#x1FE6;&delta;&epsilon;
+  &beta;&rho;&alpha;&delta;&#x1F73;&omega;&sigmaf;</span> <!-- Page 87
+  --><span class="pagenum"><a name="page87"></a>{87}</span>will be found in
+  the <i>Adagia</i> of Erasmus, under the head "Festina lente," p. 588.,
+  edit. 1599. That it was a favourite proverb of the Emperor Augustus is
+  also stated by Gellius, <i>Noct. Att.</i> x. 11., and Macrob., Saturn.
+  vi. 8. The verse,&mdash;</p>
+
+  <div class="poem">
+    <div class="stanza">
+      <p class="hg3">"<span title="asphalês gar est' ameinôn ê thrasus stratêlatês" class="grk">&#x1F00;&sigma;&phi;&alpha;&lambda;&#x1F74;&sigmaf; &gamma;&#x1F71;&rho; &#x1F10;&sigma;&tau;' &#x1F00;&mu;&epsilon;&#x1F77;&nu;&omega;&nu; &#x1F22; &theta;&rho;&alpha;&sigma;&#x1F7A;&sigmaf; &sigma;&tau;&rho;&alpha;&tau;&eta;&lambda;&#x1F71;&tau;&eta;&sigmaf;</span>,"</p>
+    </div>
+  </div>
+
+  <p>is from the <i>Ph&oelig;nissæ</i> of Euripides, v. 599.</p>
+
+  <p class="author">L.</p>
+
+  <p>"<i>Sat cito, si sat bene</i>" (Vol. v., p. 594; Vol. viii., p.
+  18.).&mdash;Your correspondent C. thinks that F.&nbsp;W.&nbsp;J. is mistaken in
+  calling it a favourite maxim of Lord Eldon. Few persons are more apt to
+  make mistakes than F.&nbsp;W.&nbsp;J. He therefore sends the following extract from
+  Twiss's <i>Life of Lord C. Eldon</i>, vol. i. p. 49. They are Lord
+  Eldon's own words, after having narrated the anecdote to which C.
+  refers:</p>
+
+<blockquote class="b1n">
+
+  <p>"In short, in all that I have had to do in future life, professional
+  and judicial, I have always felt the effect of this early admonition on
+  the pannels of the vehicle which conveyed me from school, 'Sat cito, si
+  sat bene.' It was the impression of this which made me that deliberative
+  judge&mdash;as some have said, too deliberative; and reflection on all
+  that is past will not authorise me to deny, that whilst I have been
+  thinking 'Sat cito, si sat bene,' I may not sufficiently have recollected
+  whether 'Sat bene, si sat cito' has had its influence."</p>
+
+</blockquote>
+
+  <p>The anecdote, and this observation upon it, are taken by Twiss from a
+  book of anecdotes in Lord Eldon's own handwriting.</p>
+
+  <p class="author">F. W. J.</p>
+
+  <p><i>Council of Laodicea, Canon 35.</i> (Vol. viii., p. 7.).&mdash;<span
+  class="sc">Clericus</span> (D.) will find <i>Angelos</i> in the text,
+  without <i>Angulos</i> in the margin, in any volume which contains the
+  version by Dionysius Exiguus, or that by Gentianus Hervetus; the former
+  printed Mogunt. 1525; Paris, 1609, 1661, and 1687: the latter, Paris,
+  1561 and 1618; and sufficiently supplied by Beverege and Howell. Both
+  translations are given by Crabbe, Surius, Binius, and others.</p>
+
+  <p>The corrupt reading <i>Angulos</i>, derived from Isidorus Mercator,
+  appears in the text, and without a marginal correction, in James Merlin's
+  edition of the <i>Councils</i>, Colon. 1530; in Carranza's <i>Summa</i>,
+  Salmant. 1551, Lugd. 1601, Lovan. 1668 (in which last impression, the
+  twelfth, the true heading of the Canon, according to Dionysius and
+  Crisconius, viz. "De his qui <i>Angelos</i> colunt," is restored); and in
+  the <i>Sanctiones Ecclesiasticæ</i> of Joverius, Paris, 1555.</p>
+
+  <p>For <i>Angelos</i> in the text, with a courageous "fortè legendum"
+  <i>Angulos</i> in the margin, in Pope Adrian's <i>Epitome Canonum</i>, we
+  are deeply indebted to Canisius (<i>Thesaur. Monum.</i>, ii. 271. ed.
+  Basnage); and this is the method adopted by Longus à Coriolano and
+  Bail.</p>
+
+  <p class="author">R. G.</p>
+
+  <p><i>Anna Lightfoot</i> (Vol. vii., p. 595.).&mdash;I have heard my
+  mother speak of Anna Lightfoot: her family belonged to the religious
+  community called Friends or Quakers. My mother was born 1751, and died in
+  the year 1836. The aunt of Anna Eleanor Lightfoot was next-door-neighbour
+  to my grandfather, who lived in Sir Wm. Warren's Square, Wapping. The
+  family were from Yorkshire, and the father of Anna was a shoemaker, and
+  kept a shop near Execution Dock, in the same district. He had a brother
+  who was a linendraper, living in the neighbourhood of St. James's, at the
+  west end of the town; and Anna was frequently his visitor, and here it
+  was that she became acquainted with the great man of the day. She was
+  missing, and advertised for by her friends; and, after some time had
+  elapsed, they obtained some information as to her retreat, stating that
+  she was well provided for; and her condition became known to them. She
+  had a son who was a corn-merchant, but, from some circumstance, became
+  deranged in his intellects, and it is said committed suicide. But whether
+  she had a daughter, I never heard. A retreat was provided for Anna in one
+  of those large houses surrounded with a high wall and garden, in the
+  district of Cat-and-Mutton Fields, on the east side of Hackney Road,
+  leading from Mile End Road; where she lived, and it is said died, but in
+  what year I cannot say. All this I have heard my mother tell when I was a
+  young lad; furthermore your deponent knoweth not.</p>
+
+  <p class="author">J. M. C.</p>
+
+  <p><i>Jack and Gill</i> (Vol. vii., p. 572.).&mdash;A somewhat earlier
+  instance of the occurrence of the expression "Jack and Gill" is to be
+  found (with a slight difference) in John Heywood's <i>Dialogue of Wit and
+  Folly</i>, page 11. of the Percy Society's reprint:</p>
+
+  <div class="poem">
+    <div class="stanza">
+      <p class="hg3">"No more hathe he in mynde, ether payne or care,</p>
+      <p>Than hathe other Cock my hors, or Gyll my mare!"</p>
+    </div>
+  </div>
+
+  <p>This is probably not more than twenty years earlier than your
+  correspondent's quotation from Tusser.</p>
+
+  <p class="author">H. C. K.</p>
+
+  <p><i>Simile of the Soul and the Magnetic Needle</i> (Vol. vi.
+  <i>passim</i>; Vol. vii., p. 508.).&mdash;Southey, in his <i>Omniana</i>
+  (vol. i. p. 210.), cites a passage from the <i>Partidas</i>, in which the
+  magnetic needle is used in illustration. It is as follows:</p>
+
+<blockquote class="b1n">
+
+  <p>"E bien assí como los marineros se guian en la noche escura por el
+  aguja, que les es medianera entre la piedra é la estrella, é les muestra
+  por de vayan, tambien en los malos tiempos, como en los buenos; otrosí
+  los que han de consejar al Rey, se deven siempre guiar por la justicia;
+  que es medianera entre Dios é el mundo, en todo tiempo, para dar
+  guardalon á los buenos, é pena á los malos, á cada uno segund su
+  merescimiento."&mdash;2 <i>Partida</i>, tit. ix. ley 28.</p>
+
+</blockquote>
+
+  <p>This passage is especially worthy of attention, as having been written
+  half a century before the supposed invention of the mariner's compass by
+  Flavius Gioias at Amalfi; and, as Southey <!-- Page 88 --><span
+  class="pagenum"><a name="page88"></a>{88}</span>remarks, "it must have
+  been well known and in general use before it would thus be referred to as
+  a familiar illustration."</p>
+
+  <p>I do not think that any of your correspondents have quoted the halting
+  lines with which Byron mars the pathos of the Rousseau-like letter of
+  Donna Julia (<i>Don Juan</i>, canto <span class="scac">I.</span> stanza
+  cxcvi.):</p>
+
+  <div class="poem">
+    <div class="stanza">
+      <p class="hg3">"My heart is feminine, nor can forget&mdash;</p>
+      <p>To all, except one image, madly blind;</p>
+      <p>So shakes the needle, and so stands the pole,</p>
+      <p>As vibrates my fond heart to my fix'd soul."</p>
+    </div>
+  </div>
+
+  <p class="author"><span class="sc">William Bates</span>.</p>
+
+  <p class="address">Birmingham.</p>
+
+  <p><i>Gibbon's Library</i> (Vol. vii., pp. 407. 455. 535.).&mdash;The
+  following quotation from Cyrus Redding's "Recollections of the Author of
+  Vathek" (<i>New Monthly Magazine</i>, vol. lxxi. p. 308.) may interest
+  J.&nbsp;H.&nbsp;M. and your other correspondents under this head:</p>
+
+<blockquote class="b1n">
+
+  <p>"'I bought it (says Beckford) to have something to read when I passed
+  through Lausanne. I have not been there since. I shut myself up for six
+  weeks, from early in the morning until night, only now and then taking a
+  ride. The people thought me mad. I read myself nearly blind.'</p>
+
+  <p>"I inquired if the books were rare or curious. He replied in the
+  negative. There were excellent editions of the principal historical
+  writers, and an extensive collection of travels. The most valuable work
+  was an edition of <i>Eustathius</i>; there was also a MS. or two. All the
+  books were in excellent condition; in number, considerably above six
+  thousand, near seven perhaps. He should have read himself mad if there
+  had been novelty enough, and he had stayed much longer.</p>
+
+  <p>"'I broke away, and dashed among the mountains. There is excellent
+  reading there, too, equally to my taste. Did you ever travel alone among
+  mountains?'</p>
+
+  <p>"I replied that I had, and been fully sensible of their mighty
+  impressions. 'Do you retain Gibbon's library?'</p>
+
+  <p>"'It is now dispersed, I believe. I made it a present to my excellent
+  physician, Dr. Schall or Scholl (I am not certain of the name). I never
+  saw it after turning hermit there.'"</p>
+
+</blockquote>
+
+  <p class="author"><span class="sc">William Bates</span>.</p>
+
+  <p class="address">Birmingham.</p>
+
+  <p><i>St. Paul's Epistles to Seneca</i> (Vol. vii., pp. 500.
+  583.).&mdash;The affirmation so frequently made and alluded to by
+  J.&nbsp;M.&nbsp;S. of Hull, that Seneca became, in the last year of his life, a
+  convert to Christianity, is an old tradition, which has just been revived
+  by a French author, M. Amédée Fleury, and is discussed and attempted to
+  be established by him at great length in two octavo volumes. I have not
+  read the book, but a learned reviewer of it, M. S. De Sacy, shows, with
+  the greatest appearance of reason and authority, that the tradition,
+  instead of being strengthened, is weakened by all that M. Fleury has said
+  about it. M. De Sacy's review is contained in the <i>Journal des
+  Débats</i> of June 30, in which excellent paper he is a frequent and
+  delightful writer on literary subjects. In the hope that it may interest
+  and gratify J.&nbsp;M.&nbsp;S. to be informed of M. Fleury's new work, I send this
+  scrap of information to the "N. &amp; Q."</p>
+
+  <p class="author"><span class="sc">John Macray</span>.</p>
+
+  <p class="address">Oxford.</p>
+
+  <p><i>"Hip, Hip, Hurrah!"</i> (Vol. vii., pp. 595. 633).&mdash;The reply
+  suggested by your correspondent R.&nbsp;S.&nbsp;F., that the above exclamation
+  originated in the Crusades, and is a corruption of the initial letters of
+  "Hierosolyma est perdita," never appeared to me to be very apposite.</p>
+
+  <p>In <i>A Collection of National English Ballads</i>, edited and
+  published by W. Chapple, 1838, in a description of the song "Old Simon,
+  the King," the favourite of Squire Western in <i>Tom Jones</i>, the
+  following lines are quoted:</p>
+
+  <div class="poem">
+    <div class="stanza">
+      <p class="hg3">"'Hang up all the poor hep drinkers,'</p>
+      <p>Cries old Sim, the king of skinkers."<a name="footnotetag4" href="#footnote4"><sup>[4]</sup></a></p>
+    </div>
+  </div>
+
+  <p>A note to the above states, in reference to the word "hep," that it
+  was a term of derision, applied to those who drank a weak infusion of the
+  "hep" (hip) berry, or sloe. "Hence," says the writer, "the exclamation of
+  'Hip, hip, hurrah,' corrupted from 'Hip, hip, away.'" The couplet quoted
+  above was written up in the Apollo Room at the Devil Tavern, Temple Bar,
+  where Ben Jonson's club, the "Apollo Club," used to meet. Many a drinker
+  of modern Port has equally good reason to exclaim with his brethren of
+  old, "Hip, hip, away!"</p>
+
+  <p class="author"><span class="sc">J. Brent</span>.</p>
+
+<div class="note">
+  <a name="footnote4"></a><b>Footnote 4:</b><a
+  href="#footnotetag4">(return)</a>
+  <p>A <i>skinker</i> is one who serves drink.</p>
+
+</div>
+  <p><i>Emblemata</i> (Vol. vii., p. 614.).&mdash;I have a small edition of
+  the <i>Emblemata Horatiana</i>, with the following title-page:</p>
+
+<blockquote class="b1n">
+
+  <p>"Othonis VænI Emblemata Horatiana Imaginibus in <i>æs</i> incisis
+  atque Latino, Germanico, Gallico et Belgico carmine Illustrata:
+  Amstelædami, apud Henricum Wetstenium, <span class="scac">M. DC.
+  LXXXIV.</span>"</p>
+
+</blockquote>
+
+  <p>The engravings, of which there are 103, measure about four inches by
+  three; the book contains 207 pages, exclusive of the index. "Amicitiæ
+  Trutina," mentioned by <span class="sc">Mr. Weld Taylor</span>, is the
+  sixty-sixth plate on page 133.</p>
+
+  <p>There is another volume of Emblems by Otho Venius, of which I have a
+  copy:</p>
+
+<blockquote class="b1n">
+
+  <p>"Amorum Emblemata Figuris Æneis Incisa, studio Othonis VænI: Batavo
+  Lugdunensis Antverpiæe Venalia apud Auctorem prostant apud Hieronymum
+  Verdussen, <span class="scac">MDCIIX</span>."</p>
+
+</blockquote>
+
+  <p>The engravings, of which (besides an allegorical frontispiece
+  representing the power of Venus) there are 124, are oval, measuring five
+  inches in length by three and a half inches in height. The designs appear
+  to me to be very good. On the <!-- Page 89 --><span class="pagenum"><a
+  name="page89"></a>{89}</span>first plate is the name of the engraver, "C.
+  Boel fecit." Each engraving has a motto, with verses in Latin, Italian,
+  and French. Recommendatory verses, by Hugo Grotius, Daniel Heinsius, Max.
+  Vrientius, Ph. Rubentius, and Petro Benedetti, are prefixed. It appears
+  from Rose's <i>Biographical Dictionary</i> (article "Van Veen"), that
+  Venius published another illustrated work, <i>The Seven Twin Sons of
+  Lara</i>. Is this work known?</p>
+
+  <p>Horace Walpole did not appreciate Venius. He says:</p>
+
+<blockquote class="b1n">
+
+  <p>"The perplexed and silly emblems of Venius are well
+  known."&mdash;<i>Anecdotes of Painting</i>, vol. ii. p. 167.</p>
+
+</blockquote>
+
+  <p>The Emblems of Gabriele Rollenhagius (of which I have also a copy)
+  consist of two centuries. The engravings are circular, with a motto round
+  each, and Latin verses at foot. My edition was published at Utrecht,
+  <span class="scac">MDCXIII</span>.</p>
+
+  <p>I write rather in the hope of eliciting information, than of
+  attempting to give any, on a subject which appears to me to deserve
+  farther inquiry.</p>
+
+  <p class="author">Q. D.</p>
+
+  <p><i>Campvere, Privileges of</i> (Vol. vii., pp. 262. 440.).&mdash;Will
+  your contributors J.&nbsp;D.&nbsp;S. and J.&nbsp;L. oblige me with references to the
+  works in which these privileges are mentioned?</p>
+
+  <p>They will find them noticed also at pages 67. and 68. of the second
+  volume of L. Guicciardini's <i>Belgium</i> (ed. 1646): "<i>Jus Gruis
+  liberæ.</i>" This is mentioned as one of the privileges of Campvere. Can
+  any of your legal friends tell me what this is, and where I may find it
+  treated of?</p>
+
+  <p class="author">E.</p>
+
+  <p><i>Slang Expressions: "Just the Cheese"</i> (Vol. vii., p.
+  617.).&mdash;This phrase is only some ten or twelve years old. Its origin
+  was this:&mdash;Some desperate witty fellows, by way of giving a comic
+  turn to the phrase "C'est une autre chose," used to translate it, "That
+  is another cheese;" and after awhile these words became "household
+  words," and when anything positive or specific was intended to be pointed
+  out, "That's the cheese" became adopted, which is nearly synonymous with
+  "Just the cheese."</p>
+
+  <p class="author"><span class="sc">Astolpho.</span></p>
+
+  <p><i>The Honorable Miss E. St. Leger</i> (Vol. vii., p.
+  598.).&mdash;Perhaps your correspondent <span class="sc">Mr. Breen</span>
+  may like to be informed that the late General the Honorable Arthur St.
+  Leger related to me the account of his relative having been made a master
+  mason, and that she had secreted herself in an old clock-case in
+  Doneraile House, on purpose to learn the secrets of the lodge, but was
+  discovered from having coughed. The Rev. Richard Arthur St. Leger, of
+  Starcross, Devon, has an engraving of the lady, who is represented
+  arrayed in all the costume of a master mason, with the apron, ring, and
+  jewel of the order.</p>
+
+  <p class="author"><span class="sc">W. Collyns.</span></p>
+
+  <p class="address">Harbow.</p>
+
+  <p><i>Queries from the Navorscher</i> (Vol. vii., p. 595.)&mdash;"The
+  Choice of Hercules," in the <i>Tatler</i>, was written by Addison; Swift
+  did not contribute more than one article to that publication, a treatise
+  on "Improprieties of Language." The allegory of "Religion being the
+  Foundation of Contentment" in the <i>Adventurer</i>, was the work of
+  Hawkesworth, to whose pen most of those papers are attributable.</p>
+
+  <p>"<i>Amentium haud amantium.</i>"&mdash;The alliteration of this
+  passage in the <i>Andria</i> of Terence is somewhat difficult to preserve
+  in English; perhaps to render it</p>
+
+<blockquote class="b1n">
+
+  <p>"An act of <i>frenzy</i> rather than <i>friendship</i>,"</p>
+
+</blockquote>
+
+  <p>would keep up the pun, though a weak translation, bringing to mind the
+  words of the song:</p>
+
+  <div class="poem">
+    <div class="stanza">
+      <p class="hg3">"O call it by some other name,</p>
+      <p>For <i>friendship</i> is too cold."</p>
+    </div>
+  </div>
+
+  <p>In French the expression might be turned "follement plutôt que
+  folâtrement," although this is a fault on the other side, and a stronger
+  word than the original.</p>
+
+  <p class="author">T. O. M.</p>
+
+  <p>"<i>Pity is akin to love</i>" (Vol. i., p. 248.).&mdash;Though a long
+  time has elapsed since the birthplace of these words was queried, no
+  answer has, I think, appeared in your columns. Will you then allow me to
+  refer H. to Southern's <i>Oroonoko</i>, Act II. Sc. 1.?</p>
+
+  <div class="poem">
+    <div class="stanza">
+      <p class="hg3">"<i>Blandford.</i> Alas! I pity you.</p>
+    </div>
+
+    <div class="stanza">
+      <p><i>Oroonoko.</i> Do pity me;</p>
+      <p><i>Pity's akin to love</i>, and every thought</p>
+      <p>Of that soft kind is welcome to my soul.</p>
+      <p>I would be pity'd here."</p>
+    </div>
+  </div>
+
+  <p class="author">W. T. M.</p>
+
+  <p class="address">Hong Kong.</p>
+
+<hr class="full" />
+
+<h2>Miscellaneous.</h2>
+
+<h3>NOTES ON BOOKS, ETC.</h3>
+
+  <p>Our library table is covered at this time with books for all classes
+  of readers. The theological student will peruse with no ordinary interest
+  the learned <i>Dissertation on the Origin and Connexion of the Gospels,
+  with a Synopsis of the Parallel Passages in the Original and Authorised
+  Version, and Critical Notes</i>, by James Smith, Esq., of Jordan Hill:
+  and when he has mastered the arguments contained in it, he may turn to
+  the new number of <i>The Journal of Sacred Literature</i>, in which will
+  be found a great variety of able papers. Our antiquarian friends will be
+  gratified with a volume compiled in a great measure from original family
+  papers, by its author Mr. Bankes, the Member for Dorsetshire; and which
+  narrates <i>The Story of Corfe Castle, and of many who have lived there,
+  collected from Ancient Chronicles and Records; also from the Private
+  Memoirs of a Family resident there in the Time of the Civil Wars</i>. The
+  volume, which is with good feeling inscribed by the author to his friends
+  and neighbours, Members of the Society for Mutual Improvement in the
+  borough of Corfe Castle, contains many interesting <!-- Page 90 --><span
+  class="pagenum"><a name="page90"></a>{90}</span>notices of his ancestors,
+  the well-known judge, Sir John Bankes and his lady&mdash;so memorable for
+  her gallant defence of Corfe Castle&mdash;drawn from the family papers.
+  <i>The Royal Descent of Nelson and Wellington from Edward I., King of
+  England, with Tables of Pedigree and Genealogical Memoirs</i>, compiled
+  by G.&nbsp;R. French, is a handsomely printed volume, which will please the
+  genealogist; while the historical student will be more interested in
+  <i>The Flowers of History, especially such as relate to the Affairs of
+  Britain from the Beginning of the World to the Year 1307, collected by
+  Matthew of Westminster, translated by C.&nbsp;D. Yonge</i>, Vol. I., a new
+  volume of Bohn's <i>Antiquarian Library</i>, and an important addition to
+  his series of translations of our early national chronicles. The
+  classical student is indebted to the same publisher for the second volume
+  of Mr. Owen's <i>Translation of the Organon, or Logical Treatises of
+  Aristotle</i>: nor will he regard as the least important addition to his
+  library, the new Part (No. VII.) of Smith's <i>Dictionary of Greek and
+  Roman Geography</i>, which extends from <i>Cyrrhus</i> to <i>Etruria</i>,
+  and is distinguished by the same excellences as the preceding Parts. We
+  must conclude these Notes with a brief reference to a handsome reprint of
+  the great work of De Quincy, the appearance of which in the <i>London
+  Magazine</i> some thirty years since created so great a sensation, we
+  mean of course his <i>Confessions of an English Opium-eater</i>.</p>
+
+<hr class="full" />
+
+<h3>BOOKS AND ODD VOLUMES WANTED TO PURCHASE.</h3>
+
+  <p><span class="sc">Literary Gazette</span>, 1834 to 1845.</p>
+
+  <p><span class="sc">Athenæum</span>, Commencement to 1835.</p>
+
+  <p><span class="sc">A Narrative of the Holy Life and Happy Death of Mr.
+  John Angier</span>. London 1685.</p>
+
+  <p><span class="sc">Moore's Melodies</span>. 15th Edition.</p>
+
+  <p><span class="sc">Wood's Athenæ Oxonienses</span> (ed. Bliss). 4 vols.
+  4to. 1813-20.</p>
+
+  <p><span class="sc">The Complaynts of Scotland</span>. 8vo. Edited by
+  Leyden. 1804.</p>
+
+  <p><span class="sc">Shakspeare's Plays</span>. Vol. V. of Johnson and
+  Steevens's edition, in 15 vols. 8vo. 1739.</p>
+
+  <p>*** <i>Correspondents sending Lists of Books Wanted are requested to
+  send their names.</i></p>
+
+  <p>*** Letters, stating particulars and lowest price, <i>carriage
+  free</i>, to be sent to <span class="sc">Mr. Bell</span>, Publisher of
+  "NOTES AND QUERIES," 186. Fleet Street.</p>
+
+<hr class="full" />
+
+<h2>Notices to Correspondents.</h2>
+
+  <p><span class="sc">Cecil Harbottle</span> <i>in our next.</i></p>
+
+  <p><span class="sc">W. Merry</span> <i>and</i> <span class="scac">M. E.
+  C.</span> <i>Our Correspondents are right. The oversight in question is
+  certainly open to their censure.</i></p>
+
+  <p><i>Answers to other Correspondents next week.</i></p>
+
+  <p><i>A few complete sets of</i> "<span class="sc">Notes and
+  Queries</span>," Vols. i. <i>to</i> vii., <i>price Three Guineas and a
+  Half, may now be had; for which early application is desirable.</i></p>
+
+  <p>"<span class="sc">Notes and Queries</span>" <i>is published at noon on
+  Friday, so that the Country booksellers may receive Copies in that nights
+  parcels, and deliver them to their Subscribers on the Saturday.</i></p>
+
+<hr class="full" />
+
+<p class="cenhead">Now ready, Price 25<i>s.</i>, Second Edition, revised
+and corrected. Dedicated by Special Permission
+to</p>
+
+<p class="cenhead">THE (LATE) ARCHBISHOP OF
+CANTERBURY.</p>
+
+  <p>PSALMS AND HYMNS FOR THE SERVICE OF THE CHURCH. The words selected by
+  the Very Rev. H.&nbsp;H. MILMAN, D.D., Dean of St. Paul's. The Music arranged
+  for Four Voices, but applicable also to Two or One, including Chants for
+  the Services. Responses to the Commandments and a Concise <span
+  class="sc">System of Chanting</span>, by J.&nbsp;B. SALE, Musical Instructor
+  and Organist to Her Majesty. 4to., neat, in morocco cloth, price 25s. To
+  be had of Mr. J.&nbsp;B. SALE, 21. Holywell Street, Millbank, Westminster, on
+  the receipt of a Post-office Order for that amount: and, by order, of the
+  principal Booksellers and Music Warehouses.</p>
+
+<blockquote class="b1n">
+
+  <p>"A great advance on the works we have hitherto had, connected with our
+  Church and Cathedral Service."&mdash;<i>Times.</i></p>
+
+  <p>"A collection of Psalm Tunes certainly unequalled in this
+  country."&mdash;<i>Literary Gazette.</i></p>
+
+  <p>"One of the best collections of tunes which we have yet seen. Well
+  merits the distinguished patronage under which it
+  appears"&mdash;<i>Musical World.</i></p>
+
+  <p>"A collection of Psalms and Hymns, together with a system of Chanting
+  of a very superior character to any which has hitherto
+  appeared."&mdash;<i>John Bull.</i></p>
+
+</blockquote>
+
+<p class="cenhead">London: GEORGE BELL, 186. Fleet Street.</p>
+
+<p class="cenhead">Also, lately published,</p>
+
+  <p>J. B. SALE'S SANCTUS, COMMANDMENTS and CHANTS as performed at the
+  Chapel Royal St. James, price 2<i>s.</i></p>
+
+<p class="cenhead">C. LONSDALE. 26. Old Bond Street.</p>
+
+<hr class="full" />
+
+  <p>PHOTOGRAPHY.&mdash;HORNE &amp; CO.'S Iodized Collodion, for obtaining
+  Instantaneous Views, and Portraits in from three to thirty seconds,
+  according to light.</p>
+
+  <p>Portraits obtained by the above, for delicacy of detail rival the
+  choicest Daguerreotypes, specimens of which may be seen at their
+  Establishment.</p>
+
+  <p>Also every description of Apparatus, Chemicals, &amp;c., &amp;c., used
+  in this beautiful Art.&mdash;123. and 121. Newgate Street.</p>
+
+<hr class="full" />
+
+  <p>PHOTOGRAPHIC PICTURES.&mdash;A Selection of the above beautiful
+  Productions (comprising Views in VENICE, PARIS, RUSSIA, NUBIA, &amp;c.)
+  may be seen at BLAND &amp; LONG'S, 153. Fleet Street, where may also be
+  procured Apparatus of every Description, and pure Chemicals for the
+  practice of Photography in all its Branches.</p>
+
+  <p>Calotype, Daguerreotype, and Glass Pictures for the Stereoscope.</p>
+
+  <p>*** Catalogues may be had on application.</p>
+
+<p class="cenhead">BLAND &amp; LONG, Opticians, Philosophical
+and Photographical Instrument Makers, and
+Operative Chemists, 163. Fleet Street.</p>
+
+<hr class="full" />
+
+<p class="cenhead">PHOTOGRAPHIC CAMERAS.</p>
+
+  <p>OTTEWILL'S REGISTERED DOUBLE-BODIED FOLDING CAMERA, is superior to
+  every other form of Camera, for the Photographic Tourist, from its
+  capability of Elongation or Contraction to any Focal Adjustment, its
+  extreme Portability and its adaptation for taking either Views or
+  Portraits.</p>
+
+  <p>Every Description of Camera, or Slides, Tripod Stands, Printing
+  Frames, &amp;c., may be obtained at his MANUFACTORY, Charlotte Terrace,
+  Barnsbury Road, Islington.</p>
+
+  <p>New Inventions, Models, &amp;c., made to order or from Drawings.</p>
+
+<hr class="full" />
+
+  <p>BROMIZED COLLODION.&mdash;J. B. HOCKIN &amp; CO. Chemists, 289.
+  Strand, are ready to supply the above Photographic Agent: Vide
+  <i>Photographic Journal</i>, June 21st. Their Iodized Collodion is highly
+  sensitive, and retains all its qualities unimpaired for three months. The
+  Sensitive Solution can be had separate. Pure Chemicals, Apparatus, and
+  all the requisites for the practice of Photography, and Instruction in
+  all its Branches.</p>
+
+  <p>A very superior Positive Paper.</p>
+
+<hr class="full" />
+
+  <p>LA LUMIERE; French Photographic Journal. The only Journal which gives
+  weekly all the principal Photographic News of England and the Continent;
+  with Original Articles and Communications on the different Processes and
+  Discoveries, Reports of the French Academy of Sciences, Articles on Art,
+  Reviews, &amp;c.</p>
+
+<p class="cenhead">Published at PARIS every SATURDAY.</p>
+
+  <p>Terms, 16<i>s.</i> per annum in advance. All English Subscriptions and
+  Communications to be addressed to the English Editor, 6. Henman Terrace,
+  Camden Town, London.</p>
+
+<hr class="full" />
+
+<p class="cenhead">The Twenty-eighth Edition.</p>
+
+  <p>NEUROTONICS, or the Art of Strengthening the Nerves, containing
+  Remarks on the influence of the Nerves upon the Health of Body and Mind,
+  and the means of Cure for Nervousness, Debility, Melancholy, and all
+  Chronic Diseases, by DR. NAPIER, M.D. London: HOULSTON &amp; STONEMAN.
+  Price 4<i>d.</i>, or Post Free from the Author for Five Penny Stamps.</p>
+
+<blockquote class="b1n">
+
+  <p>"We can conscientiously recommend 'Neurotonics,' by Dr. Napier, to the
+  careful perusal of our invalid readers."&mdash;<i>John Bull Newspaper,
+  June 5, 1852.</i></p>
+
+</blockquote>
+
+<hr class="full" />
+
+<p class="cenhead">Just published, price 1<i>s.</i>, free by Post 1<i>s.</i> 4<i>d.</i>,</p>
+
+  <p>THE WAXED-PAPER PHOTOGRAPHIC PROCESS of GUSTAVE LE GRAY'S NEW EDITION.
+  Translated from the French.</p>
+
+  <p>Sole Agents in the United Kingdom for VOIGHTLANDER &amp; SON'S
+  celebrated Lenses for Portraits and Views.</p>
+
+  <p>General Depôt for Turner's, Whatman's, Canson Frères, La Croix, and
+  other Talbotype Papers.</p>
+
+  <p>Pure Photographic Chemicals.</p>
+
+  <p>Instructions and Specimens in every Branch of the Art.</p>
+
+<p class="cenhead">GEORGE KNIGHT &amp; SONS, Foster Lane,
+London.</p>
+
+<hr class="full" />
+
+<p><!-- Page 91 --><span class="pagenum"><a name="page91"></a>{91}</span></p>
+
+<h3>WESTERN LIFE ASSURANCE
+AND ANNUITY SOCIETY.</h3>
+
+<p class="cenhead">3. PARLIAMENT STREET, LONDON.</p>
+
+<p class="cenhead">Founded A.D. 1842.</p>
+
+<hr class="short" />
+
+<p class="cenhead"><i>Directors.</i></p>
+
+
+<table class="nobctr" summary="directors" title="directors">
+  <tr>
+    <td class="rightbsing" style="vertical-align:top; text-align:left">
+      <p>H. E. Bicknell, Esq.<br />
+      T. S. Cocks, Jun. Esq., M.P.<br />
+      G. H. Drew, Esq.<br />
+      W. Evans, Esq.<br />
+      W. Freeman, Esq.<br />
+      F. Fuller, Esq.<br />
+      J. H. Goodhart, Esq.</p>
+
+    </td>
+    <td class="hspcsingle" style="vertical-align:top; text-align:left">
+      <p>T. Grissell, Esq.<br />
+      J. Hunt, Esq.<br />
+      J. A. Lethbridge, Esq.<br />
+      E. Lucas, Esq.<br />
+      J. Lys Seager, Esq.<br />
+      J. B. White, Esq.<br />
+      J. Carter Wood, Esq.</p>
+
+    </td>
+  </tr>
+</table>
+
+<p class="cenhead"><i>Trustees.</i>&mdash;W. Whateley, Esq., Q.C.; George Drew, Esq., T. Grissell, Esq.<br />
+<i>Physician.</i>&mdash;William Rich. Basham, M.D.<br />
+<i>Bankers.</i>&mdash;Messrs. Cocks, Biddulph, and Co., Charing Cross.</p>
+
+<p class="cenhead">VALUABLE PRIVILEGE.</p>
+
+  <p>POLICIES effected in this Office do not become void through temporary
+  difficulty in paying a Premium, as permission is given upon application
+  to suspend the payment at interest, according to the conditions detailed
+  in the Prospectus.</p>
+
+  <p>Specimens of Rates of Premium for Assuring 100<i>l.</i>, with a Share
+  in three-fourths of the Profits:&mdash;</p>
+
+<table width="35%" class="nobctr" summary="Specimens of Rates" title="Specimens of Rates">
+<tr>
+<td class="hspcsingle" style="text-align:left; width:28%">Age</td>
+<td class="hspcsingle" style="text-align:right; width:7%"><i>£</i></td>
+<td class="hspcsingle" style="text-align:right; width:7%"><i>s.</i></td>
+<td class="rightbsing" style="text-align:right; width:7%"><i>d.</i></td>
+<td class="hspcsingle" style="text-align:left; width:28%">Age</td>
+<td class="hspcsingle" style="text-align:right; width:7%"><i>£</i></td>
+<td class="hspcsingle" style="text-align:right; width:7%"><i>s.</i></td>
+<td class="hspcsingle" style="text-align:right; width:7%"><i>d.</i></td>
+</tr>
+<tr>
+<td class="hspcsingle" style="text-align:left">&nbsp; 17</td>
+<td class="hspcsingle" style="text-align:right">1</td>
+<td class="hspcsingle" style="text-align:right">14</td>
+<td class="rightbsing" style="text-align:right">4</td>
+<td class="hspcsingle" style="text-align:left">&nbsp; 32</td>
+<td class="hspcsingle" style="text-align:right">2</td>
+<td class="hspcsingle" style="text-align:right">10</td>
+<td class="hspcsingle" style="text-align:right">8</td>
+</tr>
+<tr>
+<td class="hspcsingle" style="text-align:left">&nbsp; 22</td>
+<td class="hspcsingle" style="text-align:right">1</td>
+<td class="hspcsingle" style="text-align:right">18</td>
+<td class="rightbsing" style="text-align:right">8</td>
+<td class="hspcsingle" style="text-align:left">&nbsp; 37</td>
+<td class="hspcsingle" style="text-align:right">2</td>
+<td class="hspcsingle" style="text-align:right">18</td>
+<td class="hspcsingle" style="text-align:right">6</td>
+</tr>
+<tr>
+<td class="hspcsingle" style="text-align:left">&nbsp; 27</td>
+<td class="hspcsingle" style="text-align:right">2</td>
+<td class="hspcsingle" style="text-align:right">4</td>
+<td class="rightbsing" style="text-align:right">5</td>
+<td class="hspcsingle" style="text-align:left">&nbsp; 42</td>
+<td class="hspcsingle" style="text-align:right">3</td>
+<td class="hspcsingle" style="text-align:right">8</td>
+<td class="hspcsingle" style="text-align:right">2</td>
+</tr></table>
+
+<p class="cenhead">ARTHUR SCRATCHLEY, M.A., F.R.A.S., Actuary.</p>
+
+  <p>Now ready, price 10<i>s.</i> 6<i>d.</i>, Second Edition, with material
+  additions, INDUSTRIAL INVESTMENT and EMIGRATION: being a TREATISE ON
+  BENEFIT BUILDING SOCIETIES, and on the General Principles of Land
+  Investment, exemplified in the Cases of Freehold Land Societies, Building
+  Companies, &amp;c. With a Mathematical Appendix on Compound Interest and
+  Life Assurance. By ARTHUR SCRATCHLEY, M.A., Actuary to the Western Life
+  Assurance Society, 3. Parliament Street, London.</p>
+
+<hr class="full" />
+
+  <p>SPECTACLES.&mdash;WM. ACKLAND applies his medical knowledge as a
+  Licentiate of the Apothecaries' Company, London, his theory as a
+  Mathematician, and his practice as a Working Optician, aided by Smee's
+  Optometer, in the selection of Spectacles suitable to every derangement
+  of vision, so as to preserve the sight to extreme old age.</p>
+
+  <p>ACHROMATIC TELESCOPES, with the New Vetzlar Eye-pieces, as exhibited
+  at the Academy of Sciences in Paris. The Lenses of these Eye-pieces are
+  so constructed that the rays of light fall nearly perpendicular to the
+  surface of the various lenses, by which the aberration is completely
+  removed; and with a telescope so fitted gives one-third more magnifying
+  power and light than could be obtained by the old Eye-pieces. Prices of
+  the various sizes on application to</p>
+
+<p class="cenhead">WM. ACKLAND, Optician, 93. Hatton Garden,
+London.</p>
+
+<hr class="full" />
+
+  <p>BENNETT'S MODEL WATCH, as shown at the GREAT EXHIBITION. No. 1. Class
+  X., in Gold and Silver Cases. in five qualities, and adapted to all
+  Climates, may now be had at the MANUFACTORY, 65. CHEAPSIDE. Superior Gold
+  London-made Patent Levers, 17, 15, and 12 guineas. Ditto, in Silver
+  Cases, 8, 6, and 4 guineas. First-rate Geneva Levers, in Gold Cases, 12,
+  10, and 8 guineas. Ditto, in Silver Cases, 8, 6, and 5 guineas. Superior
+  Lever, with Chronometer Balance, Gold, 27, 23, and 19 guineas. Bennett's
+  Pocket Chronometer, Gold, 50 guineas; Silver, 40 guineas. Every Watch
+  skilfully examined, timed, and its performance guaranteed. Barometers,
+  2<i>l.</i>, 3<i>l.</i>, and 4<i>l.</i> Thermometers from 1<i>s.</i>
+  each.</p>
+
+  <p>BENNETT, Watch, Clock, and Instrument Maker to the Royal Observatory,
+  the Board of Ordnance, the Admiralty, and the Queen, 65. CHEAPSIDE.</p>
+
+<hr class="full" />
+
+  <p>UNITED KINGDOM LIFE ASSURANCE COMPANY: established by Act of
+  Parliament in 1834.&mdash;8. Waterloo Place, Pall Mall, London.</p>
+
+<p class="cenhead">HONORARY PRESIDENTS.</p>
+
+<table class="nobctr" summary="Honorary Presidents." title="Honorary Presidents.">
+<tr><td class="rightbsing" valign="top" style="width:50%">
+Earl of Courtown<br />
+Earl Leven and Melville<br />
+Earl of Norbury<br />
+Earl of Stair<br />
+Viscount Falkland
+</td><td class="hspcsingle" valign="top" style="width:50%">
+Lord Elphinstone<br />
+Lord Belhaven and Stenton<br />
+Wm. Campbell, Esq.,<br />
+of Tillichewan
+</td></tr>
+</table>
+
+<p class="cenhead">LONDON BOARD.</p>
+
+<p class="cenhead"><i>Chairman.</i>&mdash;Charles Graham, Esq.<br />
+<i>Deputy-Chairman.</i>&mdash;Charles Downes, Esq.</p>
+
+<table class="nobctr" summary="London Board." title="London Board.">
+<tr><td class="rightbsing" valign="top" style="width:50%">
+H. Blair Avarne, Esq.<br />
+E. Lennox Boyd, Esq.,<br />
+F.S.A., <i>Resident</i>.<br />
+C. Berwick Curtis, Esq.<br />
+William Fairlie, Esq.<br />
+D. Q. Henriques, Esq.
+</td><td class="hspcsingle" valign="top" style="width:50%">
+J. G. Henriques, Esq.<br />
+F. C. Maitland, Esq.<br />
+William Railton, Esq.<br />
+F. H. Thomson, Esq.<br />
+Thomas Thorby, Esq.
+</td></tr>
+</table>
+
+<p class="cenhead">MEDICAL OFFICERS.</p>
+
+<p class="cenhead"><i>Physician.</i>&mdash;Arthur H. Hassall, Esq., M.D., 8. Bennett Street, St. James's.<br />
+<i>Surgeon.</i>&mdash;F. H. Tomson, Esq., 48. Berners Street.</p>
+
+  <p>The Bonus added to Policies from March, 1834, to December 31, 1847, is
+  as follows:&mdash;</p>
+
+
+<table class="topbotbctr" summary="Bonus added to Policies" title="Bonus added to Policies">
+  <tr>
+    <td class="rightbotbsing" style="text-align:center" rowspan="2">
+      <p>Sum<br />
+      Assured</p>
+
+    </td>
+    <td class="rightbotbsing" style="text-align:center" rowspan="2">
+      <p>Time<br />
+      Assured.</p>
+
+    </td>
+    <td class="rightbotbsing" style="text-align:center" colspan="2">
+      <p>Sum added to<br />
+      Policy</p>
+
+    </td>
+    <td class="botbsing" style="text-align:center" rowspan="2">
+      <p>Sum<br />
+      Payable<br />
+      at Death.</p>
+
+    </td>
+  </tr>
+
+  <tr>
+    <td class="allb" style="text-align:center">
+      <p>In 1841.</p>
+
+    </td>
+    <td class="allb" style="text-align:center">
+      <p>In 1848.</p>
+
+    </td>
+  </tr>
+
+  <tr>
+    <td class="rightbsing" style="text-align:right">
+      <p><i>£&nbsp; &nbsp;</i></p>
+
+    </td>
+    <td class="rightbsing" style="text-align:left">
+    </td>
+    <td class="rightbsing" style="text-align:right">
+      <p><i>£ &nbsp; s. d.</i></p>
+
+    </td>
+    <td class="rightbsing" style="text-align:right">
+      <p><i>£ &nbsp; s. d.</i></p>
+
+    </td>
+    <td class="hspcsingle" style="text-align:right">
+      <p><i>£ &nbsp; s. d.</i></p>
+
+    </td>
+  </tr>
+
+  <tr>
+    <td class="rightbsing" style="text-align:right">
+      <p>5000</p>
+
+    </td>
+    <td class="rightbsing" style="text-align:left">
+      <p>14 years</p>
+
+    </td>
+    <td class="rightbsing" style="text-align:right">
+      <p>683 &nbsp; 6 &nbsp;8&nbsp;</p>
+
+    </td>
+    <td class="rightbsing" style="text-align:right">
+      <p>787 10 &nbsp;0&nbsp;</p>
+
+    </td>
+    <td class="hspcsingle" style="text-align:right">
+      <p>6470 16 &nbsp;8&nbsp;</p>
+
+    </td>
+  </tr>
+
+  <tr>
+    <td class="rightbsing" style="text-align:right">
+      <p>* 1000</p>
+
+    </td>
+    <td class="rightbsing" style="text-align:left">
+      <p>&nbsp; 7 years</p>
+
+    </td>
+    <td class="rightbsing" style="text-align:center">
+      <p>&mdash;</p>
+
+    </td>
+    <td class="rightbsing" style="text-align:right">
+      <p>157 10 &nbsp;0&nbsp;</p>
+
+    </td>
+    <td class="hspcsingle" style="text-align:right">
+      <p>1157 10 &nbsp;0&nbsp;</p>
+
+    </td>
+  </tr>
+
+  <tr>
+    <td class="rightbsing" style="text-align:right">
+      <p>500</p>
+
+    </td>
+    <td class="rightbsing" style="text-align:left">
+      <p>&nbsp; 1 year</p>
+
+    </td>
+    <td class="rightbsing" style="text-align:center">
+      <p>&mdash;</p>
+
+    </td>
+    <td class="rightbsing" style="text-align:right">
+      <p>11 &nbsp; 5 &nbsp;0&nbsp;</p>
+
+    </td>
+    <td class="hspcsingle" style="text-align:right">
+      <p>511 &nbsp; 5 &nbsp;0&nbsp;</p>
+
+    </td>
+  </tr>
+</table>
+
+  <p>* <span class="sc">Example.</span>&mdash;At the commencement of the
+  year 1841, a person aged thirty took out a Policy for 1000<i>l.</i>, the
+  annual payment for which is 24<i>l.</i> 1<i>s.</i> 8<i>d.</i>; in 1847 he
+  had paid in premiums 168<i>l.</i> 11<i>s.</i> 8<i>d.</i>; but the profits
+  being 2¼ per cent. per annum on the sum insured (which is 22<i>l.</i>
+  10<i>s.</i> per annum for each 1000<i>l.</i>) he had 157<i>l.</i>
+  10<i>s.</i> added to the Policy, almost as much as the premiums paid.</p>
+
+  <p>The Premiums, nevertheless, are on the most moderate scale, and only
+  one-half need be paid for the first five years, when the Insurance is for
+  Life. Every information will be afforded on application to the Resident
+  Director.</p>
+
+<hr class="full" />
+
+<h3>GILBERT J. FRENCH,</h3>
+
+<p class="cenhead">BOLTON, LANCASHIRE,</p>
+
+  <p>RESPECTFULLY informs the Clergy, Architects, and Churchwardens, that
+  he replies immediately to all applications by letter, for information
+  respecting his Manufactures in CHURCH FURNITURE, ROBES, COMMUNION LINEN,
+  &amp;c., &amp;c., supplying full information as to Prices, together with
+  Sketches, Estimates, Patterns of Materials, &amp;c., &amp;c.</p>
+
+  <p>Having declined appointing Agents, MR. FRENCH invites direct
+  communications by Post, as the most economical and satisfactory
+  arrangement. PARCELS delivered Free by Railway.</p>
+
+<hr class="full" />
+
+  <p>HEAL &amp; SON'S ILLUSTRATED CATALOGUE OF BEDSTEADS, sent free by
+  post. It contains designs and prices of upwards of ONE HUNDRED different
+  Bedsteads; also of every description of Bedding, Blankets, and Quilts.
+  And their new warerooms contain an extensive assortment of Bed-room
+  Furniture, Furniture Chintzes, Damasks, and Dimities, so as to render
+  their Establishment complete for the general furnishing of Bed-rooms.</p>
+
+<p class="cenhead">HEAL &amp; SON, Bedstead and Bedding Manufacturers,
+196. Tottenham Court Road.</p>
+
+<hr class="full" />
+
+  <p>PHOTOGRAPHIC PAPER.&mdash;Negative and Positive Papers of Whatman's,
+  Turner's, Sanford's, and Canson Frères' make. Waxed-Paper for Le Gray's
+  Process. Iodized and Sensitive Paper for every kind of Photography.</p>
+
+  <p>Sold by JOHN SANFORD, Photographic Stationer, Aldine Chambers, 13.
+  Paternoster Row, London.</p>
+
+<hr class="full" />
+
+<h3>INDIGESTION, CONSTIPATION,
+NERVOUSNESS, &amp;c.&mdash;BARRY,<br />
+DU BARRY &amp; CO.'S HEALTH-RESTORING
+FOOD for INVALIDS and INFANTS.</h3>
+
+<hr class="short" />
+
+  <p>THE REVALENTA ARABICA FOOD, the only natural, pleasant, and effectual
+  remedy (without medicine, purging, inconvenience, or expense, as it saves
+  fifty times its cost in other remedies) for nervous, stomachic,
+  intestinal, liver and bilious complaints, however deeply rooted,
+  dyspepsia (indigestion), habitual constipation, diarrh&oelig;a, acidity,
+  heartburn, flatulency, oppression, distension, palpitation, eruption of
+  the skin, rheumatism, gout, dropsy, sickness at the stomach during
+  pregnancy, at sea, and under all other circumstances, debility in the
+  aged as well as infants, fits, spasms, cramps, paralysis, &amp;c.</p>
+
+<p class="cenhead"><i>A few out of 50,000 Cures:&mdash;</i></p>
+
+<blockquote class="b1n">
+
+  <p>Cure, No. 71, of dyspepsia; from the Right Hon. the Lord Stuart de
+  Decies:&mdash;"I have derived considerable benefits from your Revalenta
+  Arabica Food, and consider it due to yourselves and the public to
+  authorise the publication of these lines.&mdash;<span class="sc">Stuart
+  de Decies.</span>"</p>
+
+</blockquote>
+
+<blockquote class="b1n">
+
+  <p>Cure, No. 49,832:&mdash;"Fifty years' indescribable agony from
+  dyspepsia, nervousness, asthma, cough, constipation, flatulency, spasms,
+  sickness at the stomach, and vomitings have been removed by Du Barry's
+  excellent food.&mdash;<span class="sc">Maria Jolly</span>, Wortham Ling,
+  near Diss, Norfolk."</p>
+
+</blockquote>
+
+<blockquote class="b1n">
+
+  <p>Cure, No. 180:&mdash;"Twenty-five years' nervousness, constipation,
+  indigestion, and debility, from which I had suffered great misery, and
+  which no medicine could remove or relieve, have been effectually cured by
+  Du Barry's food in a very short time.&mdash;<span class="sc">W. R.
+  Reeves</span>, Pool Anthony, Tiverton."</p>
+
+</blockquote>
+
+<blockquote class="b1n">
+
+  <p>Cure, No. 4,208:&mdash;"Eight years' dyspepsia, nervousness, debility,
+  with cramps, spasms, and nausea, for which my servant had consulted the
+  advice of many, have been effectually removed by Du Barry's delicious
+  food in a very short time. I shall be happy to answer any
+  inquiries.&mdash;<span class="sc">Rev. John W. Flavell</span>, Ridlington
+  Rectory, Norfolk."</p>
+
+</blockquote>
+
+<p class="cenhead"><i>Dr. Wurzer's Testimonial.</i></p>
+
+<blockquote class="b1n">
+
+  <p class="author">"Bonn, July 19. 1852.</p>
+
+  <p>"This light and pleasant Farina is one of the most excellent,
+  nourishing, and restorative remedies, and supersedes, in many cases, all
+  kinds of medicines. It is particularly useful in confined habit of body,
+  as also diarrh&oelig;a, bowel complaints, affections of the kidneys and
+  bladder, such as stone or gravel; inflammatory irritation and cramp of
+  the urethra, cramp of the kidneys and bladder, strictures, and
+  hemorrhoids. This really invaluable remedy is employed with the most
+  satisfactory result, not only in bronchial and pulmonary complaints,
+  where irritation and pain are to be removed, but also in pulmonary and
+  bronchial consumption, in which it counteracts effectually the
+  troublesome cough; and I am enabled with perfect truth to express the
+  conviction that Du Barry's Revalenta Arabica is adapted to the cure of
+  incipient hectic complaints and consumption.</p>
+
+<p class="cenhead">"<span class="sc">Dr. Rud Wurzer.</span><br />
+"Counsel of Medicine, and practical M.D. in Bonn."</p>
+
+</blockquote>
+
+  <p>London Agents:&mdash;Fortnum, Mason &amp; Co., 182. Piccadilly,
+  purveyors to Her Majesty the Queen; Hedges &amp; Butler, 155. Regent
+  Street; and through all respectable grocers, chemists, and medicine
+  venders. In canisters, suitably packed for all climates, and with full
+  instructions, 1lb. 2<i>s.</i> 9<i>d.</i>; 2lb. 4<i>s.</i> 6<i>d.</i>;
+  5lb. 11<i>s.</i>; 12lb. 22<i>s.</i>; super-refined, 5lb. 22<i>s.</i>;
+  10lb. 33<i>s.</i> The 10lb. and 12lb. carriage free, on receipt of
+  Post-office order.&mdash;Barry, Du Barry Co., 77. Regent Street,
+  London.</p>
+
+  <p><span class="sc">Important Caution.</span>&mdash;Many invalids having
+  been seriously injured by spurious imitations under closely similar
+  names, such as Ervalenta, Arabaca, and others, the public will do well to
+  see that each canister bears the name <span class="sc">Barry, Du Barry
+  &amp; Co.</span>, 77. Regent Street, London, in full, <i>without which
+  none is genuine</i>.</p>
+
+<hr class="full" />
+
+<p><!-- Page 92 --><span class="pagenum"><a name="page92"></a>{92}</span></p>
+
+<p class="cenhead">A CHEAP ISSUE OF</p>
+
+<h3>MURRAY'S HANDBOOKS
+FOR TRAVELLERS.</h3>
+
+<hr class="short" />
+
+<p class="cenhead">FOR THE CONTINENT.</p>
+
+  <p>HANDBOOK&mdash;TRAVEL TALK. 3<i>s.</i> 6<i>d.</i></p>
+
+  <p>HANDBOOK&mdash;BELGIUM AND THE RHINE. 5<i>s.</i></p>
+
+  <p>HANDBOOK&mdash;SWITZERLAND, SAVOY, AND PIEDMONT. 7<i>s.</i>
+  6<i>d.</i></p>
+
+  <p>HANDBOOK&mdash;NORTH GERMANY, AND HOLLAND. 9<i>s.</i></p>
+
+  <p>HANDBOOK&mdash;SOUTH GERMANY AND THE TYROL. 9<i>s.</i></p>
+
+  <p>HANDBOOK&mdash;FRANCE AND THE PYRENEES. 9<i>s.</i></p>
+
+  <p>HANDBOOK&mdash;SPAIN, ANDALUSIA, ETC. 16<i>s.</i></p>
+
+  <p>HANDBOOK&mdash;NORTH ITALY AND FLORENCE. 9<i>s.</i></p>
+
+  <p>HANDBOOK&mdash;SOUTH ITALY AND NAPLES.</p>
+
+  <p>HANDBOOK&mdash;EGYPT AND THEBES. 15<i>s.</i></p>
+
+  <p>HANDBOOK&mdash;DENMARK, NORWAY, AND SWEDEN. 12<i>s.</i></p>
+
+  <p>HANDBOOK&mdash;RUSSIA AND FINLAND. 12<i>s.</i></p>
+
+<p class="cenhead">FOR ENGLAND.</p>
+
+  <p>HANDBOOK&mdash;MODERN LONDON. 5<i>s.</i></p>
+
+  <p>HANDBOOK&mdash;ENGLAND. <span class="sc">Part I.</span> DEVON AND
+  CORNWALL. 6<i>s.</i></p>
+
+<p class="cenhead">JOHN MURRAY, Albemarle Street.</p>
+
+<hr class="full" />
+
+<p class="cenhead">THE QUARTERLY REVIEW,
+No. CLXXXV., is published THIS DAY.</p>
+
+<p class="cenhead"><span class="sc">Contents</span>:</p>
+
+  <div class="contents">
+    <div class="stanza">
+      <p>&nbsp; &nbsp; I. IRELAND, BY THE FOUR MASTERS.</p>
+      <p>&nbsp; &nbsp;II. HAXTHAUSEN ON RUSSIA.</p>
+      <p>&nbsp; III. COMPARATIVE ANATOMY&mdash;PROFESSOR OWEN.</p>
+      <p>&nbsp; IV. ECCLESIASTICAL FORGERIES.</p>
+      <p>&nbsp; &nbsp;V. AUTOBIOGRAPHY OF SIGNOR RUFFINI.</p>
+      <p>&nbsp; VI. COUNT FICQUELMONT ON FOREIGN POLICY.</p>
+      <p>&nbsp;VII. REPORT OF THE OXFORD COMMISSION.</p>
+      <p>VIII. LIFE OF THOMAS MOORE.</p>
+    </div>
+  </div>
+
+<p class="cenhead">JOHN MURRAY, Albemarle Street.</p>
+
+<hr class="full" />
+
+<p class="cenhead">Just published,</p>
+
+<p class="cenhead">THE CHRISTIAN REMEMBRANCER,
+No. LXXXI., for JULY, 1853.</p>
+
+<p class="cenhead"><span class="sc">Contents.</span></p>
+
+  <div class="contents">
+    <div class="stanza">
+      <p>1. Recent Metaphysics.</p>
+      <p>2. Miss Yonge's Novels.</p>
+      <p>3. Palmer's Dissertations on the Orthodox Communion.</p>
+      <p>4. Stirling's Cloister Life of Charles V.</p>
+      <p>5. Alford's Greek Testament. Vol. II.</p>
+      <p>6. Modern Poetry.</p>
+      <p>7. Church Penitentiary Association.</p>
+      <p>8. Spicilegium <span class="correction" title="Original reads `Solesmence'.">Solesmense</span>.</p>
+      <p>9. Notices of New Books, &amp;c.</p>
+    </div>
+  </div>
+
+<p class="cenhead">London: J. &amp; C. MOZLEY, 6. Paternoster Row.</p>
+
+<hr class="full" />
+
+<h3>J. R. SMITH'S</h3>
+
+<h2>NEW PUBLICATIONS.</h2>
+
+<hr class="short" />
+
+  <p>BRITANNIC RESEARCHES; or, New Facts and Rectifications of Ancient
+  British History. by the REV. BEALE POSTE, M.A. Just published, 8vo. (pp.
+  488.), with engravings, cloth, 15<i>s.</i></p>
+
+  <p>A FEW NOTES ON SHAKSPEARE, with Occasional Remarks on Mr. Collier's
+  Folio of 1632. By the REV. ALEXANDER DYCE. 8vo. cloth, 5<i>s.</i></p>
+
+  <p>WILTSHIRE TALES, illustrative of the Manners, Customs, and Dialect of
+  that and adjoining Counties. By J.&nbsp;Y. AKERMAN, ESQ. 12mo. cloth,
+  2<i>s.</i> 6<i>d.</i></p>
+
+  <p>FACTS AND SPECULATIONS on the Origin and History of Playing Cards. By
+  W.&nbsp;A. CHATTO, Author of "Jackson's History of Wood Engraving." In one
+  handsome volume, 8vo., illustrated with many Engravings, both plain and
+  coloured, cloth, 1<i>l.</i> 1<i>s.</i></p>
+
+  <p>BOSWORTH'S (Rev. Dr.) Compendious Anglo-Saxon and English Dictionary.
+  8vo., closely printed in treble columns, cloth, 2<i>s.</i></p>
+
+  <p>LOWER'S (M.A.) ESSAYS on English Surnames. 2 vols. post 8vo. Third
+  Edition, greatly enlarged, cloth, 12<i>s.</i></p>
+
+  <p>LOWER'S CURIOSITIES of HERALDRY, with Illustrations from Old English
+  Writers. 8vo., numerous Engravings, cloth, 14<i>s.</i></p>
+
+  <p>WRIGHT'S (THOS.) ESSAYS on the Literature, Popular Superstitions, and
+  History of England in the Middle Ages. 2 vols. post 8vo., cloth,
+  16<i>s.</i></p>
+
+  <p>GUIDE to ARCHÆOLOGY. An Archæological Index to Remains of Antiquity of
+  the Celtic, Romano British, and Anglo-Saxon Periods. By JOHN YONGE
+  AKERMAN, Fellow and Secretary to the Society of Antiquaries. 1 vol. 8vo.,
+  illustrated with numerous Engravings, comprising upwards of 500 objects,
+  cloth, 15<i>s.</i></p>
+
+  <p>A NEW LIFE OF SHAKSPEARE; including many Particulars respecting the
+  Poet and his Family, never before published. By JAMES ORCHARD HALLIWELL,
+  F.R.S., F.S.A., &amp;c. 8vo., 76 Engravings by Fairholt, cloth,
+  15<i>s.</i></p>
+
+<hr class="short" />
+
+<p class="cenhead">JOHN RUSSELL SMITH, 36. SOHO SQUARE, LONDON.</p>
+
+<hr class="full" />
+
+<p class="cenhead">NEW EDITIONS OF SHARON TURNER'S
+HISTORICAL WORKS, WITH THE
+AUTHOR'S FINAL CORRECTIONS.</p>
+
+<p class="cenhead">Just published, in 4 vols. 8vo., price 50<i>s.</i> cloth.</p>
+
+  <p>SHARON TURNER'S HISTORY of ENGLAND DURING THE MIDDLE AGES: Comprising
+  the Reigns from the Norman Conquest to the Accession of Henry VIII. The
+  Fifth Edition, revised; with the Author's final Corrections added by the
+  Author's Son, the REV. SYDNEY TURNER.</p>
+
+<p class="cenhead">By the same Author, New Editions,</p>
+
+  <p>THE HISTORY OF THE ANGLO-SAXONS. The Seventh Edition. 3 vols. 8vo.,
+  price 36<i>s.</i></p>
+
+  <p>THE SACRED HISTORY OF THE WORLD. The Eighth Edition, in 3 vols. post
+  8vo., price 31<i>s.</i> 6<i>d.</i></p>
+
+<p class="cenhead">London: LONGMAN, BROWN, GREEN, &amp; LONGMANS.</p>
+
+<hr class="full" />
+
+  <p>A COMPLETE HISTORY OF DRUGS, by M. POMET; with what is Observable from
+  MESSRS. LEMERQ and TOURNEFORT. Divided into Three Classes: Vegetable,
+  Animal, and Mineral, and their Use in Chemistry, Pharmacy, and the Arts.
+  Illustrated with above 400 Copper Cuts. Done into English. 2 vols. 4to.
+  in one. London: R. Bornirck &amp; Co., 1712. Dedicated to Dr. Sloane.</p>
+
+  <p>DE HUMANA PHYSIOGNOMIA JOANNIS BAPTISTÆ PORTÆ Neapolitani. Libri 4.
+  1601. Ursellis Typ. Conellatorii. Numerous Woodcuts. To be disposed
+  of.</p>
+
+  <p>Apply by letter to W. C., care of MR. BELL, 186. Fleet Street.</p>
+
+<hr class="full" />
+
+<h3>LITERARY CURIOSITIES.</h3>
+
+  <p>An Original and Highly Interesting Newspaper (<i>A Little Mercury</i>,
+  of eight pages), published in the ever Memorable Year of the Martyrdom of
+  <span class="sc">King Charles the First</span>, 205 years ago! Very rare,
+  exceedingly curious, and in fine preservation! Sent free on receipt of
+  12<i>s.</i> 6<i>d.</i></p>
+
+  <p>An Original, Rare, and Curious Newspaper (<i>A Little Mercury</i>, of
+  sixteen pages), published in <span class="sc">Charles the Second's</span>
+  Reign, sent free on receipt of 6<i>s.</i></p>
+
+  <p>An Original Newspaper (<i>A Little Gazette</i>), rich in curious
+  historical and domestic announcements, published in <span
+  class="sc">Charles the Second's</span> Reign, sent free on receipt of
+  4<i>s.</i> 6<i>d.</i></p>
+
+  <p>An Original Newspaper of <span class="sc">James the Second's</span>
+  Reign, rare and curious, sent free on receipt of 3<i>s.</i>
+  6<i>d.</i></p>
+
+  <p>An Original Newspaper of <span class="sc">William And Mary's</span>
+  Reign, rare and curious, sent free on receipt of 3<i>s.</i>
+  6<i>d.</i></p>
+
+  <p>An Original Newspaper of <span class="sc">Queen Anne's</span> Reign,
+  ornamented with curious woodcuts, rare and very interesting, sent free on
+  receipt of 3<i>s.</i></p>
+
+  <p>An Original Newspaper of <span class="sc">George the First's</span>
+  Reign, with a curious woodcut title, rare, sent free on receipt of
+  2<i>s.</i> 6<i>d.</i></p>
+
+  <p>An Original Newspaper of <span class="sc">George the Second's</span>
+  Reign, sent free on receipt of 2<i>s.</i></p>
+
+  <p>An Original Newspaper of <span class="sc">George the Third's</span>
+  Reign, sent free on receipt of 1<i>s.</i></p>
+
+  <p>Apply, <span class="sc">by Letter only</span>, inclosing a Remittance,
+  either Post-office Order, or Postage Stamps, addressed to MR. JAMES
+  HAMILTON FENNELL, 1. Warwick Court, Holborn, London.</p>
+
+<hr class="full" />
+
+<p class="cenhead">TO PRINTERS, PUBLISHERS, AUTHORS, ETC.</p>
+
+  <p>WOOD ENGRAVINGS.&mdash;Illustrations for Books, Periodicals,
+  Newspapers, and every Class of Wood Engravings executed in a Superior
+  Style, at reasonable Prices, by GEORGE DORRINGTON, Designer and Engraver
+  on Wood, 4. Ampton Street, Gray's Inn Road.&mdash;Specimens and Estimates
+  forwarded upon receipt of particulars.</p>
+
+<hr class="full" />
+
+  <p>Printed by <span class="sc">Thomas Clark Shaw</span>, of No. 10.
+  Stonefield Street, in the Parish of St. Mary, Islington, at No. 5. New
+  Street Square, in the Parish of St. Bride, in the City of London; and
+  published by <span class="sc">George Bell</span>, of No. 186. Fleet
+  Street, in the Parish of St. Dunstan in the West, in the City of London,
+  Publisher, at No. 186. Fleet Street aforesaid.&mdash;Saturday, July 23,
+  1853.</p>
+
+</body>
+</html>
